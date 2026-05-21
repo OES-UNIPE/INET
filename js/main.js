@@ -123,7 +123,7 @@ function closeModal() {
 
 async function init() {
   try {
-    setStatus('Cargando datos desde Google Sheets...');
+    setStatus('Cargando datos...');
     state.rows = await loadJurisdictionRows();
     state.results = evaluateRows(state.rows);
 
