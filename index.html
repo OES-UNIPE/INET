@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mapa de Institucionalización COPETyP</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-kicker">UNIPE · INET</span>
+      <span class="brand-sep"></span>
+      <span class="brand-name">Mapa de Institucionalización COPETyP</span>
+    </div>
+    <div class="header-actions">
+      <button class="header-btn" id="pdfBtn" type="button" disabled>Exportar PDF</button>
+      <button class="header-btn" id="methodologyBtn" type="button">+ información</button>
+    </div>
+  </header>
+
+  <main class="app-shell">
+    <aside class="map-panel">
+      <div class="map-title">
+        <span>Mapa jurisdiccional</span>
+        <strong>Provincias según nivel de institucionalización</strong>
+      </div>
+      <div class="layer-control">
+        <button class="layer-btn" id="schoolsLayerBtn" type="button">
+          <span class="layer-dot"></span>
+          Escuelas ETP
+        </button>
+      </div>
+      <div id="map" class="map"></div>
+      <div class="map-legend">
+        <span><i class="dot consolidated"></i>Consolidado</span>
+        <span><i class="dot intermediate"></i>Intermedio</span>
+        <span><i class="dot initial"></i>Incipiente</span>
+        <span><i class="dot empty"></i>Sin datos</span>
+      </div>
+    </aside>
+
+    <section class="content-panel">
+      <div id="status" class="status show">Cargando datos desde Google Sheets...</div>
+      <div id="summaryTable"></div>
+      <div id="institutionalizationDetail"></div>
+      <div id="fichaConsejo"></div>
+    </section>
+  </main>
+
+  <div class="modal" id="methodologyModal" role="dialog" aria-modal="true" aria-labelledby="methodologyTitle">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h2 id="methodologyTitle">Cómo se construye la clasificación</h2>
+        <button class="modal-close" id="methodologyClose" type="button" aria-label="Cerrar">×</button>
+      </div>
+      <div class="modal-body">
+        <h3>Propósito</h3>
+        <p>El Mapa de Institucionalización ofrece una lectura aproximativa, rápida e intuitiva sobre la situación actual de los Consejos o instancias equivalentes en cada jurisdicción. La clasificación se construye a partir de la información brindada por las propias jurisdicciones y debe ser acompañada por una lectura cualitativa, situada y atenta al contexto institucional de cada caso.</p>
+
+        <h3>Dimensiones</h3>
+        <ul>
+          <li>D1. Institucionalización formal: 30%.</li>
+          <li>D2. Funcionamiento efectivo: 30%.</li>
+          <li>D3. Articulación y representatividad: 20%.</li>
+          <li>D4. Vinculación con PP y ETP: 20%.</li>
+        </ul>
+
+        <h3>Puntajes por pregunta</h3>
+        <table class="score-table">
+          <thead><tr><th>Dimensión</th><th>Componente</th><th>Criterio</th></tr></thead>
+          <tbody>
+            <tr><td>D1</td><td>1.2. Año de creación</td><td>Sin año = 0; hasta 10 años = 0,5; más de 10 años = 1.</td></tr>
+            <tr><td>D1</td><td>1.3. Marco normativo</td><td>Sí = 1; otras opciones o sin información = 0.</td></tr>
+            <tr><td>D1</td><td>1.3.3. Situación normativa</td><td>Vigente, ampliada, modificada o reemplazada = 1; en revisión, actualización o elaboración = 0,5; en blanco o derogada = 0.</td></tr>
+            <tr><td>D1</td><td>2.8. Equipo permanente</td><td>En blanco o no se dispone de información = 0; cualquier otro valor = 1.</td></tr>
+            <tr><td>D2</td><td>3.3. Frecuencia de reunión</td><td>Mensual o más frecuente, bimestral o trimestral = 1; esporádica = 0,5; no se reúne = 0.</td></tr>
+            <tr><td>D2</td><td>3.4. Instituciones participantes</td><td>11 o más, o 7 a 10 = 1; 1 a 3, o 4 a 6 = 0,5; ninguna = 0.</td></tr>
+            <tr><td>D2</td><td>2.7. Instancias de trabajo</td><td>Sí = 1; otras opciones = 0.</td></tr>
+            <tr><td>D3</td><td>2.3, 2.4 y 2.5. Actores participantes</td><td>Con algún valor informado = 1; en blanco = 0.</td></tr>
+            <tr><td>D4</td><td>3.2 y 5.1. Opciones seleccionadas</td><td>Sin opciones = 0; hasta 2 opciones = 0,5; 3 o más = 1.</td></tr>
+            <tr><td>D4</td><td>5.2. Actores en PP</td><td>Con algún valor informado = 1; sin información = 0.</td></tr>
+          </tbody>
+        </table>
+
+        <h3>Cálculo global</h3>
+        <p class="formula">Global = D1 × 0,30 + D2 × 0,30 + D3 × 0,20 + D4 × 0,20</p>
+        <p>Para superar el nivel Incipiente, D1 y D2 deben alcanzar al menos nivel Intermedio. Para alcanzar el nivel Consolidado, D1 y D2 deben estar consolidadas, el puntaje global debe ser igual o superior a 65 y debe existir información en todas las dimensiones.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <span>Asistencia técnica para la articulación y el fortalecimiento de Prácticas Profesionalizantes</span>
+    <div class="footer-logos">
+      <img src="assets/img/LogoBID.png" alt="BID">
+      <img src="assets/img/logoINET.png" alt="INET">
+      <img src="assets/img/LOGOUNIPE.png" alt="UNIPE">
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
