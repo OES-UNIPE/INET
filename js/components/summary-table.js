@@ -7,6 +7,7 @@ function levelClass(level) {
 
 export function renderSummaryTable(container, results, selectedKey, onSelect, options = {}) {
   const order = { Consolidado: 3, Intermedio: 2, Incipiente: 1 };
+  const dimensionHeaders = results[0]?.dimResults || [];
   const sorted = [...results].sort((a, b) => {
     const byLevel = order[b.level] - order[a.level];
     if (byLevel) return byLevel;
@@ -31,10 +32,7 @@ export function renderSummaryTable(container, results, selectedKey, onSelect, op
             <tr>
               <th>Jurisdicción</th>
               <th>Global</th>
-              <th>D1</th>
-              <th>D2</th>
-              <th>D3</th>
-              <th>D4</th>
+              ${dimensionHeaders.map(dimension => `<th>${escapeHTML(dimension.title)}</th>`).join('')}
             </tr>
           </thead>
           <tbody>
