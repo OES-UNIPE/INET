@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mapa de Institucionalización COPETyP</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-kicker">UNIPE · INET</span>
+      <span class="brand-sep"></span>
+      <span class="brand-name">Mapa de Institucionalización COPETyP</span>
+    </div>
+    <div class="header-actions">
+      <button class="header-btn" id="pdfBtn" type="button" disabled>Exportar PDF</button>
+      <button class="header-btn" id="normativesBtn" type="button">Ver normativas</button>
+      <button class="header-btn" id="methodologyBtn" type="button">+ información</button>
+    </div>
+  </header>
+
+  <main class="app-shell">
+    <aside class="map-panel">
+      <div class="map-title">
+        <span>Mapa jurisdiccional</span>
+        <strong>Provincias según nivel de institucionalización</strong>
+      </div>
+      <div class="layer-control">
+        <button class="layer-btn" id="schoolsLayerBtn" type="button">
+          <span class="layer-dot"></span>
+          Escuelas ETP
+        </button>
+      </div>
+      <div id="map" class="map"></div>
+      <div class="map-legend">
+        <span><i class="dot consolidated"></i>Consolidado</span>
+        <span><i class="dot intermediate"></i>Intermedio</span>
+        <span><i class="dot initial"></i>Incipiente</span>
+        <span><i class="dot empty"></i>Sin datos</span>
+      </div>
+    </aside>
+
+    <section class="content-panel">
+      <div id="status" class="status show">Cargando datos desde Google Sheets...</div>
+      <div id="summaryTable"></div>
+      <div id="institutionalizationDetail"></div>
+      <div id="fichaConsejo"></div>
+      <div id="normativeRepository"></div>
+    </section>
+  </main>
+
+  <div class="modal" id="methodologyModal" role="dialog" aria-modal="true" aria-labelledby="methodologyTitle">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h2 id="methodologyTitle">Cómo se construye la clasificación</h2>
+        <button class="modal-close" id="methodologyClose" type="button" aria-label="Cerrar">×</button>
+      </div>
+      <div class="modal-body">
+        <h3>Propósito</h3>
+        <p>El Mapa de Institucionalización ofrece una lectura aproximativa, rápida e intuitiva sobre la situación actual de los Consejos o instancias equivalentes en cada jurisdicción. La clasificación se construye a partir de la información brindada por las propias jurisdicciones y debe ser acompañada por una lectura cualitativa, situada y atenta al contexto institucional de cada caso.</p>
+
+        <h3>Dimensiones y ponderaciones</h3>
+        <table class="score-table">
+          <thead><tr><th>Dimensión</th><th>Nombre</th><th>Peso global</th><th>Componentes</th></tr></thead>
+          <tbody>
+            <tr><td>D1</td><td>Institucionalización formal</td><td>30%</td><td>4 preguntas</td></tr>
+            <tr><td>D2</td><td>Funcionamiento efectivo</td><td>30%</td><td>3 preguntas</td></tr>
+            <tr><td>D3</td><td>Articulación y representatividad</td><td>20%</td><td>3 preguntas</td></tr>
+            <tr><td>D4</td><td>Vinculación con PP y ETP</td><td>20%</td><td>3 preguntas</td></tr>
+          </tbody>
+        </table>
+
+        <h3>Puntajes por componente</h3>
+        <table class="score-table">
+          <thead><tr><th>Dimensión</th><th>Componente</th><th>Pregunta utilizada</th><th>Criterio de puntaje</th></tr></thead>
+          <tbody>
+            <tr><td>D1</td><td>D1.1. Antigüedad institucional del Consejo</td><td>1.2. ¿En qué año fue creado el Consejo (o instancia equivalente)?</td><td>Sin año = 0; hasta 10 años = 0,5; más de 10 años = 1.</td></tr>
+            <tr><td>D1</td><td>D1.2. Tiene normativa específica</td><td>1.3. ¿Existe un marco normativo que regula la creación y/o funcionamiento del Consejo?</td><td>Sí = 1; otras opciones o sin información = 0.</td></tr>
+            <tr><td>D1</td><td>D1.3. Situación actual de la normativa</td><td>1.3.3. Indique la situación actual de la principal normativa que regula el Consejo en su jurisdicción.</td><td>Vigente, ampliada, modificada o reemplazada por una nueva normativa vigente = 1; en revisión, actualización o elaboración = 0,5; en blanco o derogada = 0.</td></tr>
+            <tr><td>D1</td><td>D1.4. Cuenta con equipo permanente</td><td>2.8. ¿Cuántas personas integran el equipo de personas permanentes del Consejo?</td><td>En blanco o no se dispone de información = 0; cualquier otro valor = 1.</td></tr>
+
+            <tr><td>D2</td><td>D2.1. Frecuencia de reunión del Consejo</td><td>3.3. ¿Con qué frecuencia se reúne el Consejo (o instancia equivalente)?</td><td>Mensual o más frecuente, bimestral o trimestral = 1; esporádica = 0,5; no se reúne actualmente = 0.</td></tr>
+            <tr><td>D2</td><td>D2.2. Instituciones participantes en el último año</td><td>3.4. En el último año, aproximadamente, ¿qué cantidad de instituciones o entidades participaron en mesas de trabajo, foros o instancias similares?</td><td>11 o más, o 7 a 10 = 1; 1 a 3, o 4 a 6 = 0,5; ninguna = 0.</td></tr>
+            <tr><td>D2</td><td>D2.3. Existen mesas, foros o instancias de trabajo</td><td>2.7. ¿Existen instancias de trabajo del Consejo que se agrupen por territorio o por sector de actividad?</td><td>Sí = 1; otras opciones = 0.</td></tr>
+
+            <tr><td>D3</td><td>D3.1. Participan actores educativos/científicos</td><td>2.3. ¿Qué actores del ámbito Educativo-Científico participan en el Consejo?</td><td>Con algún valor informado = 1; en blanco = 0.</td></tr>
+            <tr><td>D3</td><td>D3.2. Participan actores productivos/empresariales</td><td>2.4. ¿Qué actores del sector Productivo/Empresarial participan en el Consejo?</td><td>Con algún valor informado = 1; en blanco = 0.</td></tr>
+            <tr><td>D3</td><td>D3.3. Participan otros actores o ámbitos</td><td>2.5. ¿Existen otros actores o ámbitos participantes que no hayan sido mencionados anteriormente?</td><td>Con algún valor informado = 1; en blanco = 0.</td></tr>
+
+            <tr><td>D4</td><td>D4.1. Cantidad de funciones desarrolladas con mayor frecuencia</td><td>3.2. Seleccione las funciones que el Consejo desarrolla con mayor frecuencia.</td><td>Sin opciones = 0; hasta 2 opciones = 0,5; 3 o más opciones = 1.</td></tr>
+            <tr><td>D4</td><td>D4.2. Cantidad de roles en relación con la ETP</td><td>5.1. ¿Qué rol tiene el Consejo (o instancia equivalente) en relación con la ETP?</td><td>Sin opciones = 0; hasta 2 opciones = 0,5; 3 o más opciones = 1.</td></tr>
+            <tr><td>D4</td><td>D4.3. Participan actores en el desarrollo de PP</td><td>5.2. ¿Qué actores participan, a través del Consejo, en el desarrollo de las prácticas profesionalizantes?</td><td>Con algún valor informado = 1; sin información = 0.</td></tr>
+          </tbody>
+        </table>
+
+        <h3>Cálculo por dimensión</h3>
+        <p>Cada componente puede aportar como máximo 1 punto. El puntaje de cada dimensión se calcula como la proporción entre puntos obtenidos y puntos posibles.</p>
+        <p class="formula">Dimensión = puntos obtenidos / puntos posibles</p>
+        <table class="score-table">
+          <thead><tr><th>Nivel de dimensión</th><th>Criterio</th></tr></thead>
+          <tbody>
+            <tr><td>Consolidado</td><td>75% o más de los puntos posibles de la dimensión.</td></tr>
+            <tr><td>Intermedio</td><td>35% a 74% de los puntos posibles de la dimensión.</td></tr>
+            <tr><td>Incipiente</td><td>Menos de 35% de los puntos posibles de la dimensión.</td></tr>
+          </tbody>
+        </table>
+
+        <h3>Cálculo global</h3>
+        <p>El índice global combina las cuatro dimensiones con ponderaciones diferenciadas. D1 y D2 tienen mayor peso porque expresan las condiciones institucionales y de funcionamiento efectivo del Consejo.</p>
+        <p class="formula">Global = D1 × 0,30 + D2 × 0,30 + D3 × 0,20 + D4 × 0,20</p>
+        <p>El resultado se expresa en una escala de 0 a 100 y luego se traduce a una clasificación cualitativa.</p>
+
+        <h3>Pisos y reglas de clasificación global</h3>
+        <table class="score-table">
+          <thead><tr><th>Clasificación global</th><th>Condiciones</th></tr></thead>
+          <tbody>
+            <tr><td>Incipiente</td><td>Se asigna cuando D1 o D2 quedan en nivel Incipiente, o cuando el puntaje global queda por debajo de 35. La regla de D1/D2 opera como piso: aunque el puntaje global sea mayor, si la institucionalización formal o el funcionamiento efectivo son incipientes, la clasificación global no supera Incipiente.</td></tr>
+            <tr><td>Consolidado</td><td>Requiere puntaje global igual o superior a 65, información en todas las dimensiones, D1 en nivel Consolidado y D2 en nivel Consolidado.</td></tr>
+            <tr><td>Intermedio</td><td>Se asigna cuando se superan los pisos mínimos de D1 y D2, el puntaje global es igual o superior a 35, pero no se cumplen todas las condiciones para Consolidado.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <span>Asistencia técnica para la articulación y el fortalecimiento de Prácticas Profesionalizantes</span>
+    <div class="footer-logos">
+      <img src="assets/img/LogoBID.png" alt="BID">
+      <img src="assets/img/logoINET.png" alt="INET">
+      <img src="assets/img/LOGOUNIPE.png" alt="UNIPE">
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
