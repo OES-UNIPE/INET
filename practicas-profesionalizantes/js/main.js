@@ -85,7 +85,7 @@ function renderInstitutionalizationLegend() {
     <span><i class="dot consolidated"></i>Consolidado</span>
     <span><i class="dot intermediate"></i>Intermedio</span>
     <span><i class="dot initial"></i>Incipiente</span>
-    <span><i class="dot empty"></i>Sin dato</span>`;
+    <span><i class="dot pending"></i>Pendiente</span>`;
 }
 
 function renderActorLegend(domain) {

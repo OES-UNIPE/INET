@@ -4,8 +4,7 @@ const LEVEL_COLORS = {
   Consolidado: '#27AE60',
   Intermedio: '#C8A84B',
   Incipiente: '#C94A4A',
-  Pendiente: '#7D8FA3',
-  'Sin dato': '#D7E2EE'
+  Pendiente: '#7D8FA3'
 };
 
 const ACTOR_COLORS = Object.freeze({
@@ -42,18 +41,17 @@ function selectedStyle() {
 }
 
 function levelForMetric(result, metricId) {
-  if (!result) return 'Sin dato';
-  if (metricId === 'global') return result.nivelGlobal;
-  return result.dimensiones.find(dimension => dimension.id === metricId)?.nivelEtiqueta || 'Sin dato';
+  if (!result) return 'Pendiente';
+  const level = metricId === 'global'
+    ? result.nivelGlobal
+    : result.dimensiones.find(dimension => dimension.id === metricId)?.nivelEtiqueta;
+  return !level || level === 'Sin dato' ? 'Pendiente' : level;
 }
 
 function featureStyle(result, isSelected, metricId) {
   if (isSelected) return selectedStyle();
   const level = levelForMetric(result, metricId);
-  const color = LEVEL_COLORS[level] || LEVEL_COLORS['Sin dato'];
-  if (!result) {
-    return { fillColor: color, fillOpacity: 0.22, color: 'rgba(10,35,64,.22)', weight: 1 };
-  }
+  const color = LEVEL_COLORS[level] || LEVEL_COLORS.Pendiente;
   return { fillColor: color, fillOpacity: 0.62, color, weight: 1.2 };
 }
 
