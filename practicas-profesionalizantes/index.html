@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mapa jurisdiccional de institucionalización de las Prácticas Profesionalizantes.">
+  <title>Mapa de institucionalización de las Prácticas Profesionalizantes</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-kicker">UNIPE · INET</span>
+      <span class="brand-sep"></span>
+      <span class="brand-name">Mapa de institucionalización de las Prácticas Profesionalizantes</span>
+    </div>
+    <div class="header-actions">
+      <a class="header-btn back-link" href="../" aria-label="Volver a la portada">← Volver</a>
+      <button class="header-btn" id="pdfBtn" type="button" disabled>Exportar PDF</button>
+      <button class="header-btn" id="normativasBtn" type="button" disabled>Ver normativas</button>
+      <button class="header-btn" id="oferentesBtn" type="button" aria-pressed="false" disabled>Ver instituciones/actores</button>
+      <button class="header-btn" id="refreshBtn" type="button">Actualizar datos</button>
+      <button class="header-btn" id="methodologyBtn" type="button">+ información</button>
+    </div>
+  </header>
+
+  <main class="app-shell">
+    <aside class="map-panel">
+      <div class="map-title">
+        <span>Mapa jurisdiccional</span>
+        <strong>Visualización: <span id="mapMetricLabel">Nivel global</span></strong>
+      </div>
+      <div class="layer-control">
+        <button class="layer-btn" id="schoolsLayerBtn" type="button">
+          <span class="layer-dot"></span>
+          Escuelas ETP
+        </button>
+      </div>
+      <div id="map" class="map"></div>
+      <div class="map-legend" id="mapLegend" aria-label="Leyenda del mapa">
+        <span><i class="dot consolidated"></i>Consolidado</span>
+        <span><i class="dot intermediate"></i>Intermedio</span>
+        <span><i class="dot initial"></i>Incipiente</span>
+        <span><i class="dot pending"></i>Pendiente</span>
+        <span><i class="dot empty"></i>Sin dato</span>
+      </div>
+    </aside>
+
+    <section class="content-panel">
+      <div id="status" class="status show info" role="status">
+        <span data-status-text>Cargando datos desde Google Sheets...</span>
+        <button class="small-btn" id="retryBtn" type="button" hidden>Reintentar</button>
+      </div>
+      <div id="summaryTable"></div>
+      <div id="institutionalizationDetail"></div>
+      <div id="oferentesTable"></div>
+      <div id="normativeRepository"></div>
+    </section>
+  </main>
+
+  <div class="modal" id="methodologyModal" role="dialog" aria-modal="true" aria-labelledby="methodologyTitle">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h2 id="methodologyTitle">Cómo se construye la clasificación</h2>
+        <button class="modal-close" id="methodologyClose" type="button" aria-label="Cerrar">×</button>
+      </div>
+      <div class="modal-body" id="methodologyBody"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <span>Asistencia técnica para la articulación y el fortalecimiento de Prácticas Profesionalizantes</span>
+    <div class="footer-logos">
+      <img src="assets/img/LogoBID.png" alt="BID">
+      <img src="assets/img/logoINET.png" alt="INET">
+      <img src="assets/img/LOGOUNIPE.png" alt="UNIPE">
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
+
+
+
