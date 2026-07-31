@@ -1,0 +1,134 @@
+.app-shell{
+  height:calc(100vh - 64px - 46px);
+  display:grid;
+  grid-template-columns:minmax(300px,34vw) minmax(620px,1fr);
+  gap:18px;
+  padding:18px;
+  overflow:hidden;
+}
+
+.map-panel,
+.content-panel{
+  min-height:0;
+  border:1px solid var(--border);
+  border-radius:6px;
+  background:var(--surface);
+  box-shadow:var(--shadow);
+  overflow:hidden;
+}
+
+.map-panel{
+  display:flex;
+  flex-direction:column;
+}
+
+.map-title{
+  padding:18px 20px;
+  background:linear-gradient(135deg,var(--navy),var(--blue) 70%,var(--mid));
+  color:#fff;
+}
+
+.map-title span{
+  display:block;
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--gold);
+  margin-bottom:3px;
+}
+
+.map-title strong{
+  display:block;
+  font-size:15px;
+}
+
+.layer-control{
+  padding:10px 14px;
+  border-bottom:1px solid var(--border);
+  background:var(--light);
+}
+
+.layer-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  border:1px solid var(--border);
+  border-radius:20px;
+  background:#fff;
+  color:var(--muted);
+  padding:5px 11px;
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:.05em;
+  text-transform:uppercase;
+}
+
+.layer-btn.active{
+  border-color:var(--navy);
+  color:var(--navy);
+}
+
+.layer-dot{
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  background:var(--green);
+}
+
+.map{
+  flex:1;
+  min-height:0;
+}
+
+.map-legend{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px 14px;
+  padding:10px 14px;
+  background:var(--navy);
+  color:rgba(255,255,255,.72);
+  font-size:10px;
+}
+
+.map-legend span{
+  display:flex;
+  align-items:center;
+  gap:6px;
+}
+
+.dot{
+  width:9px;
+  height:9px;
+  border-radius:50%;
+  display:inline-block;
+}
+
+.dot.consolidated{background:var(--green);}
+.dot.intermediate{background:var(--yellow);}
+.dot.initial{background:var(--red);}
+.dot.pending{background:#7D8FA3;}
+.dot.empty{background:#D7E2EE;}
+
+.content-panel{
+  padding:16px;
+  overflow:auto;
+  background:var(--bg);
+}
+
+@media (max-width: 980px){
+  .app-shell{
+    height:auto;
+    grid-template-columns:1fr;
+    padding:12px;
+    overflow:visible;
+  }
+
+  .map-panel{
+    height:520px;
+  }
+
+  .content-panel{
+    overflow:visible;
+  }
+}

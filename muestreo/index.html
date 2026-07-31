@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Muestreo - ETP</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/muestra.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-kicker">BID · INET · UNIPE</span>
+      <span class="brand-sep"></span>
+      <span class="brand-name">Muestreo - ETP</span>
+    </div>
+    <div class="header-actions">
+      <a class="header-btn back-link" href="../" aria-label="Volver a la portada">← Volver</a>
+      <button class="header-btn" id="methodBtn" type="button">Metodología</button>
+      <button class="header-btn" id="printBtn" type="button" disabled>Exportar PDF</button>
+    </div>
+  </header>
+
+  <main class="app-shell muestra-shell">
+    <aside class="map-panel muestra-map-panel">
+      <div class="map-title">
+        <span>Mapa departamental</span>
+        <strong>Concentración de instituciones seleccionadas</strong>
+      </div>
+      <div class="layer-control floating-control">
+        <div class="map-control-field">
+          <label for="groupBy">Visualización</label>
+          <select id="groupBy">
+            <option value="heat">Mapa de calor</option>
+          </select>
+        </div>
+        <div class="map-control-field">
+          <label for="jurisdictionFilter">Jurisdicción</label>
+          <select id="jurisdictionFilter">
+            <option value="">Todas</option>
+          </select>
+        </div>
+      </div>
+      <div id="map" class="map muestra-map"></div>
+      <div id="mapLegend" class="map-legend"></div>
+    </aside>
+
+    <section class="content-panel muestra-content">
+      <div id="status" class="status show">Cargando datos...</div>
+
+      <section class="config-card">
+        <div class="panel-heading">
+          <span class="section-kicker">Configuración</span>
+          <h1>Diseño de muestra</h1>
+        </div>
+
+        <div class="control-grid">
+          <label class="field full">
+            <span>Porcentaje de instituciones a relevar por jurisdicción</span>
+            <div class="range-row">
+              <input id="coverageInput" type="range" min="1" max="100" value="25">
+              <strong id="coverageValue">25%</strong>
+            </div>
+          </label>
+
+          <label class="field">
+            <span>Mínimo de instituciones por jurisdicción</span>
+            <input id="minJurisdictionInput" type="number" min="1" max="50" value="3">
+          </label>
+
+          <label class="field">
+            <span>Código de muestreo</span>
+            <input id="seedInput" type="text" value="">
+          </label>
+
+          <div class="constraint-box">
+            <label class="check-row">
+              <input id="sectorProportional" type="checkbox">
+              <span>Considerar sector de gestión en el muestreo</span>
+            </label>
+          </div>
+
+          <div class="constraint-box">
+            <label class="check-row">
+              <input id="orientacionProportional" type="checkbox" checked disabled>
+              <span>Representatividad activa por orientación</span>
+            </label>
+          </div>
+
+          <div class="constraint-box">
+            <label class="check-row">
+              <input id="tipoProportional" type="checkbox" disabled>
+              <span>Tipo de institución descriptivo</span>
+            </label>
+          </div>
+
+          <div class="constraint-box">
+            <label class="check-row">
+              <input id="sexoProportional" type="checkbox" disabled>
+              <span>Sexo de matrícula descriptivo</span>
+            </label>
+          </div>
+
+          <div class="constraint-box full">
+            <label class="check-row">
+              <input id="matriculaProportional" type="checkbox" checked disabled>
+              <span>Reportar cobertura de matrícula total</span>
+            </label>
+          </div>
+
+        <p class="help-text">Cada jurisdicción aporta el porcentaje seleccionado de sus instituciones, respetando el mínimo definido y el tope del universo disponible. La orientación es siempre criterio activo; el sector de gestión puede incorporarse opcionalmente al muestreo. Tipo de institución y sexo se reportan como variables descriptivas.</p>
+
+        <div class="action-row">
+          <button class="primary-btn" id="calculateBtn" type="button">Calcular muestra</button>
+          <button class="secondary-btn" id="generateBtn" type="button" disabled>Generar opciones</button>
+          <button class="secondary-btn" id="newCalcBtn" type="button" disabled>Realizar nuevo cálculo</button>
+        </div>
+      </section>
+
+      <div id="results"></div>
+    </section>
+  </main>
+
+  <div class="modal" id="methodModal" role="dialog" aria-modal="true" aria-labelledby="methodTitle">
+    <div class="modal-card wide-modal">
+      <div class="modal-head">
+        <h2 id="methodTitle">Metodología de selección</h2>
+        <button class="modal-close" id="methodClose" type="button" aria-label="Cerrar">×</button>
+      </div>
+      <div class="modal-body">
+        <h3>Fuente de datos y universo</h3>
+        <p>La aplicación consume <code>assets/01_LISTADO.csv</code> como base institucional, normaliza encabezados, convierte los campos numéricos de matrícula y usa un identificador estable por registro para reproducir la selección. El universo operativo se calcula con los registros cargados de ETP secundaria común disponibles en la base.</p>
+        <p>Los departamentos se enlazan con <code>assets/02_Deptos_INDEC.csv</code> y se representan sobre los polígonos de <code>assets/03_Departamentos.json</code>. Los registros sin código departamental compatible quedan visibles en los diagnósticos y no aportan al sombreado territorial.</p>
+        <h3>Asignación territorial</h3>
+        <p>La cantidad objetivo se determina siempre dentro de cada jurisdicción. Si el porcentaje y el piso jurisdiccional superan el universo disponible, se toma el total de instituciones de esa jurisdicción y se marca como <code>censo_jurisdiccional</code>.</p>
+        <p class="formula">Casos = min(TotalJurisdicción, max(PisoJurisdiccional, round(TotalJurisdicción × PorcentajeMuestra)))</p>
+        <h3>Criterio activo de representatividad</h3>
+        <p>Las candidatas se comparan contra la distribución jurisdiccional real de orientación. Si se activa sector de gestión, la representatividad se calcula como promedio del error de orientación y el error de gestión. Tipo institucional, matrícula por sexo y composición por sexo quedan disponibles como variables descriptivas y no inciden en el score.</p>
+        <p class="formula">Score = max(0, 100 - ErrorInstituciones - ErrorMatrícula - ErrorTerritorial - ErrorRepresentatividad)</p>
+        <table class="score-table">
+          <thead><tr><th>Criterio</th><th>Qué mide</th></tr></thead>
+          <tbody>
+            <tr><td>Error de instituciones</td><td>Diferencia entre cobertura institucional objetivo y cobertura obtenida.</td></tr>
+            <tr><td>Error de matrícula</td><td>Diferencia entre matrícula objetivo y matrícula cubierta por la muestra dentro de cada jurisdicción.</td></tr>
+            <tr><td>Error de orientación</td><td>Desvío respecto de la distribución jurisdiccional real por orientación.</td></tr>
+            <tr><td>Error de gestión</td><td>Solo se incorpora cuando el sector de gestión está activado como criterio opcional.</td></tr>
+            <tr><td>Error territorial</td><td>Diferencia entre casos esperados y seleccionados por jurisdicción y por distribución departamental disponible.</td></tr>
+          </tbody>
+        </table>
+              <h3>Ponderador operativo y composición</h3>
+        <p>La exportación incorpora un único ponderador operativo: <code>ponderador_diseno_recomendado</code>, junto con <code>criterio_ponderador_diseno</code> y <code>tipo_cobertura_jurisdiccional</code>. Sin sector de gestión activo, el estrato de diseño es jurisdicción × orientación; con sector activo, jurisdicción × orientación × gestión. En jurisdicciones censadas, el ponderador recomendado es 1.</p>
+        <h3>Mapa y reemplazos</h3>
+        <p>El mapa colorea departamentos según instituciones seleccionadas y permite filtrar la lectura haciendo clic en jurisdicciones, departamentos o escuelas seleccionadas. Para cada institución seleccionada se asignan hasta dos reemplazos dentro de la misma jurisdicción que no integran la muestra principal. Si no existe reemplazo disponible en esa jurisdicción, la exportación lo deja vacío e informa la observación correspondiente.</p>
+        <h3>Limitaciones y trazabilidad</h3>
+        <p>La calidad del resultado depende de la completitud de los campos de origen y del enlace territorial disponible. El reporte del proceso documenta fecha de generación, código de muestreo, porcentaje, mínimo por jurisdicción, censos jurisdiccionales, ponderador recomendado, advertencias territoriales, filtros activos, opciones evaluadas y opción visualizada.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="processModal" role="dialog" aria-modal="true" aria-labelledby="processTitle">
+    <div class="modal-card process-modal-card">
+      <div class="modal-head">
+        <div>
+          <span class="section-kicker">Proceso transparente</span>
+          <h2 id="processTitle">Procesando</h2>
+        </div>
+        <div class="process-modal-actions">
+          <button class="small-btn" id="processDownload" type="button" disabled>Descargar PDF</button>
+          <button class="modal-close" id="processClose" type="button" aria-label="Cerrar" disabled>×</button>
+        </div>
+      </div>
+      <div class="modal-body">
+        <p id="processSubtitle" class="process-subtitle"></p>
+        <div class="process-progress">
+          <div id="processBar" class="process-bar"></div>
+        </div>
+        <ol id="processSteps" class="process-steps"></ol>
+        <div id="processLog" class="process-log"></div>
+        <details id="processReportWrap" class="process-report-wrap" open>
+          <summary>Reporte del proceso</summary>
+          <div id="processReport" class="process-report"></div>
+        </details>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal" id="newCalcModal" role="dialog" aria-modal="true" aria-labelledby="newCalcTitle">
+    <div class="modal-card new-calc-modal-card">
+      <div class="modal-head">
+        <h2 id="newCalcTitle">Realizar nuevo cálculo</h2>
+        <button class="modal-close" id="newCalcCancelX" type="button" aria-label="Cerrar">×</button>
+      </div>
+      <div class="modal-body">
+        <p>Antes de iniciar un nuevo cálculo, podés guardar las opciones generadas actualmente. Si continuás sin guardar, las opciones actuales serán reemplazadas.</p>
+        <div class="modal-action-row">
+          <button class="secondary-btn" id="newCalcCsv" type="button">Descargar CSV</button>
+          <button class="secondary-btn" id="newCalcExcel" type="button">Descargar Excel</button>
+          <button class="primary-btn caution-btn" id="newCalcContinue" type="button">Continuar sin guardar</button>
+          <button class="secondary-btn" id="newCalcCancel" type="button">Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="site-footer">
+    <span>Asistencia técnica para la articulación y el fortalecimiento de Prácticas Profesionalizantes</span>
+    <div class="footer-logos">
+      <img src="assets/img/LogoBID.png" alt="BID">
+      <img src="assets/img/logoINET.png" alt="INET">
+      <img src="assets/img/LOGOUNIPE.png" alt="UNIPE">
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/topojson-client@3"></script>
+  <script type="module" src="js/main.js?v=20260625-fase9"></script>
+</body>
+</html>
+
+
+
+
+
+
+
