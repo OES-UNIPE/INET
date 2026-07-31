@@ -7,7 +7,8 @@ export const WORKBOOK_SHEETS = Object.freeze({
   niveles: '03_NIVELES',
   rubrica: '04_RUBRICA',
   normativas: '05_NORMATIVAS',
-  oferentes: '06_OFERENTES'
+  oferentes: '06_OFERENTES',
+  normativasDescripcion: '07_NORMATIVAS_DESCRIPCION'
 });
 
 export const SOURCE_LABELS = Object.freeze({
@@ -16,7 +17,8 @@ export const SOURCE_LABELS = Object.freeze({
   niveles: '03_NIVELES',
   rubrica: '04_RUBRICA',
   normativas: '05_NORMATIVAS',
-  oferentes: '06_OFERENTES'
+  oferentes: '06_OFERENTES',
+  normativasDescripcion: '07_NORMATIVAS_DESCRIPCION'
 });
 
 

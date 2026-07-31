@@ -9,7 +9,8 @@ const REQUIRED_HEADERS = Object.freeze({
   niveles: ['ID_NIVEL', 'ETIQUETA', 'VALOR', 'ORDEN', 'DESCRIPCION_GENERAL'],
   rubrica: ['ID_DIMENSION', 'ID_NIVEL', 'ETIQUETA_DIMENSION', 'ETIQUETA_NIVEL', 'DESCRIPCION'],
   normativas: ['CARPETA_PRINCIPAL', 'RUTA_SUBCARPETA', 'NOMBRE_DE_ARCHIVO', 'URL_LECTURA', 'URL_DESCARGA_DIRECTA', 'CONTROL'],
-  oferentes: ['ID_JURISDICCION', 'ACTOR_INSTITUCION', 'AMBITO', 'SECTOR', 'OBSERVACIONES']
+  oferentes: ['ID_JURISDICCION', 'ACTOR_INSTITUCION', 'AMBITO', 'SECTOR', 'OBSERVACIONES'],
+  normativasDescripcion: ['JURISDICCION', 'NOMBRE', 'DESCRIPCION']
 });
 
 function canonicalHeader(value) {
@@ -275,27 +276,69 @@ export function extractJurisdictionFromPath(path, jurisdictionNames = []) {
   return match || candidate;
 }
 
-function attachNormativas(model, rows) {
+function normativeNameParts(fileName) {
+  const name = String(fileName || '').trim().replace(/\.[^.]+$/, '');
+  const separator = name.indexOf('_');
+  if (separator < 0) return { name, tipo: name, numero: '' };
+  return {
+    name,
+    tipo: name.slice(0, separator).trim(),
+    numero: name.slice(separator + 1).trim()
+  };
+}
+
+function normativeKey(jurisdiccion, name) {
+  return `${normalize(jurisdiccion)}|${normalize(name)}`;
+}
+
+function attachNormativas(model, rows, descriptionRows) {
   const jurisdictionNames = model.jurisdicciones.map(item => item.jurisdiccion);
   const warnings = [];
-  const normativas = rows
-    .filter(row => normalize(row.CONTROL) === 'si')
+  const enabledRows = rows.filter(row => normalize(row.CONTROL) === 'si');
+  const descriptionsByKey = new Map();
+
+  descriptionRows.forEach((row, index) => {
+    const jurisdiccion = extractJurisdictionFromPath(row.JURISDICCION, jurisdictionNames);
+    const key = normativeKey(jurisdiccion, row.NOMBRE);
+    if (descriptionsByKey.has(key)) {
+      const rowNumber = Number.isInteger(row.__index) ? row.__index + 2 : index + 2;
+      const warning = `07_NORMATIVAS_DESCRIPCION fila ${rowNumber}: clave duplicada para “${row.JURISDICCION} / ${row.NOMBRE}”.`;
+      warnings.push(warning);
+      console.warn('[07_NORMATIVAS_DESCRIPCION]', warning);
+      return;
+    }
+    descriptionsByKey.set(key, String(row.DESCRIPCION || '').trim());
+  });
+
+  const normativas = enabledRows
     .map((row, index) => {
       const jurisdiccion = extractJurisdictionFromPath(row.RUTA_SUBCARPETA, jurisdictionNames);
+      const { name, tipo, numero } = normativeNameParts(row.NOMBRE_DE_ARCHIVO);
       if (jurisdiccion === 'Sin jurisdicción') {
-        const warning = `05_NORMATIVAS fila ${row.__index ? row.__index + 2 : index + 2}: no se pudo extraer la jurisdicción de “${row.RUTA_SUBCARPETA || '(vacío)'}”.`;
+        const rowNumber = Number.isInteger(row.__index) ? row.__index + 2 : index + 2;
+        const warning = `05_NORMATIVAS fila ${rowNumber}: no se pudo extraer la jurisdicción de “${row.RUTA_SUBCARPETA || '(vacío)'}”.`;
         warnings.push(warning);
         console.warn('[05_NORMATIVAS]', warning);
       }
+      const descriptionKey = normativeKey(jurisdiccion, name);
+      const descripcion = descriptionsByKey.get(descriptionKey) || '';
+      if (!descripcion) {
+        const warning = `No se encontró descripción para “${jurisdiccion} / ${name || '(sin nombre)'}”.`;
+        warnings.push(warning);
+        console.warn('[07_NORMATIVAS_DESCRIPCION]', warning);
+      }
       return {
         jurisdiccion,
-        nombre: String(row.NOMBRE_DE_ARCHIVO || '').trim(),
+        tipo,
+        numero,
+        descripcion,
         enlace: String(row.URL_DESCARGA_DIRECTA || '').trim()
       };
     })
     .sort((a, b) =>
       a.jurisdiccion.localeCompare(b.jurisdiccion, 'es') ||
-      a.nombre.localeCompare(b.nombre, 'es')
+      a.tipo.localeCompare(b.tipo, 'es') ||
+      a.numero.localeCompare(b.numero, 'es', { numeric: true })
     );
 
   const byJurisdiction = new Map();
@@ -373,15 +416,18 @@ export async function loadApplicationData() {
   const entries = CORE_SOURCE_KEYS.map(key => [key, readSheet(workbook, key)]);
   const model = validateAndBuild(normalizeSources(Object.fromEntries(entries)));
   const [normativasResult, oferentesResult] = await Promise.allSettled([
-    Promise.resolve().then(() => readSheet(workbook, 'normativas', { allowEmpty: true })),
+    Promise.resolve().then(() => Promise.all([
+      readSheet(workbook, 'normativas', { allowEmpty: true }),
+      readSheet(workbook, 'normativasDescripcion')
+    ])),
     Promise.resolve().then(() => readSheet(workbook, 'oferentes', { allowEmpty: true }))
   ]);
 
   if (normativasResult.status === 'fulfilled') {
-    attachNormativas(model, normativasResult.value);
+    attachNormativas(model, normativasResult.value[0], normativasResult.value[1]);
   } else {
     const error = normativasResult.reason;
-    console.error('[05_NORMATIVAS] El repositorio de normativas fue deshabilitado.', error);
+    console.error('[05_NORMATIVAS + 07_NORMATIVAS_DESCRIPCION] El repositorio de normativas fue deshabilitado.', error);
     model.normativas = [];
     model.indices.normativasPorJurisdiccion = new Map();
     model.normativasAvailable = false;
