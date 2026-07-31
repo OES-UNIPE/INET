@@ -1552,9 +1552,11 @@ tbody tr.selected{
 #oferentesTable,
 #normativeRepository{scroll-margin-top:12px;}
 
-.normative-table th:nth-child(1){width:24%;}
-.normative-table th:nth-child(2){width:61%;}
-.normative-table th:nth-child(3){width:15%;}
+.normative-table th:nth-child(1){width:20%;}
+.normative-table th:nth-child(2){width:12%;}
+.normative-table th:nth-child(3){width:12%;}
+.normative-table th:nth-child(4){width:41%;}
+.normative-table th:nth-child(5){width:15%;}
 
 .ambito-widget{
   position:fixed;

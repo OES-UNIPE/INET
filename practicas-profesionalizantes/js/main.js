@@ -105,6 +105,7 @@ function selectJurisdiction(key, options = {}) {
 
   state.selectedKey = result.idJurisdiccion;
   state.mapView.select(result.idJurisdiccion);
+  state.normativeRepository?.setJurisdiction(result.jurisdiccion);
 
   if (state.vistaActiva === 'oferentes') {
     state.generalCollapsed = false;
@@ -126,6 +127,7 @@ function clearSelection() {
   state.selectedKey = null;
   state.generalCollapsed = false;
   state.mapView?.clearSelection();
+  state.normativeRepository?.setJurisdiction('');
   renderGeneralView();
   renderInstitutionalizationDetail(detail, null);
   pdfBtn.disabled = true;
@@ -207,6 +209,7 @@ function openOferentesView() {
   state.widgetAmbitoVisible = true;
   state.generalCollapsed = false;
   state.mapView.clearSelection();
+  state.normativeRepository?.setJurisdiction('');
   state.mapView.disableSchools();
   schoolsLayerBtn.hidden = true;
   pdfBtn.disabled = true;
@@ -225,6 +228,7 @@ function restoreGeneralView() {
   state.generalCollapsed = false;
   state.mapView.setInstitutionalizationMode(state.metricId);
   state.mapView.clearSelection();
+  state.normativeRepository?.setJurisdiction('');
   renderAmbitoWidget(mapElement, [], { widgetAmbitoVisible: false }, {});
   oferentesTable.innerHTML = '';
   schoolsLayerBtn.hidden = false;
@@ -288,7 +292,7 @@ async function init() {
     renderInstitutionalizationLegend();
 
     const unavailableSources = [
-      !state.model.normativasAvailable ? `05_NORMATIVAS: ${state.model.normativasError}` : '',
+      !state.model.normativasAvailable ? `05_NORMATIVAS / 07_NORMATIVAS_DESCRIPCION: ${state.model.normativasError}` : '',
       !state.model.oferentesAvailable ? `06_OFERENTES: ${state.model.oferentesError}` : ''
     ].filter(Boolean);
     if (unavailableSources.length) {

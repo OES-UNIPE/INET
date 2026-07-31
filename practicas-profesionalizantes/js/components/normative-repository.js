@@ -1,7 +1,7 @@
 import { escapeHTML, normalize } from '../utils/normalize.js';
 
 function searchText(row) {
-  return normalize(`${row.jurisdiccion} ${row.nombre}`);
+  return normalize(`${row.jurisdiccion} ${row.tipo} ${row.numero} ${row.descripcion}`);
 }
 
 function linkCell(link) {
@@ -14,7 +14,9 @@ function tableRows(rows) {
   return rows.map(row => `
     <tr>
       <td data-label="Jurisdicción">${escapeHTML(row.jurisdiccion)}</td>
-      <td data-label="Nombre" class="long-text">${escapeHTML(row.nombre || '—')}</td>
+      <td data-label="Tipo">${escapeHTML(row.tipo || '—')}</td>
+      <td data-label="Número">${escapeHTML(row.numero || '—')}</td>
+      <td data-label="Descripción" class="long-text">${escapeHTML(row.descripcion || '—')}</td>
       <td data-label="Enlace">${linkCell(row.enlace)}</td>
     </tr>`).join('');
 }
@@ -24,6 +26,7 @@ export class NormativeRepository {
     this.container = container;
     this.rows = [];
     this.query = '';
+    this.jurisdiccion = '';
     this.status = 'loading';
     this.collapsed = true;
   }
@@ -31,6 +34,11 @@ export class NormativeRepository {
   setRows(rows) {
     this.rows = rows;
     this.status = rows.length ? 'ready' : 'empty';
+    this.render();
+  }
+
+  setJurisdiction(jurisdiccion = '') {
+    this.jurisdiccion = String(jurisdiccion || '').trim();
     this.render();
   }
 
@@ -51,7 +59,11 @@ export class NormativeRepository {
 
   filteredRows() {
     const query = normalize(this.query);
-    return query ? this.rows.filter(row => searchText(row).includes(query)) : this.rows;
+    const jurisdictionKey = normalize(this.jurisdiccion);
+    return this.rows.filter(row =>
+      (!jurisdictionKey || normalize(row.jurisdiccion) === jurisdictionKey) &&
+      (!query || searchText(row).includes(query))
+    );
   }
 
   renderBody(rows) {
@@ -62,7 +74,7 @@ export class NormativeRepository {
     return `
       <div class="repository-table-wrap normative-table-wrap">
         <table class="normative-table">
-          <thead><tr><th>Jurisdicción</th><th>Nombre</th><th>Enlace</th></tr></thead>
+          <thead><tr><th>Jurisdicción</th><th>Tipo</th><th>Número</th><th>Descripción</th><th>Enlace</th></tr></thead>
           <tbody>${tableRows(rows)}</tbody>
         </table>
       </div>`;
@@ -86,8 +98,9 @@ export class NormativeRepository {
           <div class="repository-controls">
             <label>
               <span>Buscar normativa</span>
-              <input id="normativeSearch" type="search" value="${escapeHTML(this.query)}" placeholder="Buscar por jurisdicción o nombre de archivo">
+              <input id="normativeSearch" type="search" value="${escapeHTML(this.query)}" placeholder="Buscar por jurisdicción, tipo, número o descripción">
             </label>
+            ${this.jurisdiccion ? `<div class="active-filter"><span>Jurisdicción seleccionada: ${escapeHTML(this.jurisdiccion)}</span></div>` : ''}
           </div>
           ${this.renderBody(filtered)}
         </div>
