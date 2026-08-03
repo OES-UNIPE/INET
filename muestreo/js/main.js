@@ -1218,7 +1218,8 @@ async function init() {
     validateLoadedData();
     debugLoadedData();
     setStatus("", false);
-    calculate(false);
+    await calculate(false);
+    await generate(false);
   } catch (error) {
     console.error(error);
     setStatus(error.message, true);
