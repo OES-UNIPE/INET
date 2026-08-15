@@ -49,9 +49,9 @@ function levelForMetric(result, metricId) {
 }
 
 function featureStyle(result, isSelected, metricId) {
-  if (isSelected) return selectedStyle();
   const level = levelForMetric(result, metricId);
   const color = LEVEL_COLORS[level] || LEVEL_COLORS.Pendiente;
+  if (isSelected) return { ...selectedStyle(), fillColor: color };
   return { fillColor: color, fillOpacity: 0.62, color, weight: 1.2 };
 }
 
