@@ -2,12 +2,6 @@ import { escapeHTML, formatNumber } from '../utils/normalize.js';
 import { resultKey } from '../services/geo-service.js';
 
 
-function displayedLevel(result, metricId) {
-  if (metricId === 'global') return { etiqueta: result.nivelGlobal, clase: result.nivelClase };
-  const dimension = result.dimensiones.find(item => item.id === metricId);
-  return { etiqueta: dimension?.nivelEtiqueta || 'Sin dato', clase: dimension?.nivelClase || 'sin-dato' };
-}
-
 function dimensionFor(result, id) {
   return result.dimensiones.find(dimension => dimension.id === id);
 }
@@ -18,15 +12,11 @@ function displayedDimensionLevel(level) {
   return `<span class="mini-level matrix-level ${className}">${escapeHTML(label)}</span>`;
 }
 
-export function renderSummaryTable(container, results, dimensions, metricId, selectedKey, onSelect, onMetricChange, options = {}) {
+export function renderSummaryTable(container, results, dimensions, selectedKey, onSelect, options = {}) {
   const order = { Consolidado: 3, Intermedio: 2, Incipiente: 1, 'Sin dato': 0, Pendiente: -1 };
   const sorted = [...results].sort((a, b) => {
-    const levelA = displayedLevel(a, metricId).etiqueta;
-    const levelB = displayedLevel(b, metricId).etiqueta;
-    return (order[levelB] - order[levelA]) || a.jurisdiccion.localeCompare(b.jurisdiccion, 'es');
+    return (order[b.nivelGlobal] - order[a.nivelGlobal]) || a.jurisdiccion.localeCompare(b.jurisdiccion, 'es');
   });
-  const activeDimension = dimensions.find(dimension => dimension.id === metricId);
-  const metricTitle = activeDimension ? `${activeDimension.id} · ${activeDimension.etiquetaCorta}` : 'Nivel global';
   const isOverview = !selectedKey;
 
   container.innerHTML = `
@@ -41,13 +31,6 @@ export function renderSummaryTable(container, results, dimensions, metricId, sel
           ${options.collapsed ? '<button class="small-btn" id="expandGeneral" type="button">Ver tabla</button>' : ''}
         </div>
       </div>
-      <div class="metric-filters metric-filters-compact ${options.hideMetricControls ? 'is-hidden-view' : ''}" aria-label="Variable mostrada en el mapa">
-        <span>Colorear mapa por:</span>
-        <button type="button" data-metric="global" class="${metricId === 'global' ? 'active' : ''}">Global</button>
-        ${dimensions.map(dimension => `<button type="button" data-metric="${escapeHTML(dimension.id)}" class="${metricId === dimension.id ? 'active' : ''}" title="${escapeHTML(dimension.etiquetaCompleta)}">${escapeHTML(dimension.id)}</button>`).join('')}
-        <small>Vista actual: ${escapeHTML(metricTitle)}</small>
-      </div>
-
       <div class="table-scroll summary-matrix-wrap ${options.collapsed ? 'is-hidden' : ''}">
         <table class="summary-matrix">
           <colgroup>
@@ -81,9 +64,6 @@ export function renderSummaryTable(container, results, dimensions, metricId, sel
     </div>`;
 
   container.querySelector('#expandGeneral')?.addEventListener('click', options.onExpand);
-  container.querySelectorAll('[data-metric]').forEach(button => {
-    button.addEventListener('click', () => onMetricChange(button.dataset.metric));
-  });
   container.querySelectorAll('tr[data-key]').forEach(row => {
     row.addEventListener('click', () => onSelect(Number(row.dataset.key)));
   });

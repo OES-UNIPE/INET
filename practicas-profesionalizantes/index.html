@@ -33,11 +33,15 @@
         <span>Mapa jurisdiccional</span>
         <strong>Visualización: <span id="mapMetricLabel">Nivel global</span></strong>
       </div>
-      <div class="layer-control">
-        <button class="layer-btn" id="schoolsLayerBtn" type="button">
-          <span class="layer-dot"></span>
-          Escuelas ETP
-        </button>
+      <div class="layer-control" id="mapControls">
+        <div class="map-control-head">
+          <span class="map-control-label">Colorear mapa por</span>
+          <button class="layer-btn" id="schoolsLayerBtn" type="button">
+            <span class="layer-dot"></span>
+            Escuelas ETP
+          </button>
+        </div>
+        <div class="map-metric-control" id="mapMetricControl" aria-label="Variable mostrada en el mapa"></div>
       </div>
       <div id="map" class="map"></div>
       <div class="map-legend" id="mapLegend" aria-label="Leyenda del mapa">

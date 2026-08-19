@@ -23,6 +23,8 @@ const normativasBtn = document.querySelector('#normativasBtn');
 const refreshBtn = document.querySelector('#refreshBtn');
 const retryBtn = document.querySelector('#retryBtn');
 const mapMetricLabel = document.querySelector('#mapMetricLabel');
+const mapControls = document.querySelector('#mapControls');
+const mapMetricControl = document.querySelector('#mapMetricControl');
 const mapLegend = document.querySelector('#mapLegend');
 const mapElement = document.querySelector('#map');
 
@@ -140,7 +142,17 @@ function selectMetric(metricId) {
   state.mapView?.setMetric(metricId);
   const dimension = state.model.dimensiones.find(item => item.id === metricId);
   mapMetricLabel.textContent = dimension ? `${dimension.id} · ${dimension.etiquetaCorta}` : 'Nivel global';
-  renderGeneralView();
+  renderMapMetricControl();
+}
+
+function renderMapMetricControl() {
+  if (!state.model) return;
+  mapMetricControl.innerHTML = `
+    <button type="button" data-metric="global" class="${state.metricId === 'global' ? 'active' : ''}">Global</button>
+    ${state.model.dimensiones.map(dimension => `<button type="button" data-metric="${escapeHTML(dimension.id)}" class="${state.metricId === dimension.id ? 'active' : ''}" title="${escapeHTML(dimension.etiquetaCompleta)}">${escapeHTML(dimension.id)}</button>`).join('')}`;
+  mapMetricControl.querySelectorAll('[data-metric]').forEach(button => {
+    button.addEventListener('click', () => selectMetric(button.dataset.metric));
+  });
 }
 
 function renderGeneralView() {
@@ -148,13 +160,10 @@ function renderGeneralView() {
     summaryTable,
     state.model.jurisdicciones,
     state.model.dimensiones,
-    state.metricId,
     state.selectedKey,
     key => selectJurisdiction(key, { scrollDetail: state.vistaActiva === 'general' }),
-    selectMetric,
     {
       collapsed: state.vistaActiva === 'general' && state.generalCollapsed,
-      hideMetricControls: state.vistaActiva === 'oferentes',
       onExpand: clearSelection
     }
   );
@@ -211,6 +220,7 @@ function openOferentesView() {
   state.mapView.clearSelection();
   state.normativeRepository?.setJurisdiction('');
   state.mapView.disableSchools();
+  mapControls.hidden = true;
   schoolsLayerBtn.hidden = true;
   pdfBtn.disabled = true;
   renderInstitutionalizationDetail(detail, null);
@@ -231,6 +241,7 @@ function restoreGeneralView() {
   state.normativeRepository?.setJurisdiction('');
   renderAmbitoWidget(mapElement, [], { widgetAmbitoVisible: false }, {});
   oferentesTable.innerHTML = '';
+  mapControls.hidden = false;
   schoolsLayerBtn.hidden = false;
   setOferentesButtonActive(false);
   const dimension = state.model.dimensiones.find(item => item.id === state.metricId);
@@ -287,6 +298,7 @@ async function init() {
     if (state.model.normativasAvailable) state.normativeRepository.setRows(state.model.normativas);
     else state.normativeRepository.setError();
     renderGeneralView();
+    renderMapMetricControl();
     renderInstitutionalizationDetail(detail, null);
     renderMethodology();
     renderInstitutionalizationLegend();
