@@ -1,5 +1,5 @@
 import { loadApplicationData } from './services/data-service.js';
-import { renderSummaryTable } from './components/summary-table.js';
+import { renderSummaryTable } from './components/summary-table.js?v=20260819a';
 import { renderInstitutionalizationDetail } from './components/institutionalization-detail.js';
 import { renderOferentesTable, renderAmbitoWidget } from './components/oferentes-view.js';
 import { NormativeRepository } from './components/normative-repository.js';
