@@ -1,12 +1,13 @@
 # Aplicaciones ETP
 
-Página de acceso unificada a tres aplicaciones web de información y análisis de la Educación Técnico Profesional.
+Página de acceso unificada a cuatro aplicaciones web de información y análisis de la Educación Técnico Profesional.
 
 ## Aplicaciones
 
 1. **Mapa de Institucionalización COPETyP** (`consejos/`)
 2. **Mapa de Institucionalización de PP** (`practicas-profesionalizantes/`)
 3. **Aplicación de muestreo ETP** (`muestreo/`)
+4. **Resultados del relevamiento de Prácticas Profesionalizantes** (`resultados-relevamiento/`)
 
 Cada aplicación es autocontenida y conserva sus propios estilos, scripts, imágenes y datos. La portada utiliza exclusivamente los recursos ubicados en `assets/`.
 
@@ -28,7 +29,8 @@ INET/
 ├── assets/                         # Recursos exclusivos de la portada
 ├── consejos/                       # Mapa de Institucionalización COPETyP
 ├── practicas-profesionalizantes/   # Mapa de Institucionalización de PP
-└── muestreo/                       # Aplicación de muestreo ETP
+├── muestreo/                       # Aplicación de muestreo ETP
+└── resultados-relevamiento/        # Cobertura y respuestas del relevamiento
 ```
 
 ## Publicación
@@ -42,3 +44,13 @@ Todas las rutas internas son relativas, por lo que las aplicaciones funcionan ba
 - Leaflet, TopoJSON y SheetJS se cargan desde los CDN utilizados por cada aplicación.
 - Consejos y Prácticas Profesionalizantes consultan sus fuentes de datos externas originales.
 - Los archivos cartográficos y las bases locales de cada aplicación se mantienen dentro de su propio subdirectorio.
+
+## Actualización local del relevamiento
+
+El Excel fuente se conserva en `outputs/` y está excluido de Git. Para regenerar el derivado público sin modificar el libro:
+
+```text
+python scripts/procesar_relevamiento.py <excel_fuente> practicas-profesionalizantes/assets/escuelas.geojson resultados-relevamiento/assets/data/respuestas-publicas.json <informe_validacion> --internal-json resultados-relevamiento/assets/data/respuestas-internas.json
+```
+
+La versión publicada consume `respuestas-publicas.json`, que excluye CUE, nombres, matrícula, adjuntos y comentarios abiertos. Cuando se ejecuta en `localhost`, la aplicación utiliza `respuestas-internas.json`, que agrega únicamente el nombre institucional para identificar los puntos. Tanto el derivado interno como el informe de validación permanecen excluidos de Git.

@@ -7,6 +7,13 @@ Thumbs.db
 
 # VS Code
 .vscode/
+/node_modules/
+/.artifact-runtime/
+/outputs/
+/resultados-relevamiento/assets/data/validacion-datos.json
+/resultados-relevamiento/assets/data/respuestas-internas.json
+__pycache__/
+*.py[cod]
 
 # Logs
 *.log

@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Resultados territoriales del relevamiento de Prácticas Profesionalizantes.">
+  <title>Resultados del relevamiento de PP</title>
+  <link rel="icon" type="image/png" href="../assets/img/logoINET.png">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="css/base.css?v=20260914b">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-kicker">BID · INET · UNIPE</span>
+      <span class="brand-sep" aria-hidden="true"></span>
+      <span class="brand-name">Resultados del relevamiento de PP</span>
+    </div>
+    <div class="header-actions">
+      <a class="header-btn" href="../">← Volver</a>
+      <button class="header-btn" id="methodBtn" type="button">Metodología</button>
+    </div>
+  </header>
+
+  <main class="dashboard-shell">
+    <aside class="map-panel">
+      <div class="map-title">
+        <span>Cobertura territorial</span>
+        <strong>Escuelas que respondieron el relevamiento</strong>
+      </div>
+      <div class="map-controls">
+        <label>
+          <span>Jurisdicción</span>
+          <select id="jurisdictionFilter">
+            <option value="">Todo el país</option>
+          </select>
+        </label>
+        <button id="clearFilter" class="small-btn" type="button">Limpiar selección</button>
+      </div>
+      <div id="map" class="map" aria-label="Mapa de cobertura jurisdiccional y escuelas respondentes"></div>
+      <div class="map-legend" id="mapLegend"></div>
+    </aside>
+
+    <section class="content-panel">
+      <div id="status" class="status show">Cargando datos locales…</div>
+
+      <div class="page-heading">
+        <div>
+          <span class="section-kicker">Prácticas Profesionalizantes</span>
+          <h1>Resultados del relevamiento</h1>
+        </div>
+        <p id="updatedAt" class="updated-at"></p>
+      </div>
+
+      <section id="metrics" class="metric-grid" aria-label="Indicadores principales"></section>
+
+      <section class="panel-card">
+        <div class="panel-heading split-heading">
+          <div>
+            <span class="section-kicker">Cobertura</span>
+            <h2>Resumen por jurisdicción</h2>
+          </div>
+          <span id="activeTerritory" class="active-filter">Todo el país</span>
+        </div>
+        <div class="table-wrap">
+          <table class="coverage-table">
+            <thead>
+              <tr>
+                <th>Jurisdicción</th>
+                <th>Universo</th>
+                <th>Muestra</th>
+                <th>% muestra</th>
+                <th>Escuelas con respuesta</th>
+                <th>Cobertura</th>
+              </tr>
+            </thead>
+            <tbody id="coverageBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="panel-card responses-panel">
+        <div class="panel-heading split-heading">
+          <div>
+            <span class="section-kicker">Respuestas seleccionadas</span>
+            <h2 id="responsesTitle">Distribución de respuestas</h2>
+          </div>
+          <button id="clearSchool" class="small-btn" type="button" hidden>Quitar escuela seleccionada</button>
+        </div>
+        <p id="responsesContext" class="context-note"></p>
+        <div id="questionGrid" class="question-grid"></div>
+      </section>
+    </section>
+  </main>
+
+  <div class="modal" id="methodModal" role="dialog" aria-modal="true" aria-labelledby="methodTitle">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h2 id="methodTitle">Metodología y alcance</h2>
+        <button class="modal-close" id="methodClose" type="button" aria-label="Cerrar">×</button>
+      </div>
+      <div class="modal-body">
+        <h3>Universo y muestra</h3>
+        <p>El universo de referencia está compuesto por 1.750 escuelas. La muestra proyectada contiene 492 escuelas distribuidas por jurisdicción, equivalente al 28,1% del universo.</p>
+        <h3>Cobertura</h3>
+        <p>La cobertura se calcula como escuelas de la muestra con respuesta sobre escuelas proyectadas. Cuando responde una escuela de reemplazo, se contabiliza como cobertura de la muestra. Las respuestas complementarias se muestran, pero no integran el numerador.</p>
+        <h3>Tratamiento de las respuestas</h3>
+        <p>La unidad de conteo es la escuela identificada por CUE en el procesamiento privado. Cuando existen registros repetidos, el proceso informa la inconsistencia y usa provisoriamente el último registro, sin modificar el Excel fuente.</p>
+        <h3>Privacidad</h3>
+        <p id="privacyText">La versión pública no muestra nombres de escuelas, CUE, matrícula, archivos adjuntos ni comentarios abiertos. Los puntos conservan la localización exacta autorizada.</p>
+        <h3>Estado actual</h3>
+        <p>Mientras no esté completa la relación entre titulares, reemplazos y casos complementarios, la cobertura se identifica como provisional.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <span>Asistencia técnica para la articulación y el fortalecimiento de Prácticas Profesionalizantes</span>
+    <div class="footer-logos" aria-label="Instituciones participantes">
+      <img src="../assets/img/LogoBID.png" alt="BID">
+      <img src="../assets/img/logoINET.png" alt="INET">
+      <img src="../assets/img/LOGOUNIPE.png" alt="UNIPE">
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script type="module" src="js/main.js?v=20260914i"></script>
+</body>
+</html>

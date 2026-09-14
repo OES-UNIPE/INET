@@ -1,4 +1,4 @@
-import { MapView } from "./components/map-view.js";
+import { MapView } from "./components/map-view.js?v=20260914b";
 import { loadDepartmentMetadata, loadDepartmentTopology, loadInstitutions } from "./services/data-service.js";
 import {
   calculatePlan,

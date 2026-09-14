@@ -3,6 +3,8 @@ import { fmtInt } from "../utils/format.js";
 const HEAT = ["#edf2f7", "#b9d8e8", "#6fb3cf", "#2583a7", "#0f4d73"];
 const BORDER = "#ffffff";
 const ACTIVE = "#d4a017";
+const NATIONAL_VIEW = { center: [-38.5, -63.5], zoom: 4 };
+const TIERRA_DEL_FUEGO_BOUNDS = [[-55.2, -68.9], [-52.8, -65.3]];
 
 function htmlAttr(value) {
   return String(value ?? "").replaceAll("&", "&amp;").replaceAll('"', "&quot;").replaceAll("<", "&lt;").replaceAll(">", "&gt;");
@@ -15,7 +17,7 @@ export class MapView {
       preferCanvas: true,
       zoomControl: true,
       scrollWheelZoom: true,
-    }).setView([-38.5, -63.5], 4);
+    }).setView(NATIONAL_VIEW.center, NATIONAL_VIEW.zoom);
 
     L.tileLayer("https://wms.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/capabaseargenmap@EPSG%3A3857@png/{z}/{x}/{-y}.png", {
       maxZoom: 18,
@@ -193,10 +195,24 @@ export class MapView {
   fitVisible() {
     if (!this.departmentLayer) return;
     const activeCode = this.filters.codigoDepartamento;
+    if (!activeCode && !this.jurisdictionFilter) {
+      this.map.setView(NATIONAL_VIEW.center, NATIONAL_VIEW.zoom, { animate: true });
+      return;
+    }
+    if (!activeCode && this.jurisdictionFilter === "Tierra del Fuego") {
+      this.map.fitBounds(TIERRA_DEL_FUEGO_BOUNDS, { padding: [20, 20], maxZoom: 7 });
+      return;
+    }
     const layers = [];
     this.departmentLayer.eachLayer((layer) => {
       if (activeCode && this.featureCode(layer.feature) === activeCode) layers.push(layer);
     });
+    if (!layers.length) {
+      this.departmentLayer.eachLayer((layer) => {
+        const code = this.featureCode(layer.feature);
+        if (this.isVisibleFeature(layer.feature) && (this.totalByDepartment.get(code) || 0) > 0) layers.push(layer);
+      });
+    }
     if (!layers.length) {
       this.departmentLayer.eachLayer((layer) => {
         if (this.isVisibleFeature(layer.feature)) layers.push(layer);
