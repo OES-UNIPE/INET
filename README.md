@@ -50,7 +50,7 @@ Todas las rutas internas son relativas, por lo que las aplicaciones funcionan ba
 El Excel fuente se conserva en `outputs/` y está excluido de Git. Para regenerar el derivado público sin modificar el libro:
 
 ```text
-python scripts/procesar_relevamiento.py <excel_fuente> practicas-profesionalizantes/assets/escuelas.geojson resultados-relevamiento/assets/data/respuestas-publicas.json <informe_validacion> --internal-json resultados-relevamiento/assets/data/respuestas-internas.json
+python scripts/procesar_relevamiento.py <excel_fuente> practicas-profesionalizantes/assets/escuelas.geojson resultados-relevamiento/assets/data/respuestas-publicas.json <informe_validacion> --internal-json resultados-relevamiento/assets/data/respuestas-internas.json --weighted-base <muestra_completa_con_respuestas.csv>
 ```
 
-La versión publicada consume `respuestas-publicas.json`, que excluye CUE, nombres, matrícula, adjuntos y comentarios abiertos. Cuando se ejecuta en `localhost`, la aplicación utiliza `respuestas-internas.json`, que agrega únicamente el nombre institucional para identificar los puntos. Tanto el derivado interno como el informe de validación permanecen excluidos de Git.
+La base ponderada debe contener las 492 posiciones de la muestra, el estado de respuesta y `ponderador_num`. La aplicación publica la cobertura simple y ponderada por jurisdicción y permite alternar las distribuciones de las seis preguntas. La versión publicada consume `respuestas-publicas.json`, que excluye CUE, nombres, matrícula, adjuntos y comentarios abiertos. Cuando se ejecuta en `localhost`, utiliza `respuestas-internas.json`, que agrega únicamente el nombre institucional para identificar los puntos. La base ponderada, el derivado interno y el informe de validación permanecen excluidos de Git.

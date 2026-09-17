@@ -69,11 +69,12 @@
             <thead>
               <tr>
                 <th>Jurisdicción</th>
-                <th>Universo</th>
                 <th>Muestra</th>
-                <th>% muestra</th>
-                <th>Escuelas con respuesta</th>
-                <th>Cobertura</th>
+                <th>Respuestas</th>
+                <th>Sin respuesta</th>
+                <th>Cobertura sin ponderar</th>
+                <th>Cobertura ponderada</th>
+                <th>Base ponderada</th>
               </tr>
             </thead>
             <tbody id="coverageBody"></tbody>
@@ -87,7 +88,14 @@
             <span class="section-kicker">Respuestas seleccionadas</span>
             <h2 id="responsesTitle">Distribución de respuestas</h2>
           </div>
-          <button id="clearSchool" class="small-btn" type="button" hidden>Quitar escuela seleccionada</button>
+          <div class="responses-actions">
+            <div class="weight-mode" role="group" aria-label="Tipo de distribución">
+              <span>Distribuciones</span>
+              <button type="button" data-weight-mode="weighted" aria-pressed="true">Ponderadas</button>
+              <button type="button" data-weight-mode="unweighted" aria-pressed="false">Sin ponderar</button>
+            </div>
+            <button id="clearSchool" class="small-btn" type="button" hidden>Quitar escuela seleccionada</button>
+          </div>
         </div>
         <p id="responsesContext" class="context-note"></p>
         <div id="questionGrid" class="question-grid"></div>
@@ -105,13 +113,13 @@
         <h3>Universo y muestra</h3>
         <p>El universo de referencia está compuesto por 1.750 escuelas. La muestra proyectada contiene 492 escuelas distribuidas por jurisdicción, equivalente al 28,1% del universo.</p>
         <h3>Cobertura</h3>
-        <p>La cobertura se calcula como escuelas de la muestra con respuesta sobre escuelas proyectadas. Cuando responde una escuela de reemplazo, se contabiliza como cobertura de la muestra. Las respuestas complementarias se muestran, pero no integran el numerador.</p>
+        <p>La cobertura se calcula sobre las 492 posiciones de la muestra. Las 126 posiciones sin respuesta permanecen en el denominador. Cuando responde una escuela de reemplazo, se vincula a la posición muestral correspondiente.</p>
+        <h3>Ponderación</h3>
+        <p>El ponderador de diseño se calcula por escuela dentro de cada jurisdicción y estrato de orientación y gestión. Tierra del Fuego es censal y tiene peso 1. La suma efectiva de ponderadores de la muestra es 1.717,0 escuelas representadas. La tabla muestra simultáneamente la cobertura sin ponderar y ponderada; el selector cambia el cálculo de las seis distribuciones entre las respuestas válidas.</p>
         <h3>Tratamiento de las respuestas</h3>
-        <p>La unidad de conteo es la escuela identificada por CUE en el procesamiento privado. Cuando existen registros repetidos, el proceso informa la inconsistencia y usa provisoriamente el último registro, sin modificar el Excel fuente.</p>
+        <p>La unidad de conteo es la posición muestral vinculada con una escuela mediante CUE en el procesamiento privado. Se conserva una respuesta por posición; los registros duplicados y las respuestas que no integran las 492 posiciones se controlan fuera de la visualización.</p>
         <h3>Privacidad</h3>
         <p id="privacyText">La versión pública no muestra nombres de escuelas, CUE, matrícula, archivos adjuntos ni comentarios abiertos. Los puntos conservan la localización exacta autorizada.</p>
-        <h3>Estado actual</h3>
-        <p>Mientras no esté completa la relación entre titulares, reemplazos y casos complementarios, la cobertura se identifica como provisional.</p>
       </div>
     </div>
   </div>
@@ -126,6 +134,6 @@
   </footer>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script type="module" src="js/main.js?v=20260914i"></script>
+  <script type="module" src="js/main.js?v=20260917a"></script>
 </body>
 </html>

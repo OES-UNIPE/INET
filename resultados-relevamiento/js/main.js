@@ -13,6 +13,7 @@ const state = {
   pointLayer: null,
   jurisdictionId: null,
   schoolId: null,
+  weightMode: "weighted",
 };
 
 const el = {
@@ -28,6 +29,7 @@ const el = {
   questionGrid: document.getElementById("questionGrid"),
   responsesTitle: document.getElementById("responsesTitle"),
   responsesContext: document.getElementById("responsesContext"),
+  weightModeButtons: Array.from(document.querySelectorAll("[data-weight-mode]")),
   clearSchool: document.getElementById("clearSchool"),
   methodBtn: document.getElementById("methodBtn"),
   methodModal: document.getElementById("methodModal"),
@@ -35,6 +37,7 @@ const el = {
 };
 
 const intFormat = new Intl.NumberFormat("es-AR");
+const decimalFormat = new Intl.NumberFormat("es-AR", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
 const pctFormat = new Intl.NumberFormat("es-AR", { style: "percent", maximumFractionDigits: 1 });
 
 function html(value) {
@@ -95,7 +98,7 @@ function initMap(provinces) {
       const id = provinceId(feature);
       const row = jurisdictionRow(id);
       const label = row
-        ? `<strong>${html(row.name)}</strong><br>Cobertura: ${pctFormat.format(row.coverage || 0)}<br>${intFormat.format(row.covered)} escuelas con respuesta de ${intFormat.format(row.target)} de la muestra`
+        ? `<strong>${html(row.name)}</strong><br>Sin ponderar: ${pctFormat.format(row.coverage || 0)}<br>Ponderada: ${pctFormat.format(row.weightedCoverage || 0)}<br>${intFormat.format(row.respondentSchools)} respuestas de ${intFormat.format(row.target)} posiciones`
         : "Sin datos";
       layer.bindTooltip(label, { sticky: true });
       layer.on("click", () => setJurisdiction(state.jurisdictionId === id ? null : id, true));
@@ -187,13 +190,13 @@ function renderMetrics() {
   const universe = row?.universe ?? meta.universe;
   const target = row?.target ?? meta.sampleTarget;
   const respondents = row?.respondentSchools ?? meta.respondentSchools;
-  const covered = row?.covered ?? meta.coveredSamplePositions;
   const coverage = row?.coverage ?? meta.coverage;
+  const weightedCoverage = row?.weightedCoverage ?? meta.weightedCoverage;
   el.metrics.innerHTML = [
     metric("Universo", intFormat.format(universe), row ? row.name : "Escuelas elegibles"),
     metric("Muestra proyectada", intFormat.format(target), pctFormat.format(target / universe)),
-    metric("Escuelas con respuesta", intFormat.format(respondents), row ? "CUE únicos en la jurisdicción" : "CUE únicos en la fuente"),
-    metric("Cobertura de la muestra", pctFormat.format(coverage || 0), `${intFormat.format(covered)} de ${intFormat.format(target)} escuelas de la muestra`),
+    metric("Escuelas con respuesta", intFormat.format(respondents), `${intFormat.format(target - respondents)} posiciones sin respuesta`),
+    metric("Cobertura sin ponderar", pctFormat.format(coverage || 0), `Cobertura ponderada: ${pctFormat.format(weightedCoverage || 0)}`),
   ].join("");
 }
 
@@ -201,45 +204,60 @@ function renderCoverageTable() {
   el.coverageBody.innerHTML = state.data.jurisdictions.map((row) => `
     <tr data-jurisdiction="${row.id}" class="${state.jurisdictionId === row.id ? "selected" : ""}" tabindex="0">
       <td>${html(row.name)}</td>
-      <td>${intFormat.format(row.universe)}</td>
       <td>${intFormat.format(row.target)}</td>
-      <td>${pctFormat.format(row.target / row.universe)}</td>
       <td>${intFormat.format(row.respondentSchools)}</td>
+      <td>${intFormat.format(row.nonResponse)}</td>
       <td>${pctFormat.format(row.coverage || 0)}</td>
+      <td>${pctFormat.format(row.weightedCoverage || 0)}</td>
+      <td>${decimalFormat.format(row.weightedBase || 0)}</td>
     </tr>`).join("");
 }
 
 function responseDistribution(records, questionId) {
   const counts = new Map();
+  let rawBase = 0;
+  let weightedBase = 0;
   records.forEach((record) => {
     const value = String(record.answers?.[questionId] || "").trim();
-    if (value) counts.set(value, (counts.get(value) || 0) + 1);
+    if (!value) return;
+    const weight = state.weightMode === "weighted" ? Number(record.weight) || 0 : 1;
+    counts.set(value, (counts.get(value) || 0) + weight);
+    rawBase += 1;
+    weightedBase += Number(record.weight) || 0;
   });
-  return Array.from(counts, ([label, count]) => ({ label, count })).sort((a, b) => b.count - a.count || a.label.localeCompare(b.label, "es"));
+  return {
+    items: Array.from(counts, ([label, value]) => ({ label, value })).sort((a, b) => b.value - a.value || a.label.localeCompare(b.label, "es")),
+    base: state.weightMode === "weighted" ? weightedBase : rawBase,
+    rawBase,
+    weightedBase,
+  };
 }
 
 function renderQuestions() {
   const records = filteredResponses();
   const selected = state.schoolId ? state.data.responses.find((row) => row.id === state.schoolId) : null;
   const territory = state.jurisdictionId ? jurisdictionRow(state.jurisdictionId)?.name : "todo el país";
+  const modeLabel = state.weightMode === "weighted" ? "ponderadas" : "sin ponderar";
   el.responsesTitle.textContent = selected ? "Respuesta de la escuela seleccionada" : "Distribución de respuestas";
   el.responsesContext.textContent = selected
-    ? `${selected.schoolName || "Escuela seleccionada"}. Se muestran sus respuestas y la distribución de referencia en ${territory}.`
-    : `Frecuencias calculadas sobre ${intFormat.format(records.length)} escuelas con respuesta en ${territory}.`;
+    ? `${selected.schoolName || "Escuela seleccionada"}. Se muestran sus respuestas y las distribuciones ${modeLabel} de referencia en ${territory}.`
+    : `Distribuciones ${modeLabel} calculadas sobre las respuestas válidas de ${intFormat.format(records.length)} escuelas en ${territory}.`;
   el.clearSchool.hidden = !selected;
   el.questionGrid.innerHTML = state.data.questions.map((question) => {
     const distribution = responseDistribution(records, question.id);
-    const base = distribution.reduce((sum, item) => sum + item.count, 0);
+    const base = distribution.base;
     const selectedAnswer = selected?.answers?.[question.id] || "Sin respuesta";
     return `<article class="question-card">
       <h3>${html(question.title)}</h3>
       ${selected ? `<div class="answer-selected"><span>Respuesta seleccionada</span>${html(selectedAnswer)}</div>` : ""}
-      <div class="bar-list">${distribution.map((item) => `
+      <div class="bar-list">${distribution.items.map((item) => `
         <div>
-          <div class="bar-label"><span>${html(item.label)}</span><strong>${pctFormat.format(base ? item.count / base : 0)}</strong></div>
-          <div class="bar-track"><div class="bar-fill" style="width:${base ? (item.count / base) * 100 : 0}%"></div></div>
+          <div class="bar-label"><span>${html(item.label)}</span><strong>${pctFormat.format(base ? item.value / base : 0)}</strong></div>
+          <div class="bar-track"><div class="bar-fill" style="width:${base ? (item.value / base) * 100 : 0}%"></div></div>
         </div>`).join("")}</div>
-      <p class="question-base">Base: ${intFormat.format(base)} escuelas</p>
+      <p class="question-base">${state.weightMode === "weighted"
+        ? `Base ponderada: ${decimalFormat.format(distribution.weightedBase)} escuelas representadas · ${intFormat.format(distribution.rawBase)} respuestas válidas`
+        : `Base: ${intFormat.format(distribution.rawBase)} respuestas válidas`}</p>
     </article>`;
   }).join("");
 }
@@ -257,6 +275,11 @@ function bindEvents() {
   el.filter.addEventListener("change", () => setJurisdiction(el.filter.value || null, true));
   el.clearFilter.addEventListener("click", () => setJurisdiction(null, true));
   el.clearSchool.addEventListener("click", () => { state.schoolId = null; renderAll(); });
+  el.weightModeButtons.forEach((button) => button.addEventListener("click", () => {
+    state.weightMode = button.dataset.weightMode;
+    el.weightModeButtons.forEach((item) => item.setAttribute("aria-pressed", String(item.dataset.weightMode === state.weightMode)));
+    renderQuestions();
+  }));
   el.coverageBody.addEventListener("click", (event) => {
     const row = event.target.closest("tr[data-jurisdiction]");
     if (row) setJurisdiction(state.jurisdictionId === row.dataset.jurisdiction ? null : row.dataset.jurisdiction, true);

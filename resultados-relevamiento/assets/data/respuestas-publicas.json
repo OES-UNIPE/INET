@@ -1,20 +1,25 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-14T17:26:46-03:00",
+    "generatedAt": "2026-09-17T10:03:54-03:00",
     "sourceDate": null,
-    "sourceSha256": "d43df546ba801bf011177f8559f7a786ab7fd3722f43f5addc73e2ec53385223",
+    "sourceSha256": "9ee63d5257ce2f692fc4c34855e89e05f95f0eade5388b63cdfcf38625b260a4",
     "universe": 1750,
     "sampleTarget": 492,
     "sampleShare": 0.28114285714285714,
-    "sourceRows": 383,
+    "sourceRows": 366,
     "respondentSchools": 366,
-    "duplicateExtraRows": 17,
+    "duplicateExtraRows": 0,
     "geolocatedSchools": 354,
     "unmatchedGeo": 12,
     "coveredSamplePositions": 366,
     "coverage": 0.7439024390243902,
-    "coverageStatus": "provisional",
-    "pendingClassification": 366,
+    "weightedBase": 1716.9977999999999,
+    "weightedResponses": 1271.0045999999998,
+    "weightedNonResponse": 445.9932000000001,
+    "weightedCoverage": 0.7402482402714784,
+    "coverageStatus": "confirmada",
+    "pendingClassification": 0,
+    "sourceKind": "weighted_sample",
     "access": "public"
   },
   "questions": [
@@ -57,8 +62,13 @@
       "target": 15,
       "respondentSchools": 14,
       "sampleResponses": 14,
+      "nonResponse": 1,
       "covered": 14,
       "coverage": 0.9333333333333333,
+      "weightedBase": 51.99999999999999,
+      "weightedResponses": 49.199999999999996,
+      "weightedNonResponse": 2.799999999999997,
+      "weightedCoverage": 0.9461538461538462,
       "replacements": 0,
       "complementary": 0
     },
@@ -67,11 +77,16 @@
       "name": "Buenos Aires",
       "universe": 457,
       "target": 91,
-      "respondentSchools": 65,
-      "sampleResponses": 65,
-      "covered": 65,
-      "coverage": 0.7142857142857143,
-      "replacements": 0,
+      "respondentSchools": 63,
+      "sampleResponses": 63,
+      "nonResponse": 28,
+      "covered": 63,
+      "coverage": 0.6923076923076923,
+      "weightedBase": 452.99669999999986,
+      "weightedResponses": 314.42559999999986,
+      "weightedNonResponse": 138.5711,
+      "weightedCoverage": 0.6941013036077304,
+      "replacements": 3,
       "complementary": 0
     },
     {
@@ -81,8 +96,13 @@
       "target": 15,
       "respondentSchools": 12,
       "sampleResponses": 12,
+      "nonResponse": 3,
       "covered": 12,
       "coverage": 0.8,
+      "weightedBase": 16.999800000000004,
+      "weightedResponses": 13.333200000000001,
+      "weightedNonResponse": 3.6666000000000025,
+      "weightedCoverage": 0.7843151095895244,
       "replacements": 0,
       "complementary": 0
     },
@@ -91,10 +111,15 @@
       "name": "Córdoba",
       "universe": 256,
       "target": 51,
-      "respondentSchools": 41,
-      "sampleResponses": 41,
-      "covered": 41,
-      "coverage": 0.803921568627451,
+      "respondentSchools": 42,
+      "sampleResponses": 42,
+      "nonResponse": 9,
+      "covered": 42,
+      "coverage": 0.8235294117647058,
+      "weightedBase": 255.00029999999998,
+      "weightedResponses": 210.46060000000003,
+      "weightedNonResponse": 44.539699999999954,
+      "weightedCoverage": 0.825334715292492,
       "replacements": 0,
       "complementary": 0
     },
@@ -105,8 +130,13 @@
       "target": 15,
       "respondentSchools": 11,
       "sampleResponses": 11,
+      "nonResponse": 4,
       "covered": 11,
       "coverage": 0.7333333333333333,
+      "weightedBase": 61.0,
+      "weightedResponses": 43.0,
+      "weightedNonResponse": 18.0,
+      "weightedCoverage": 0.7049180327868853,
       "replacements": 0,
       "complementary": 0
     },
@@ -115,10 +145,15 @@
       "name": "Chaco",
       "universe": 40,
       "target": 15,
-      "respondentSchools": 13,
-      "sampleResponses": 13,
-      "covered": 13,
-      "coverage": 0.8666666666666667,
+      "respondentSchools": 12,
+      "sampleResponses": 12,
+      "nonResponse": 3,
+      "covered": 12,
+      "coverage": 0.8,
+      "weightedBase": 40.00039999999999,
+      "weightedResponses": 26.889199999999995,
+      "weightedNonResponse": 13.111199999999997,
+      "weightedCoverage": 0.6722232777672223,
       "replacements": 0,
       "complementary": 0
     },
@@ -127,11 +162,16 @@
       "name": "Chubut",
       "universe": 28,
       "target": 15,
-      "respondentSchools": 15,
-      "sampleResponses": 15,
-      "covered": 15,
-      "coverage": 1.0,
-      "replacements": 0,
+      "respondentSchools": 14,
+      "sampleResponses": 14,
+      "nonResponse": 1,
+      "covered": 14,
+      "coverage": 0.9333333333333333,
+      "weightedBase": 26.000199999999996,
+      "weightedResponses": 24.333499999999997,
+      "weightedNonResponse": 1.6666999999999987,
+      "weightedCoverage": 0.9358966469488696,
+      "replacements": 1,
       "complementary": 0
     },
     {
@@ -141,8 +181,13 @@
       "target": 18,
       "respondentSchools": 15,
       "sampleResponses": 15,
+      "nonResponse": 3,
       "covered": 15,
       "coverage": 0.8333333333333334,
+      "weightedBase": 85.00020000000002,
+      "weightedResponses": 71.9466,
+      "weightedNonResponse": 13.053600000000017,
+      "weightedCoverage": 0.8464285966385959,
       "replacements": 0,
       "complementary": 0
     },
@@ -153,8 +198,13 @@
       "target": 15,
       "respondentSchools": 8,
       "sampleResponses": 8,
+      "nonResponse": 7,
       "covered": 8,
       "coverage": 0.5333333333333333,
+      "weightedBase": 22.9997,
+      "weightedResponses": 13.333199999999998,
+      "weightedNonResponse": 9.666500000000003,
+      "weightedCoverage": 0.5797119092857732,
       "replacements": 0,
       "complementary": 0
     },
@@ -165,8 +215,13 @@
       "target": 15,
       "respondentSchools": 9,
       "sampleResponses": 9,
+      "nonResponse": 6,
       "covered": 9,
       "coverage": 0.6,
+      "weightedBase": 29.0,
+      "weightedResponses": 17.575,
+      "weightedNonResponse": 11.425,
+      "weightedCoverage": 0.6060344827586207,
       "replacements": 0,
       "complementary": 0
     },
@@ -177,8 +232,13 @@
       "target": 15,
       "respondentSchools": 15,
       "sampleResponses": 15,
+      "nonResponse": 0,
       "covered": 15,
       "coverage": 1.0,
+      "weightedBase": 17.0,
+      "weightedResponses": 17.0,
+      "weightedNonResponse": 0.0,
+      "weightedCoverage": 1.0,
       "replacements": 0,
       "complementary": 0
     },
@@ -189,8 +249,13 @@
       "target": 15,
       "respondentSchools": 14,
       "sampleResponses": 14,
+      "nonResponse": 1,
       "covered": 14,
       "coverage": 0.9333333333333333,
+      "weightedBase": 24.0002,
+      "weightedResponses": 22.5002,
+      "weightedNonResponse": 1.5,
+      "weightedCoverage": 0.937500520828993,
       "replacements": 0,
       "complementary": 0
     },
@@ -199,10 +264,15 @@
       "name": "Mendoza",
       "universe": 84,
       "target": 17,
-      "respondentSchools": 12,
-      "sampleResponses": 12,
-      "covered": 12,
-      "coverage": 0.7058823529411765,
+      "respondentSchools": 13,
+      "sampleResponses": 13,
+      "nonResponse": 4,
+      "covered": 13,
+      "coverage": 0.7647058823529411,
+      "weightedBase": 82.99980000000001,
+      "weightedResponses": 63.3665,
+      "weightedNonResponse": 19.633300000000006,
+      "weightedCoverage": 0.7634536468762575,
       "replacements": 0,
       "complementary": 0
     },
@@ -213,8 +283,13 @@
       "target": 17,
       "respondentSchools": 12,
       "sampleResponses": 12,
+      "nonResponse": 5,
       "covered": 12,
       "coverage": 0.7058823529411765,
+      "weightedBase": 84.9997,
+      "weightedResponses": 60.87859999999999,
+      "weightedNonResponse": 24.121100000000013,
+      "weightedCoverage": 0.7162213513694753,
       "replacements": 0,
       "complementary": 0
     },
@@ -225,8 +300,13 @@
       "target": 15,
       "respondentSchools": 7,
       "sampleResponses": 7,
+      "nonResponse": 8,
       "covered": 7,
       "coverage": 0.4666666666666667,
+      "weightedBase": 32.0004,
+      "weightedResponses": 15.000200000000003,
+      "weightedNonResponse": 17.000199999999996,
+      "weightedCoverage": 0.46875039062011736,
       "replacements": 0,
       "complementary": 0
     },
@@ -235,10 +315,15 @@
       "name": "Río Negro",
       "universe": 40,
       "target": 15,
-      "respondentSchools": 13,
-      "sampleResponses": 13,
-      "covered": 13,
-      "coverage": 0.8666666666666667,
+      "respondentSchools": 14,
+      "sampleResponses": 14,
+      "nonResponse": 1,
+      "covered": 14,
+      "coverage": 0.9333333333333333,
+      "weightedBase": 37.99999999999999,
+      "weightedResponses": 35.699999999999996,
+      "weightedNonResponse": 2.299999999999997,
+      "weightedCoverage": 0.9394736842105263,
       "replacements": 0,
       "complementary": 0
     },
@@ -249,8 +334,13 @@
       "target": 15,
       "respondentSchools": 8,
       "sampleResponses": 8,
+      "nonResponse": 7,
       "covered": 8,
       "coverage": 0.5333333333333333,
+      "weightedBase": 69.0,
+      "weightedResponses": 36.85,
+      "weightedNonResponse": 32.15,
+      "weightedCoverage": 0.5340579710144928,
       "replacements": 0,
       "complementary": 0
     },
@@ -261,8 +351,13 @@
       "target": 15,
       "respondentSchools": 8,
       "sampleResponses": 8,
+      "nonResponse": 7,
       "covered": 8,
       "coverage": 0.5333333333333333,
+      "weightedBase": 29.000099999999996,
+      "weightedResponses": 15.6667,
+      "weightedNonResponse": 13.333399999999996,
+      "weightedCoverage": 0.5402291716235462,
       "replacements": 0,
       "complementary": 0
     },
@@ -273,8 +368,13 @@
       "target": 15,
       "respondentSchools": 13,
       "sampleResponses": 13,
+      "nonResponse": 2,
       "covered": 13,
       "coverage": 0.8666666666666667,
+      "weightedBase": 32.00019999999999,
+      "weightedResponses": 27.9335,
+      "weightedNonResponse": 4.066699999999994,
+      "weightedCoverage": 0.8729164192723797,
       "replacements": 0,
       "complementary": 0
     },
@@ -283,10 +383,15 @@
       "name": "Santa Cruz",
       "universe": 20,
       "target": 15,
-      "respondentSchools": 11,
-      "sampleResponses": 11,
-      "covered": 11,
-      "coverage": 0.7333333333333333,
+      "respondentSchools": 10,
+      "sampleResponses": 10,
+      "nonResponse": 5,
+      "covered": 10,
+      "coverage": 0.6666666666666666,
+      "weightedBase": 19.0,
+      "weightedResponses": 12.75,
+      "weightedNonResponse": 6.25,
+      "weightedCoverage": 0.6710526315789473,
       "replacements": 0,
       "complementary": 0
     },
@@ -297,8 +402,13 @@
       "target": 35,
       "respondentSchools": 25,
       "sampleResponses": 25,
+      "nonResponse": 10,
       "covered": 25,
       "coverage": 0.7142857142857143,
+      "weightedBase": 170.00029999999998,
+      "weightedResponses": 123.12639999999999,
+      "weightedNonResponse": 46.87389999999999,
+      "weightedCoverage": 0.7242716630500065,
       "replacements": 0,
       "complementary": 0
     },
@@ -307,10 +417,15 @@
       "name": "Santiago del Estero",
       "universe": 30,
       "target": 15,
-      "respondentSchools": 7,
-      "sampleResponses": 7,
-      "covered": 7,
-      "coverage": 0.4666666666666667,
+      "respondentSchools": 9,
+      "sampleResponses": 9,
+      "nonResponse": 6,
+      "covered": 9,
+      "coverage": 0.6,
+      "weightedBase": 29.999800000000004,
+      "weightedResponses": 18.0356,
+      "weightedNonResponse": 11.964200000000005,
+      "weightedCoverage": 0.6011906746044973,
       "replacements": 0,
       "complementary": 0
     },
@@ -321,8 +436,13 @@
       "target": 15,
       "respondentSchools": 12,
       "sampleResponses": 12,
+      "nonResponse": 3,
       "covered": 12,
       "coverage": 0.8,
+      "weightedBase": 39.99999999999999,
+      "weightedResponses": 31.699999999999996,
+      "weightedNonResponse": 8.299999999999997,
+      "weightedCoverage": 0.7925,
       "replacements": 0,
       "complementary": 0
     },
@@ -333,8 +453,13 @@
       "target": 8,
       "respondentSchools": 6,
       "sampleResponses": 6,
+      "nonResponse": 2,
       "covered": 6,
       "coverage": 0.75,
+      "weightedBase": 8.0,
+      "weightedResponses": 6.0,
+      "weightedNonResponse": 2.0,
+      "weightedCoverage": 0.75,
       "replacements": 0,
       "complementary": 0
     }
@@ -344,8 +469,8 @@
       "id": "escuela-0001",
       "jurisdictionId": "02",
       "jurisdiction": "Ciudad de Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.8,
       "coordinates": [
         -58.373237067107,
         -34.611882807619
@@ -363,8 +488,8 @@
       "id": "escuela-0002",
       "jurisdictionId": "02",
       "jurisdiction": "Ciudad de Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.8,
       "coordinates": [
         -58.454717960832,
         -34.583758982099
@@ -382,8 +507,8 @@
       "id": "escuela-0003",
       "jurisdictionId": "02",
       "jurisdiction": "Ciudad de Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.8,
       "coordinates": [
         -58.446692652574,
         -34.608709863639
@@ -401,8 +526,8 @@
       "id": "escuela-0004",
       "jurisdictionId": "02",
       "jurisdiction": "Ciudad de Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.5,
       "coordinates": [
         -58.495706940151,
         -34.601899011879
@@ -420,8 +545,8 @@
       "id": "escuela-0005",
       "jurisdictionId": "02",
       "jurisdiction": "Ciudad de Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.5,
       "coordinates": null,
       "answers": {
         "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
@@ -436,8 +561,8 @@
       "id": "escuela-0006",
       "jurisdictionId": "02",
       "jurisdiction": "Ciudad de Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.8,
       "coordinates": [
         -58.443294771351,
         -34.588481561871
@@ -455,8 +580,8 @@
       "id": "escuela-0007",
       "jurisdictionId": "02",
       "jurisdiction": "Ciudad de Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.8,
       "coordinates": [
         -58.454781309693,
         -34.630128106513
@@ -474,8 +599,8 @@
       "id": "escuela-0008",
       "jurisdictionId": "02",
       "jurisdiction": "Ciudad de Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.8,
       "coordinates": [
         -58.481000346569,
         -34.640699706349
@@ -493,8 +618,8 @@
       "id": "escuela-0009",
       "jurisdictionId": "02",
       "jurisdiction": "Ciudad de Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.8,
       "coordinates": [
         -58.517774568837,
         -34.621324912056
@@ -512,8 +637,8 @@
       "id": "escuela-0010",
       "jurisdictionId": "02",
       "jurisdiction": "Ciudad de Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.0,
       "coordinates": null,
       "answers": {
         "q_2_1_1": "Sí, pero comparte la tarea con otras funciones (por ejemplo, docente de taller, jefe/a de taller, directivo/a).",
@@ -528,8 +653,8 @@
       "id": "escuela-0011",
       "jurisdictionId": "02",
       "jurisdiction": "Ciudad de Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.8,
       "coordinates": [
         -58.416246444128,
         -34.621791747671
@@ -547,8 +672,8 @@
       "id": "escuela-0012",
       "jurisdictionId": "02",
       "jurisdiction": "Ciudad de Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.8,
       "coordinates": [
         -58.419124829907,
         -34.599329302109
@@ -566,8 +691,8 @@
       "id": "escuela-0013",
       "jurisdictionId": "02",
       "jurisdiction": "Ciudad de Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.5,
       "coordinates": null,
       "answers": {
         "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
@@ -582,8 +707,8 @@
       "id": "escuela-0014",
       "jurisdictionId": "02",
       "jurisdiction": "Ciudad de Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.5,
       "coordinates": [
         -58.374842011722,
         -34.634074747905
@@ -601,8 +726,8 @@
       "id": "escuela-0015",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.3333,
       "coordinates": [
         -58.603596745593,
         -34.623950021676
@@ -620,8 +745,8 @@
       "id": "escuela-0016",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.3191,
       "coordinates": [
         -60.353914917038,
         -33.595963690694
@@ -639,8 +764,8 @@
       "id": "escuela-0017",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "reemplazo",
+      "weight": 5.3191,
       "coordinates": [
         -59.277824124084,
         -35.00792414878
@@ -658,8 +783,8 @@
       "id": "escuela-0018",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.8636,
       "coordinates": [
         -60.57066017063,
         -33.920943588576
@@ -677,8 +802,8 @@
       "id": "escuela-0019",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.5,
       "coordinates": [
         -60.829576813319,
         -33.916029877277
@@ -696,8 +821,8 @@
       "id": "escuela-0020",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.8636,
       "coordinates": [
         -62.614419164712,
         -37.730013018985
@@ -715,8 +840,8 @@
       "id": "escuela-0021",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "reemplazo",
+      "weight": 5.3191,
       "coordinates": [
         -58.017698075106,
         -35.567969591124
@@ -734,8 +859,8 @@
       "id": "escuela-0022",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 3.7,
       "coordinates": [
         -59.023917775385,
         -34.09635489856
@@ -753,8 +878,8 @@
       "id": "escuela-0023",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.3191,
       "coordinates": [
         -57.563337466651,
         -38.000772842692
@@ -772,8 +897,8 @@
       "id": "escuela-0024",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.3191,
       "coordinates": [
         -60.27660948424,
         -38.386090938246
@@ -791,8 +916,8 @@
       "id": "escuela-0025",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.3191,
       "coordinates": [
         -59.038683311485,
         -34.095619503137
@@ -810,8 +935,8 @@
       "id": "escuela-0026",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.3191,
       "coordinates": [
         -58.599756034313,
         -34.608193888637
@@ -829,8 +954,8 @@
       "id": "escuela-0027",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.3333,
       "coordinates": [
         -58.654070746667,
         -34.599746723932
@@ -848,8 +973,8 @@
       "id": "escuela-0028",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 3.7,
       "coordinates": [
         -58.820902417313,
         -34.629641127636
@@ -867,8 +992,8 @@
       "id": "escuela-0029",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.8636,
       "coordinates": [
         -59.202690104341,
         -37.352523580718
@@ -886,8 +1011,8 @@
       "id": "escuela-0030",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.3191,
       "coordinates": [
         -59.360441911667,
         -37.282870569941
@@ -905,8 +1030,8 @@
       "id": "escuela-0031",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.5,
       "coordinates": [
         -63.165224797886,
         -37.690348034334
@@ -924,8 +1049,8 @@
       "id": "escuela-0032",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 3.7,
       "coordinates": [
         -58.518519465695,
         -34.524712235164
@@ -943,8 +1068,8 @@
       "id": "escuela-0033",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.3191,
       "coordinates": [
         -62.282780149684,
         -38.713295499687
@@ -962,8 +1087,8 @@
       "id": "escuela-0034",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.3191,
       "coordinates": [
         -58.339434201827,
         -34.799975268244
@@ -981,8 +1106,8 @@
       "id": "escuela-0035",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.3333,
       "coordinates": [
         -58.499366242258,
         -34.527684012407
@@ -1000,8 +1125,8 @@
       "id": "escuela-0036",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.3191,
       "coordinates": [
         -58.22400247627,
         -35.169718804949
@@ -1019,8 +1144,8 @@
       "id": "escuela-0037",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.3191,
       "coordinates": [
         -58.813962221379,
         -34.531567827293
@@ -1038,8 +1163,8 @@
       "id": "escuela-0038",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.5,
       "coordinates": [
         -60.473391969464,
         -35.126153978423
@@ -1057,8 +1182,8 @@
       "id": "escuela-0039",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.8636,
       "coordinates": [
         -59.760403950182,
         -37.366376404347
@@ -1076,8 +1201,8 @@
       "id": "escuela-0040",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 3.7,
       "coordinates": [
         -57.959078868922,
         -34.910657092943
@@ -1095,8 +1220,8 @@
       "id": "escuela-0041",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.3191,
       "coordinates": [
         -57.972420990836,
         -34.95387112745
@@ -1114,8 +1239,8 @@
       "id": "escuela-0042",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.3191,
       "coordinates": [
         -62.244171296468,
         -38.714520943786
@@ -1133,8 +1258,8 @@
       "id": "escuela-0043",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "reemplazo",
+      "weight": 5.3191,
       "coordinates": [
         -60.097782730788,
         -34.069793851805
@@ -1152,8 +1277,8 @@
       "id": "escuela-0044",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.8636,
       "coordinates": [
         -59.452092560323,
         -34.459426109427
@@ -1171,8 +1296,8 @@
       "id": "escuela-0045",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.3191,
       "coordinates": [
         -57.56572377723,
         -37.980111161501
@@ -1190,8 +1315,8 @@
       "id": "escuela-0046",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.3191,
       "coordinates": [
         -59.842552840841,
         -36.765672034037
@@ -1209,8 +1334,8 @@
       "id": "escuela-0047",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.3191,
       "coordinates": [
         -58.488010749122,
         -37.145327717503
@@ -1228,8 +1353,8 @@
       "id": "escuela-0048",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.3191,
       "coordinates": [
         -58.389337563688,
         -34.705167860568
@@ -1247,8 +1372,8 @@
       "id": "escuela-0049",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.3191,
       "coordinates": [
         -62.738210496317,
         -35.985033620005
@@ -1266,8 +1391,8 @@
       "id": "escuela-0050",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.3191,
       "coordinates": [
         -58.184429113413,
         -34.811747525128
@@ -1285,8 +1410,8 @@
       "id": "escuela-0051",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.3191,
       "coordinates": [
         -58.201056060263,
         -34.7584349606
@@ -1304,27 +1429,8 @@
       "id": "escuela-0052",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
-      "coordinates": [
-        -58.269727819912,
-        -34.74873759291
-      ],
-      "answers": {
-        "q_2_1_1": "Sí, pero comparte la tarea con otras funciones (por ejemplo, docente de taller, jefe/a de taller, directivo/a).",
-        "q_2_2_3": "Sí, se remite y aprueba formalmente todos los años",
-        "q_2_2_5": "Modalidad mixta (se realizan ambos formatos sin que uno predomine)",
-        "q_3_4": "Sí, contamos con un registro digital que se actualiza anualmente",
-        "q_4_2": "Es suficiente para cubrir las Prácticas Profesionalizantes (PP) de la matrícula de la escuela",
-        "q_5_6": "Parcialmente; se prioriza la experiencia laboral general por sobre la especificidad del título"
-      }
-    },
-    {
-      "id": "escuela-0053",
-      "jurisdictionId": "06",
-      "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.8636,
       "coordinates": [
         -62.648608229586,
         -39.375748747107
@@ -1339,11 +1445,11 @@
       }
     },
     {
-      "id": "escuela-0054",
+      "id": "escuela-0053",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.3191,
       "coordinates": [
         -57.879783077827,
         -34.86683387918
@@ -1358,11 +1464,11 @@
       }
     },
     {
-      "id": "escuela-0055",
+      "id": "escuela-0054",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.3191,
       "coordinates": [
         -58.837671903735,
         -34.495641247945
@@ -1377,11 +1483,11 @@
       }
     },
     {
-      "id": "escuela-0056",
+      "id": "escuela-0055",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.3191,
       "coordinates": [
         -60.875767329998,
         -35.445036788317
@@ -1396,11 +1502,11 @@
       }
     },
     {
-      "id": "escuela-0057",
+      "id": "escuela-0056",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.8636,
       "coordinates": [
         -61.916418482227,
         -38.762773361301
@@ -1415,11 +1521,11 @@
       }
     },
     {
-      "id": "escuela-0058",
+      "id": "escuela-0057",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.8636,
       "coordinates": [
         -62.976634518242,
         -40.788307346545
@@ -1434,11 +1540,11 @@
       }
     },
     {
-      "id": "escuela-0059",
+      "id": "escuela-0058",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.3191,
       "coordinates": [
         -58.534480437922,
         -34.729299619781
@@ -1453,11 +1559,11 @@
       }
     },
     {
-      "id": "escuela-0060",
+      "id": "escuela-0059",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.3191,
       "coordinates": [
         -58.5604888243,
         -34.502935347788
@@ -1472,11 +1578,11 @@
       }
     },
     {
-      "id": "escuela-0061",
+      "id": "escuela-0060",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.3333,
       "coordinates": [
         -62.103091164633,
         -38.885430315554
@@ -1491,11 +1597,11 @@
       }
     },
     {
-      "id": "escuela-0062",
+      "id": "escuela-0061",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.8636,
       "coordinates": [
         -58.049976085128,
         -35.325708475466
@@ -1510,11 +1616,11 @@
       }
     },
     {
-      "id": "escuela-0063",
+      "id": "escuela-0062",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 3.7,
       "coordinates": [
         -58.465235164771,
         -34.84041020027
@@ -1529,11 +1635,11 @@
       }
     },
     {
-      "id": "escuela-0064",
+      "id": "escuela-0063",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.8636,
       "coordinates": [
         -61.941047921025,
         -38.090652634811
@@ -1548,11 +1654,11 @@
       }
     },
     {
-      "id": "escuela-0065",
+      "id": "escuela-0064",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.8636,
       "coordinates": [
         -61.662835900256,
         -36.93898064544
@@ -1567,11 +1673,11 @@
       }
     },
     {
-      "id": "escuela-0066",
+      "id": "escuela-0065",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.8636,
       "coordinates": [
         -59.653811480016,
         -37.159169461801
@@ -1586,11 +1692,11 @@
       }
     },
     {
-      "id": "escuela-0067",
+      "id": "escuela-0066",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.3191,
       "coordinates": [
         -58.177888358561,
         -34.790296118671
@@ -1605,11 +1711,11 @@
       }
     },
     {
-      "id": "escuela-0068",
+      "id": "escuela-0067",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.8636,
       "coordinates": [
         -59.867514705039,
         -36.779471941976
@@ -1624,11 +1730,11 @@
       }
     },
     {
-      "id": "escuela-0069",
+      "id": "escuela-0068",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.8636,
       "coordinates": [
         -60.882135822998,
         -38.620734573319
@@ -1643,11 +1749,11 @@
       }
     },
     {
-      "id": "escuela-0070",
+      "id": "escuela-0069",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.8636,
       "coordinates": [
         -58.939016931386,
         -35.964572336544
@@ -1662,11 +1768,11 @@
       }
     },
     {
-      "id": "escuela-0071",
+      "id": "escuela-0070",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 3.7,
       "coordinates": [
         -58.67398317928,
         -34.513974123007
@@ -1681,11 +1787,11 @@
       }
     },
     {
-      "id": "escuela-0072",
+      "id": "escuela-0071",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.3191,
       "coordinates": [
         -58.756026548832,
         -34.466683190562
@@ -1700,30 +1806,11 @@
       }
     },
     {
-      "id": "escuela-0073",
+      "id": "escuela-0072",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
-      "coordinates": [
-        -58.798161658234,
-        -34.44789875952
-      ],
-      "answers": {
-        "q_2_1_1": "Sí, pero comparte la tarea con otras funciones (por ejemplo, docente de taller, jefe/a de taller, directivo/a).",
-        "q_2_2_3": "Sí, se remite y aprueba formalmente todos los años",
-        "q_2_2_5": "Modalidad mixta (se realizan ambos formatos sin que uno predomine)",
-        "q_3_4": "No contamos con un registro de oferentes",
-        "q_4_2": "Es insuficiente para cubrir las necesidades de Prácticas Profesionalizantes (PP)",
-        "q_5_6": "Sí, mediante un análisis de coherencia entre las actividades realizadas en la práctica y la planificación inicial del proyecto"
-      }
-    },
-    {
-      "id": "escuela-0074",
-      "jurisdictionId": "06",
-      "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.5,
       "coordinates": null,
       "answers": {
         "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
@@ -1735,11 +1822,11 @@
       }
     },
     {
-      "id": "escuela-0075",
+      "id": "escuela-0073",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.3191,
       "coordinates": [
         -58.354406600884,
         -34.643039417235
@@ -1754,11 +1841,11 @@
       }
     },
     {
-      "id": "escuela-0076",
+      "id": "escuela-0074",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.3191,
       "coordinates": [
         -62.969373284879,
         -40.796884578416
@@ -1773,11 +1860,11 @@
       }
     },
     {
-      "id": "escuela-0077",
+      "id": "escuela-0075",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.3191,
       "coordinates": null,
       "answers": {
         "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
@@ -1789,11 +1876,11 @@
       }
     },
     {
-      "id": "escuela-0078",
+      "id": "escuela-0076",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.8636,
       "coordinates": [
         -60.016149400774,
         -36.023963691271
@@ -1808,11 +1895,11 @@
       }
     },
     {
-      "id": "escuela-0079",
+      "id": "escuela-0077",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.8636,
       "coordinates": [
         -58.340428470856,
         -34.880353047704
@@ -1827,11 +1914,11 @@
       }
     },
     {
-      "id": "escuela-0080",
+      "id": "escuela-0078",
       "jurisdictionId": "10",
       "jurisdiction": "Catamarca",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.2222,
       "coordinates": [
         -65.764590869039,
         -28.46668531006
@@ -1846,11 +1933,11 @@
       }
     },
     {
-      "id": "escuela-0081",
+      "id": "escuela-0079",
       "jurisdictionId": "10",
       "jurisdiction": "Catamarca",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.2222,
       "coordinates": [
         -65.774591286363,
         -28.469447002163
@@ -1865,11 +1952,11 @@
       }
     },
     {
-      "id": "escuela-0082",
+      "id": "escuela-0080",
       "jurisdictionId": "10",
       "jurisdiction": "Catamarca",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.2222,
       "coordinates": [
         -65.769964257443,
         -28.460463524538
@@ -1884,11 +1971,11 @@
       }
     },
     {
-      "id": "escuela-0083",
+      "id": "escuela-0081",
       "jurisdictionId": "10",
       "jurisdiction": "Catamarca",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.0,
       "coordinates": [
         -67.567568150086,
         -28.066913912463
@@ -1903,11 +1990,11 @@
       }
     },
     {
-      "id": "escuela-0084",
+      "id": "escuela-0082",
       "jurisdictionId": "10",
       "jurisdiction": "Catamarca",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.2222,
       "coordinates": [
         -66.052427106815,
         -26.702483980409
@@ -1922,11 +2009,11 @@
       }
     },
     {
-      "id": "escuela-0085",
+      "id": "escuela-0083",
       "jurisdictionId": "10",
       "jurisdiction": "Catamarca",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.0,
       "coordinates": [
         -65.6583761,
         -28.15428059
@@ -1941,11 +2028,11 @@
       }
     },
     {
-      "id": "escuela-0086",
+      "id": "escuela-0084",
       "jurisdictionId": "10",
       "jurisdiction": "Catamarca",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.2222,
       "coordinates": [
         -65.05771,
         -29.268390000003
@@ -1960,11 +2047,11 @@
       }
     },
     {
-      "id": "escuela-0087",
+      "id": "escuela-0085",
       "jurisdictionId": "10",
       "jurisdiction": "Catamarca",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.0,
       "coordinates": [
         -65.828525393175,
         -28.548596220019
@@ -1979,11 +2066,11 @@
       }
     },
     {
-      "id": "escuela-0088",
+      "id": "escuela-0086",
       "jurisdictionId": "10",
       "jurisdiction": "Catamarca",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.0,
       "coordinates": [
         -66.336294714,
         -27.6166504818
@@ -1998,11 +2085,11 @@
       }
     },
     {
-      "id": "escuela-0089",
+      "id": "escuela-0087",
       "jurisdictionId": "10",
       "jurisdiction": "Catamarca",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.0,
       "coordinates": [
         -65.48981921,
         -28.16755342
@@ -2017,11 +2104,11 @@
       }
     },
     {
-      "id": "escuela-0090",
+      "id": "escuela-0088",
       "jurisdictionId": "10",
       "jurisdiction": "Catamarca",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.2222,
       "coordinates": [
         -66.06925,
         -26.802270000005
@@ -2036,11 +2123,11 @@
       }
     },
     {
-      "id": "escuela-0091",
+      "id": "escuela-0089",
       "jurisdictionId": "10",
       "jurisdiction": "Catamarca",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.0,
       "coordinates": [
         -65.782972633569,
         -28.49308955
@@ -2055,11 +2142,11 @@
       }
     },
     {
-      "id": "escuela-0092",
+      "id": "escuela-0090",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.7692,
       "coordinates": [
         -64.090804778812,
         -31.647693026949
@@ -2074,11 +2161,30 @@
       }
     },
     {
-      "id": "escuela-0093",
+      "id": "escuela-0091",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.0741,
+      "coordinates": [
+        -64.1401703,
+        -31.1358696
+      ],
+      "answers": {
+        "q_2_1_1": "No contamos con personal específico; la tarea se distribuye informalmente.",
+        "q_2_2_3": "No se remite a nivel jurisdiccional; queda aprobado a nivel interno o institucional",
+        "q_2_2_5": "Modalidad mixta (se realizan ambos formatos sin que uno predomine)",
+        "q_3_4": "Sí, contamos con un registro digital que se actualiza anualmente",
+        "q_4_2": "Es suficiente para cubrir las Prácticas Profesionalizantes (PP) de la matrícula de la escuela",
+        "q_5_6": "Sí, mediante un análisis de coherencia entre las actividades realizadas en la práctica y la planificación inicial del proyecto"
+      }
+    },
+    {
+      "id": "escuela-0092",
+      "jurisdictionId": "14",
+      "jurisdiction": "Córdoba",
+      "caseType": "titular",
+      "weight": 5.0741,
       "coordinates": [
         -64.068160000092,
         -30.702459996076
@@ -2093,11 +2199,11 @@
       }
     },
     {
-      "id": "escuela-0094",
+      "id": "escuela-0093",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.7692,
       "coordinates": [
         -62.7287890768,
         -33.5883159603
@@ -2112,11 +2218,11 @@
       }
     },
     {
-      "id": "escuela-0095",
+      "id": "escuela-0094",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.0741,
       "coordinates": [
         -64.248327735281,
         -31.415652444901
@@ -2131,11 +2237,11 @@
       }
     },
     {
-      "id": "escuela-0096",
+      "id": "escuela-0095",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.7692,
       "coordinates": [
         -62.8954394131,
         -31.737163182
@@ -2150,11 +2256,11 @@
       }
     },
     {
-      "id": "escuela-0097",
+      "id": "escuela-0096",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.0741,
       "coordinates": [
         -64.272166628001,
         -33.078688767881
@@ -2169,11 +2275,11 @@
       }
     },
     {
-      "id": "escuela-0098",
+      "id": "escuela-0097",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.7692,
       "coordinates": [
         -64.591621000004,
         -34.836941000493
@@ -2188,11 +2294,11 @@
       }
     },
     {
-      "id": "escuela-0099",
+      "id": "escuela-0098",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.0741,
       "coordinates": [
         -62.666110000413,
         -31.003001999906
@@ -2207,11 +2313,11 @@
       }
     },
     {
-      "id": "escuela-0100",
+      "id": "escuela-0099",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.7692,
       "coordinates": [
         -62.854117502783,
         -33.147202272373
@@ -2226,11 +2332,11 @@
       }
     },
     {
-      "id": "escuela-0101",
+      "id": "escuela-0100",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.7692,
       "coordinates": [
         -63.677906429579,
         -31.910529215859
@@ -2245,11 +2351,11 @@
       }
     },
     {
-      "id": "escuela-0102",
+      "id": "escuela-0101",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.0741,
       "coordinates": [
         -64.437039999717,
         -31.646030000087
@@ -2264,11 +2370,11 @@
       }
     },
     {
-      "id": "escuela-0103",
+      "id": "escuela-0102",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.0741,
       "coordinates": [
         -64.353719231432,
         -31.460204283631
@@ -2283,11 +2389,11 @@
       }
     },
     {
-      "id": "escuela-0104",
+      "id": "escuela-0103",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 6.4,
       "coordinates": [
         -64.490966508644,
         -31.429700567916
@@ -2302,11 +2408,11 @@
       }
     },
     {
-      "id": "escuela-0105",
+      "id": "escuela-0104",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.0741,
       "coordinates": [
         -63.259006648023,
         -32.411334054679
@@ -2321,11 +2427,11 @@
       }
     },
     {
-      "id": "escuela-0106",
+      "id": "escuela-0105",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.0741,
       "coordinates": [
         -64.236740362558,
         -31.433421265537
@@ -2340,11 +2446,11 @@
       }
     },
     {
-      "id": "escuela-0107",
+      "id": "escuela-0106",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.0741,
       "coordinates": [
         -63.031001152458,
         -32.102170085424
@@ -2359,11 +2465,11 @@
       }
     },
     {
-      "id": "escuela-0108",
+      "id": "escuela-0107",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.7692,
       "coordinates": [
         -63.310805007764,
         -33.455813822522
@@ -2378,11 +2484,11 @@
       }
     },
     {
-      "id": "escuela-0109",
+      "id": "escuela-0108",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.7692,
       "coordinates": [
         -62.1087018,
         -31.359206
@@ -2397,11 +2503,11 @@
       }
     },
     {
-      "id": "escuela-0110",
+      "id": "escuela-0109",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.7692,
       "coordinates": [
         -62.006469156808,
         -30.73157833116
@@ -2416,11 +2522,11 @@
       }
     },
     {
-      "id": "escuela-0111",
+      "id": "escuela-0110",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.0741,
       "coordinates": [
         -64.4025908607,
         -31.7254890009
@@ -2435,11 +2541,11 @@
       }
     },
     {
-      "id": "escuela-0112",
+      "id": "escuela-0111",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 6.4,
       "coordinates": [
         -64.127446050886,
         -32.176028750273
@@ -2454,11 +2560,11 @@
       }
     },
     {
-      "id": "escuela-0113",
+      "id": "escuela-0112",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.0,
       "coordinates": [
         -61.957337999909,
         -30.839949995991
@@ -2473,11 +2579,11 @@
       }
     },
     {
-      "id": "escuela-0114",
+      "id": "escuela-0113",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.0741,
       "coordinates": [
         -62.29906641997,
         -32.658106800804
@@ -2492,11 +2598,11 @@
       }
     },
     {
-      "id": "escuela-0115",
+      "id": "escuela-0114",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.0741,
       "coordinates": [
         -63.205217716023,
         -32.422798591859
@@ -2511,11 +2617,11 @@
       }
     },
     {
-      "id": "escuela-0116",
+      "id": "escuela-0115",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.7692,
       "coordinates": [
         -63.726812,
         -29.907307
@@ -2530,11 +2636,11 @@
       }
     },
     {
-      "id": "escuela-0117",
+      "id": "escuela-0116",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.0741,
       "coordinates": [
         -64.34213829138,
         -33.122705691529
@@ -2549,11 +2655,11 @@
       }
     },
     {
-      "id": "escuela-0118",
+      "id": "escuela-0117",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.0741,
       "coordinates": [
         -64.278668999944,
         -31.442446000236
@@ -2568,11 +2674,11 @@
       }
     },
     {
-      "id": "escuela-0119",
+      "id": "escuela-0118",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.0741,
       "coordinates": [
         -64.335905508046,
         -31.337105824257
@@ -2587,11 +2693,11 @@
       }
     },
     {
-      "id": "escuela-0120",
+      "id": "escuela-0119",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 6.4,
       "coordinates": [
         -64.257520754662,
         -31.464501758421
@@ -2606,11 +2712,11 @@
       }
     },
     {
-      "id": "escuela-0121",
+      "id": "escuela-0120",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.0,
       "coordinates": [
         -64.335307461782,
         -33.136849816076
@@ -2625,11 +2731,11 @@
       }
     },
     {
-      "id": "escuela-0122",
+      "id": "escuela-0121",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.7692,
       "coordinates": [
         -64.393242158028,
         -32.223147957224
@@ -2644,11 +2750,11 @@
       }
     },
     {
-      "id": "escuela-0123",
+      "id": "escuela-0122",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.0741,
       "coordinates": [
         -64.226854999887,
         -31.343854000087
@@ -2663,11 +2769,11 @@
       }
     },
     {
-      "id": "escuela-0124",
+      "id": "escuela-0123",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.0,
       "coordinates": [
         -64.430299682355,
         -31.669733064851
@@ -2682,11 +2788,11 @@
       }
     },
     {
-      "id": "escuela-0125",
+      "id": "escuela-0124",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.7692,
       "coordinates": [
         -65.446919707518,
         -31.413925025145
@@ -2701,11 +2807,11 @@
       }
     },
     {
-      "id": "escuela-0126",
+      "id": "escuela-0125",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.0741,
       "coordinates": [
         -64.338044000073,
         -31.347319999768
@@ -2720,11 +2826,11 @@
       }
     },
     {
-      "id": "escuela-0127",
+      "id": "escuela-0126",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.0741,
       "coordinates": [
         -64.175255694915,
         -31.295667073108
@@ -2739,11 +2845,11 @@
       }
     },
     {
-      "id": "escuela-0128",
+      "id": "escuela-0127",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.0741,
       "coordinates": [
         -64.402832148099,
         -31.557176580039
@@ -2758,11 +2864,11 @@
       }
     },
     {
-      "id": "escuela-0129",
+      "id": "escuela-0128",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 6.4,
       "coordinates": [
         -64.056555999505,
         -31.397620000923
@@ -2777,11 +2883,11 @@
       }
     },
     {
-      "id": "escuela-0130",
+      "id": "escuela-0129",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.0741,
       "coordinates": [
         -63.505899,
         -33.035548
@@ -2796,11 +2902,11 @@
       }
     },
     {
-      "id": "escuela-0131",
+      "id": "escuela-0130",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.0741,
       "coordinates": [
         -64.089656999474,
         -30.997221167125
@@ -2815,11 +2921,11 @@
       }
     },
     {
-      "id": "escuela-0132",
+      "id": "escuela-0131",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.0,
       "coordinates": [
         -64.508722348931,
         -30.985477830167
@@ -2834,11 +2940,11 @@
       }
     },
     {
-      "id": "escuela-0133",
+      "id": "escuela-0132",
       "jurisdictionId": "18",
       "jurisdiction": "Corrientes",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.0,
       "coordinates": [
         -56.023536759749,
         -28.049720940394
@@ -2853,11 +2959,11 @@
       }
     },
     {
-      "id": "escuela-0134",
+      "id": "escuela-0133",
       "jurisdictionId": "18",
       "jurisdiction": "Corrientes",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.0,
       "coordinates": [
         -58.62444444211,
         -28.260489923758
@@ -2872,11 +2978,11 @@
       }
     },
     {
-      "id": "escuela-0135",
+      "id": "escuela-0134",
       "jurisdictionId": "18",
       "jurisdiction": "Corrientes",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.25,
       "coordinates": [
         -57.092981624298,
         -29.705265386373
@@ -2891,11 +2997,11 @@
       }
     },
     {
-      "id": "escuela-0136",
+      "id": "escuela-0135",
       "jurisdictionId": "18",
       "jurisdiction": "Corrientes",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.0,
       "coordinates": [
         -59.1648331147,
         -29.2371020934
@@ -2910,11 +3016,11 @@
       }
     },
     {
-      "id": "escuela-0137",
+      "id": "escuela-0136",
       "jurisdictionId": "18",
       "jurisdiction": "Corrientes",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.25,
       "coordinates": [
         -58.5308752244,
         -27.502956482
@@ -2929,11 +3035,11 @@
       }
     },
     {
-      "id": "escuela-0138",
+      "id": "escuela-0137",
       "jurisdictionId": "18",
       "jurisdiction": "Corrientes",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.25,
       "coordinates": [
         -55.82730507,
         -27.91681364
@@ -2948,11 +3054,11 @@
       }
     },
     {
-      "id": "escuela-0139",
+      "id": "escuela-0138",
       "jurisdictionId": "18",
       "jurisdiction": "Corrientes",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.0,
       "coordinates": [
         -57.98344137,
         -30.47490444
@@ -2967,11 +3073,11 @@
       }
     },
     {
-      "id": "escuela-0140",
+      "id": "escuela-0139",
       "jurisdictionId": "18",
       "jurisdiction": "Corrientes",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.25,
       "coordinates": [
         -58.7849446,
         -27.50444362
@@ -2986,11 +3092,11 @@
       }
     },
     {
-      "id": "escuela-0141",
+      "id": "escuela-0140",
       "jurisdictionId": "18",
       "jurisdiction": "Corrientes",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 11.0,
       "coordinates": [
         -57.337218385916,
         -27.42937372795
@@ -3005,11 +3111,11 @@
       }
     },
     {
-      "id": "escuela-0142",
+      "id": "escuela-0141",
       "jurisdictionId": "18",
       "jurisdiction": "Corrientes",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.0,
       "coordinates": [
         -57.337218385916,
         -27.42937372795
@@ -3024,11 +3130,11 @@
       }
     },
     {
-      "id": "escuela-0143",
+      "id": "escuela-0142",
       "jurisdictionId": "18",
       "jurisdiction": "Corrientes",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.0,
       "coordinates": [
         -58.31399984387,
         -28.371383843914
@@ -3043,11 +3149,11 @@
       }
     },
     {
-      "id": "escuela-0144",
+      "id": "escuela-0143",
       "jurisdictionId": "22",
       "jurisdiction": "Chaco",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.0,
       "coordinates": [
         -60.433470617896,
         -26.806181974919
@@ -3062,11 +3168,11 @@
       }
     },
     {
-      "id": "escuela-0145",
+      "id": "escuela-0144",
       "jurisdictionId": "22",
       "jurisdiction": "Chaco",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.5556,
       "coordinates": [
         -59.33697114458,
         -26.541695595942
@@ -3081,30 +3187,11 @@
       }
     },
     {
-      "id": "escuela-0146",
+      "id": "escuela-0145",
       "jurisdictionId": "22",
       "jurisdiction": "Chaco",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
-      "coordinates": [
-        -59.373421900818,
-        -26.454729048914
-      ],
-      "answers": {
-        "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
-        "q_2_2_3": "Se remite para notificación, pero no requiere aprobación explícita para iniciar",
-        "q_2_2_5": "Modalidad mixta (se realizan ambos formatos sin que uno predomine)",
-        "q_3_4": "Sí, contamos con un registro en fichas (soporte papel)",
-        "q_4_2": "Es insuficiente para cubrir las necesidades de Prácticas Profesionalizantes (PP)",
-        "q_5_6": "Sí, mediante un análisis de coherencia entre las actividades realizadas en la práctica y la planificación inicial del proyecto"
-      }
-    },
-    {
-      "id": "escuela-0147",
-      "jurisdictionId": "22",
-      "jurisdiction": "Chaco",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.5,
       "coordinates": [
         -60.903837815227,
         -27.686891575666
@@ -3119,11 +3206,11 @@
       }
     },
     {
-      "id": "escuela-0148",
+      "id": "escuela-0146",
       "jurisdictionId": "22",
       "jurisdiction": "Chaco",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.0,
       "coordinates": [
         -58.978714443486,
         -27.457512814231
@@ -3138,11 +3225,11 @@
       }
     },
     {
-      "id": "escuela-0149",
+      "id": "escuela-0147",
       "jurisdictionId": "22",
       "jurisdiction": "Chaco",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.0,
       "coordinates": [
         -60.714126058168,
         -27.566180850732
@@ -3157,11 +3244,11 @@
       }
     },
     {
-      "id": "escuela-0150",
+      "id": "escuela-0148",
       "jurisdictionId": "22",
       "jurisdiction": "Chaco",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.5556,
       "coordinates": [
         -59.027111078108,
         -27.426268440754
@@ -3176,11 +3263,11 @@
       }
     },
     {
-      "id": "escuela-0151",
+      "id": "escuela-0149",
       "jurisdictionId": "22",
       "jurisdiction": "Chaco",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.5556,
       "coordinates": [
         -61.093194833822,
         -27.092528352296
@@ -3195,11 +3282,11 @@
       }
     },
     {
-      "id": "escuela-0152",
+      "id": "escuela-0150",
       "jurisdictionId": "22",
       "jurisdiction": "Chaco",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.5,
       "coordinates": [
         -61.173123262534,
         -26.505117662015
@@ -3214,11 +3301,11 @@
       }
     },
     {
-      "id": "escuela-0153",
+      "id": "escuela-0151",
       "jurisdictionId": "22",
       "jurisdiction": "Chaco",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.5556,
       "coordinates": [
         -61.187703756434,
         -27.208994233802
@@ -3233,11 +3320,11 @@
       }
     },
     {
-      "id": "escuela-0154",
+      "id": "escuela-0152",
       "jurisdictionId": "22",
       "jurisdiction": "Chaco",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.5556,
       "coordinates": [
         -60.429717957811,
         -26.3421274049
@@ -3252,11 +3339,11 @@
       }
     },
     {
-      "id": "escuela-0155",
+      "id": "escuela-0153",
       "jurisdictionId": "22",
       "jurisdiction": "Chaco",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.5556,
       "coordinates": [
         -61.137352930744,
         -27.836082503872
@@ -3271,11 +3358,11 @@
       }
     },
     {
-      "id": "escuela-0156",
+      "id": "escuela-0154",
       "jurisdictionId": "22",
       "jurisdiction": "Chaco",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.5556,
       "coordinates": [
         -59.84760170402,
         -26.993512616833
@@ -3290,11 +3377,11 @@
       }
     },
     {
-      "id": "escuela-0157",
+      "id": "escuela-0155",
       "jurisdictionId": "26",
       "jurisdiction": "Chubut",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 3.0,
       "coordinates": [
         -71.525469844132,
         -43.118814330501
@@ -3309,11 +3396,11 @@
       }
     },
     {
-      "id": "escuela-0158",
+      "id": "escuela-0156",
       "jurisdictionId": "26",
       "jurisdiction": "Chubut",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.6667,
       "coordinates": [
         -67.478758358111,
         -45.863693893015
@@ -3328,11 +3415,11 @@
       }
     },
     {
-      "id": "escuela-0159",
+      "id": "escuela-0157",
       "jurisdictionId": "26",
       "jurisdiction": "Chubut",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.6667,
       "coordinates": [
         -65.095438679817,
         -43.30351056664
@@ -3347,11 +3434,11 @@
       }
     },
     {
-      "id": "escuela-0160",
+      "id": "escuela-0158",
       "jurisdictionId": "26",
       "jurisdiction": "Chubut",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 3.0,
       "coordinates": [
         -70.823047015105,
         -45.043181003195
@@ -3366,11 +3453,11 @@
       }
     },
     {
-      "id": "escuela-0161",
+      "id": "escuela-0159",
       "jurisdictionId": "26",
       "jurisdiction": "Chubut",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 3.0,
       "coordinates": [
         -65.709802808355,
         -44.796842582341
@@ -3385,30 +3472,30 @@
       }
     },
     {
-      "id": "escuela-0162",
+      "id": "escuela-0160",
       "jurisdictionId": "26",
       "jurisdiction": "Chubut",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.6667,
       "coordinates": [
         -67.423474224168,
         -45.790577328065
       ],
       "answers": {
         "q_2_1_1": "Sí, pero comparte la tarea con otras funciones (por ejemplo, docente de taller, jefe/a de taller, directivo/a).",
-        "q_2_2_3": "Se remite para notificación, pero no requiere aprobación explícita para iniciar",
+        "q_2_2_3": "No se remite a nivel jurisdiccional; queda aprobado a nivel interno o institucional",
         "q_2_2_5": "Predominantemente \"externas\"",
-        "q_3_4": "Sí, contamos con un registro digital que se actualiza anualmente",
+        "q_3_4": "Sí, contamos con un registro en fichas (soporte papel)",
         "q_4_2": "Es insuficiente para cubrir las necesidades de Prácticas Profesionalizantes (PP)",
         "q_5_6": "Parcialmente; se prioriza la experiencia laboral general por sobre la especificidad del título"
       }
     },
     {
-      "id": "escuela-0163",
+      "id": "escuela-0161",
       "jurisdictionId": "26",
       "jurisdiction": "Chubut",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "reemplazo",
+      "weight": 1.0,
       "coordinates": [
         -69.075025730072,
         -45.60578703529
@@ -3423,11 +3510,11 @@
       }
     },
     {
-      "id": "escuela-0164",
+      "id": "escuela-0162",
       "jurisdictionId": "26",
       "jurisdiction": "Chubut",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.25,
       "coordinates": [
         -67.463612793825,
         -45.807798095697
@@ -3442,11 +3529,11 @@
       }
     },
     {
-      "id": "escuela-0165",
+      "id": "escuela-0163",
       "jurisdictionId": "26",
       "jurisdiction": "Chubut",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.25,
       "coordinates": [
         -65.024381106225,
         -42.7789727384
@@ -3461,11 +3548,11 @@
       }
     },
     {
-      "id": "escuela-0166",
+      "id": "escuela-0164",
       "jurisdictionId": "26",
       "jurisdiction": "Chubut",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.25,
       "coordinates": null,
       "answers": {
         "q_2_1_1": "Sí, pero comparte la tarea con otras funciones (por ejemplo, docente de taller, jefe/a de taller, directivo/a).",
@@ -3477,11 +3564,11 @@
       }
     },
     {
-      "id": "escuela-0167",
+      "id": "escuela-0165",
       "jurisdictionId": "26",
       "jurisdiction": "Chubut",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.6667,
       "coordinates": [
         -65.044239010716,
         -42.772295681536
@@ -3496,11 +3583,11 @@
       }
     },
     {
-      "id": "escuela-0168",
+      "id": "escuela-0166",
       "jurisdictionId": "26",
       "jurisdiction": "Chubut",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.25,
       "coordinates": [
         -67.47620657953,
         -45.839191354885
@@ -3515,11 +3602,11 @@
       }
     },
     {
-      "id": "escuela-0169",
+      "id": "escuela-0167",
       "jurisdictionId": "26",
       "jurisdiction": "Chubut",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.6667,
       "coordinates": [
         -65.701287624254,
         -43.312331826002
@@ -3534,11 +3621,11 @@
       }
     },
     {
-      "id": "escuela-0170",
+      "id": "escuela-0168",
       "jurisdictionId": "26",
       "jurisdiction": "Chubut",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.0,
       "coordinates": [
         -71.461443684913,
         -42.488422317033
@@ -3553,30 +3640,11 @@
       }
     },
     {
-      "id": "escuela-0171",
-      "jurisdictionId": "26",
-      "jurisdiction": "Chubut",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
-      "coordinates": [
-        -71.521514483544,
-        -42.060906925146
-      ],
-      "answers": {
-        "q_2_1_1": "No contamos con personal específico; la tarea se distribuye informalmente.",
-        "q_2_2_3": "Sí, se remite y aprueba formalmente todos los años",
-        "q_2_2_5": "Modalidad mixta (se realizan ambos formatos sin que uno predomine)",
-        "q_3_4": "No contamos con un registro de oferentes",
-        "q_4_2": "Es insuficiente para cubrir las necesidades de Prácticas Profesionalizantes (PP)",
-        "q_5_6": "Parcialmente; se prioriza la experiencia laboral general por sobre la especificidad del título"
-      }
-    },
-    {
-      "id": "escuela-0172",
+      "id": "escuela-0169",
       "jurisdictionId": "30",
       "jurisdiction": "Entre Ríos",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.625,
       "coordinates": [
         -58.888023145381,
         -32.689723301926
@@ -3591,11 +3659,11 @@
       }
     },
     {
-      "id": "escuela-0173",
+      "id": "escuela-0170",
       "jurisdictionId": "30",
       "jurisdiction": "Entre Ríos",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.4286,
       "coordinates": [
         -59.997462079494,
         -32.068268076928
@@ -3610,11 +3678,11 @@
       }
     },
     {
-      "id": "escuela-0174",
+      "id": "escuela-0171",
       "jurisdictionId": "30",
       "jurisdiction": "Entre Ríos",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 3.0,
       "coordinates": [
         -58.012932000262,
         -31.396967011121
@@ -3629,11 +3697,11 @@
       }
     },
     {
-      "id": "escuela-0175",
+      "id": "escuela-0172",
       "jurisdictionId": "30",
       "jurisdiction": "Entre Ríos",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.4286,
       "coordinates": [
         -58.21478350364,
         -32.341708073269
@@ -3648,11 +3716,11 @@
       }
     },
     {
-      "id": "escuela-0176",
+      "id": "escuela-0173",
       "jurisdictionId": "30",
       "jurisdiction": "Entre Ríos",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.4286,
       "coordinates": [
         -58.3969226172,
         -32.0489062792
@@ -3667,11 +3735,11 @@
       }
     },
     {
-      "id": "escuela-0177",
+      "id": "escuela-0174",
       "jurisdictionId": "30",
       "jurisdiction": "Entre Ríos",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.625,
       "coordinates": [
         -58.881554952201,
         -32.365602956873
@@ -3686,11 +3754,11 @@
       }
     },
     {
-      "id": "escuela-0178",
+      "id": "escuela-0175",
       "jurisdictionId": "30",
       "jurisdiction": "Entre Ríos",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.625,
       "coordinates": [
         -60.502304777131,
         -31.747386253484
@@ -3705,11 +3773,11 @@
       }
     },
     {
-      "id": "escuela-0179",
+      "id": "escuela-0176",
       "jurisdictionId": "30",
       "jurisdiction": "Entre Ríos",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.4286,
       "coordinates": null,
       "answers": {
         "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
@@ -3721,11 +3789,11 @@
       }
     },
     {
-      "id": "escuela-0180",
+      "id": "escuela-0177",
       "jurisdictionId": "30",
       "jurisdiction": "Entre Ríos",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 3.0,
       "coordinates": [
         -60.549209338576,
         -31.73695607242
@@ -3740,11 +3808,11 @@
       }
     },
     {
-      "id": "escuela-0181",
+      "id": "escuela-0178",
       "jurisdictionId": "30",
       "jurisdiction": "Entre Ríos",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.625,
       "coordinates": [
         -59.628736625321,
         -30.738325178402
@@ -3759,11 +3827,11 @@
       }
     },
     {
-      "id": "escuela-0182",
+      "id": "escuela-0179",
       "jurisdictionId": "30",
       "jurisdiction": "Entre Ríos",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.625,
       "coordinates": [
         -59.982858076467,
         -31.228378744787
@@ -3778,11 +3846,11 @@
       }
     },
     {
-      "id": "escuela-0183",
+      "id": "escuela-0180",
       "jurisdictionId": "30",
       "jurisdiction": "Entre Ríos",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.4286,
       "coordinates": [
         -58.766188140516,
         -30.429341533787
@@ -3797,11 +3865,11 @@
       }
     },
     {
-      "id": "escuela-0184",
+      "id": "escuela-0181",
       "jurisdictionId": "30",
       "jurisdiction": "Entre Ríos",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.625,
       "coordinates": [
         -58.998669517874,
         -33.030513566405
@@ -3816,11 +3884,11 @@
       }
     },
     {
-      "id": "escuela-0185",
+      "id": "escuela-0182",
       "jurisdictionId": "30",
       "jurisdiction": "Entre Ríos",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.625,
       "coordinates": [
         -58.426034089075,
         -32.109057764758
@@ -3835,11 +3903,11 @@
       }
     },
     {
-      "id": "escuela-0186",
+      "id": "escuela-0183",
       "jurisdictionId": "30",
       "jurisdiction": "Entre Ríos",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.4286,
       "coordinates": [
         -59.125114173643,
         -31.190302610878
@@ -3854,11 +3922,11 @@
       }
     },
     {
-      "id": "escuela-0187",
+      "id": "escuela-0184",
       "jurisdictionId": "34",
       "jurisdiction": "Formosa",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.3333,
       "coordinates": [
         -58.652005773599,
         -26.237337392135
@@ -3873,11 +3941,11 @@
       }
     },
     {
-      "id": "escuela-0188",
+      "id": "escuela-0185",
       "jurisdictionId": "34",
       "jurisdiction": "Formosa",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.0,
       "coordinates": [
         -58.194850353997,
         -26.177775421065
@@ -3892,11 +3960,11 @@
       }
     },
     {
-      "id": "escuela-0189",
+      "id": "escuela-0186",
       "jurisdictionId": "34",
       "jurisdiction": "Formosa",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.3333,
       "coordinates": [
         -58.224895417097,
         -25.147574637773
@@ -3911,11 +3979,11 @@
       }
     },
     {
-      "id": "escuela-0190",
+      "id": "escuela-0187",
       "jurisdictionId": "34",
       "jurisdiction": "Formosa",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.0,
       "coordinates": [
         -59.101006592545,
         -25.730550325717
@@ -3930,11 +3998,11 @@
       }
     },
     {
-      "id": "escuela-0191",
+      "id": "escuela-0188",
       "jurisdictionId": "34",
       "jurisdiction": "Formosa",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.3333,
       "coordinates": [
         -59.69248376,
         -25.3634919
@@ -3949,11 +4017,11 @@
       }
     },
     {
-      "id": "escuela-0192",
+      "id": "escuela-0189",
       "jurisdictionId": "34",
       "jurisdiction": "Formosa",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.0,
       "coordinates": [
         -58.18308005189,
         -26.187223241077
@@ -3968,11 +4036,11 @@
       }
     },
     {
-      "id": "escuela-0193",
+      "id": "escuela-0190",
       "jurisdictionId": "34",
       "jurisdiction": "Formosa",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.3333,
       "coordinates": [
         -58.51304337,
         -25.21397098
@@ -3987,11 +4055,11 @@
       }
     },
     {
-      "id": "escuela-0194",
+      "id": "escuela-0191",
       "jurisdictionId": "34",
       "jurisdiction": "Formosa",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.0,
       "coordinates": [
         -57.717730891354,
         -25.284171229989
@@ -4006,11 +4074,11 @@
       }
     },
     {
-      "id": "escuela-0195",
+      "id": "escuela-0192",
       "jurisdictionId": "38",
       "jurisdiction": "Jujuy",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.4,
       "coordinates": [
         -65.300470921939,
         -24.197626718568
@@ -4025,11 +4093,11 @@
       }
     },
     {
-      "id": "escuela-0196",
+      "id": "escuela-0193",
       "jurisdictionId": "38",
       "jurisdiction": "Jujuy",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.0,
       "coordinates": [
         -65.285669305768,
         -24.175333314367
@@ -4044,11 +4112,11 @@
       }
     },
     {
-      "id": "escuela-0197",
+      "id": "escuela-0194",
       "jurisdictionId": "38",
       "jurisdiction": "Jujuy",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.875,
       "coordinates": [
         -65.182651347485,
         -24.237497412679
@@ -4063,11 +4131,11 @@
       }
     },
     {
-      "id": "escuela-0198",
+      "id": "escuela-0195",
       "jurisdictionId": "38",
       "jurisdiction": "Jujuy",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.4,
       "coordinates": [
         -65.678538670431,
         -23.214281742862
@@ -4082,11 +4150,11 @@
       }
     },
     {
-      "id": "escuela-0199",
+      "id": "escuela-0196",
       "jurisdictionId": "38",
       "jurisdiction": "Jujuy",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.875,
       "coordinates": [
         -64.789555934848,
         -23.831312197674
@@ -4101,11 +4169,11 @@
       }
     },
     {
-      "id": "escuela-0200",
+      "id": "escuela-0197",
       "jurisdictionId": "38",
       "jurisdiction": "Jujuy",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.4,
       "coordinates": [
         -65.265068203178,
         -24.389339458167
@@ -4120,11 +4188,11 @@
       }
     },
     {
-      "id": "escuela-0201",
+      "id": "escuela-0198",
       "jurisdictionId": "38",
       "jurisdiction": "Jujuy",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.875,
       "coordinates": [
         -64.679939316113,
         -24.177717363217
@@ -4139,11 +4207,11 @@
       }
     },
     {
-      "id": "escuela-0202",
+      "id": "escuela-0199",
       "jurisdictionId": "38",
       "jurisdiction": "Jujuy",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.875,
       "coordinates": [
         -64.803035503636,
         -23.9430797625
@@ -4158,11 +4226,11 @@
       }
     },
     {
-      "id": "escuela-0203",
+      "id": "escuela-0200",
       "jurisdictionId": "38",
       "jurisdiction": "Jujuy",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.875,
       "coordinates": [
         -65.701212637373,
         -22.719472557915
@@ -4177,11 +4245,11 @@
       }
     },
     {
-      "id": "escuela-0204",
+      "id": "escuela-0201",
       "jurisdictionId": "42",
       "jurisdiction": "La Pampa",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.2,
       "coordinates": [
         -64.280512,
         -35.163361
@@ -4196,11 +4264,11 @@
       }
     },
     {
-      "id": "escuela-0205",
+      "id": "escuela-0202",
       "jurisdictionId": "42",
       "jurisdiction": "La Pampa",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.0,
       "coordinates": [
         -64.688685,
         -35.065377
@@ -4215,11 +4283,11 @@
       }
     },
     {
-      "id": "escuela-0206",
+      "id": "escuela-0203",
       "jurisdictionId": "42",
       "jurisdiction": "La Pampa",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.125,
       "coordinates": [
         -63.593361,
         -35.241478
@@ -4234,11 +4302,11 @@
       }
     },
     {
-      "id": "escuela-0207",
+      "id": "escuela-0204",
       "jurisdictionId": "42",
       "jurisdiction": "La Pampa",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.125,
       "coordinates": [
         -63.750006,
         -35.652232
@@ -4253,11 +4321,11 @@
       }
     },
     {
-      "id": "escuela-0208",
+      "id": "escuela-0205",
       "jurisdictionId": "42",
       "jurisdiction": "La Pampa",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.0,
       "coordinates": [
         -63.753861,
         -35.647841
@@ -4272,11 +4340,11 @@
       }
     },
     {
-      "id": "escuela-0209",
+      "id": "escuela-0206",
       "jurisdictionId": "42",
       "jurisdiction": "La Pampa",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.2,
       "coordinates": [
         -65.427157,
         -36.153452
@@ -4291,11 +4359,11 @@
       }
     },
     {
-      "id": "escuela-0210",
+      "id": "escuela-0207",
       "jurisdictionId": "42",
       "jurisdiction": "La Pampa",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.125,
       "coordinates": [
         -65.50872,
         -36.264178
@@ -4310,11 +4378,11 @@
       }
     },
     {
-      "id": "escuela-0211",
+      "id": "escuela-0208",
       "jurisdictionId": "42",
       "jurisdiction": "La Pampa",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.125,
       "coordinates": [
         -64.2822173,
         -36.624134
@@ -4329,11 +4397,11 @@
       }
     },
     {
-      "id": "escuela-0212",
+      "id": "escuela-0209",
       "jurisdictionId": "42",
       "jurisdiction": "La Pampa",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.2,
       "coordinates": [
         -64.252798,
         -36.573655
@@ -4348,11 +4416,11 @@
       }
     },
     {
-      "id": "escuela-0213",
+      "id": "escuela-0210",
       "jurisdictionId": "42",
       "jurisdiction": "La Pampa",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.125,
       "coordinates": [
         -64.597951,
         -37.382359
@@ -4367,11 +4435,11 @@
       }
     },
     {
-      "id": "escuela-0214",
+      "id": "escuela-0211",
       "jurisdictionId": "42",
       "jurisdiction": "La Pampa",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.2,
       "coordinates": [
         -67.721667,
         -37.768366
@@ -4386,11 +4454,11 @@
       }
     },
     {
-      "id": "escuela-0215",
+      "id": "escuela-0212",
       "jurisdictionId": "42",
       "jurisdiction": "La Pampa",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.2,
       "coordinates": [
         -63.544503,
         -37.64754
@@ -4405,11 +4473,11 @@
       }
     },
     {
-      "id": "escuela-0216",
+      "id": "escuela-0213",
       "jurisdictionId": "42",
       "jurisdiction": "La Pampa",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.125,
       "coordinates": [
         -63.663072,
         -37.132612
@@ -4424,11 +4492,11 @@
       }
     },
     {
-      "id": "escuela-0217",
+      "id": "escuela-0214",
       "jurisdictionId": "42",
       "jurisdiction": "La Pampa",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.125,
       "coordinates": [
         -63.427803,
         -38.088477
@@ -4443,11 +4511,11 @@
       }
     },
     {
-      "id": "escuela-0218",
+      "id": "escuela-0215",
       "jurisdictionId": "42",
       "jurisdiction": "La Pampa",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.125,
       "coordinates": [
         -64.263854,
         -35.913904
@@ -4462,11 +4530,11 @@
       }
     },
     {
-      "id": "escuela-0219",
+      "id": "escuela-0216",
       "jurisdictionId": "46",
       "jurisdiction": "La Rioja",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.6667,
       "coordinates": [
         -66.962633815077,
         -28.935499378083
@@ -4481,11 +4549,11 @@
       }
     },
     {
-      "id": "escuela-0220",
+      "id": "escuela-0217",
       "jurisdictionId": "46",
       "jurisdiction": "La Rioja",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.6667,
       "coordinates": [
         -66.793867647206,
         -28.539294027641
@@ -4500,11 +4568,11 @@
       }
     },
     {
-      "id": "escuela-0221",
+      "id": "escuela-0218",
       "jurisdictionId": "46",
       "jurisdiction": "La Rioja",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.6667,
       "coordinates": [
         -67.518308191055,
         -28.946814958426
@@ -4519,11 +4587,11 @@
       }
     },
     {
-      "id": "escuela-0222",
+      "id": "escuela-0219",
       "jurisdictionId": "46",
       "jurisdiction": "La Rioja",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.5,
       "coordinates": [
         -66.862134585226,
         -29.421655477426
@@ -4538,11 +4606,11 @@
       }
     },
     {
-      "id": "escuela-0223",
+      "id": "escuela-0220",
       "jurisdictionId": "46",
       "jurisdiction": "La Rioja",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.5,
       "coordinates": null,
       "answers": {
         "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
@@ -4554,11 +4622,11 @@
       }
     },
     {
-      "id": "escuela-0224",
+      "id": "escuela-0221",
       "jurisdictionId": "46",
       "jurisdiction": "La Rioja",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.6,
       "coordinates": [
         -67.50314705147,
         -29.164244577202
@@ -4573,11 +4641,11 @@
       }
     },
     {
-      "id": "escuela-0225",
+      "id": "escuela-0222",
       "jurisdictionId": "46",
       "jurisdiction": "La Rioja",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.5,
       "coordinates": [
         -67.513694181211,
         -29.164083220566
@@ -4592,11 +4660,11 @@
       }
     },
     {
-      "id": "escuela-0226",
+      "id": "escuela-0223",
       "jurisdictionId": "46",
       "jurisdiction": "La Rioja",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.6,
       "coordinates": [
         -67.504808517347,
         -29.29991717762
@@ -4611,11 +4679,11 @@
       }
     },
     {
-      "id": "escuela-0227",
+      "id": "escuela-0224",
       "jurisdictionId": "46",
       "jurisdiction": "La Rioja",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.6667,
       "coordinates": [
         -68.222832392027,
         -29.015574188033
@@ -4630,11 +4698,11 @@
       }
     },
     {
-      "id": "escuela-0228",
+      "id": "escuela-0225",
       "jurisdictionId": "46",
       "jurisdiction": "La Rioja",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.6667,
       "coordinates": [
         -66.31162,
         -30.361550000004
@@ -4649,11 +4717,11 @@
       }
     },
     {
-      "id": "escuela-0229",
+      "id": "escuela-0226",
       "jurisdictionId": "46",
       "jurisdiction": "La Rioja",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.6,
       "coordinates": [
         -66.585384780876,
         -31.261400629407
@@ -4668,11 +4736,11 @@
       }
     },
     {
-      "id": "escuela-0230",
+      "id": "escuela-0227",
       "jurisdictionId": "46",
       "jurisdiction": "La Rioja",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.6,
       "coordinates": [
         -66.93936677,
         -28.8443558
@@ -4687,11 +4755,11 @@
       }
     },
     {
-      "id": "escuela-0231",
+      "id": "escuela-0228",
       "jurisdictionId": "46",
       "jurisdiction": "La Rioja",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.6667,
       "coordinates": [
         -67.425606151672,
         -29.142795582589
@@ -4706,11 +4774,11 @@
       }
     },
     {
-      "id": "escuela-0232",
+      "id": "escuela-0229",
       "jurisdictionId": "46",
       "jurisdiction": "La Rioja",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.6,
       "coordinates": [
         -66.263152479602,
         -30.629518201515
@@ -4725,11 +4793,11 @@
       }
     },
     {
-      "id": "escuela-0233",
+      "id": "escuela-0230",
       "jurisdictionId": "50",
       "jurisdiction": "Mendoza",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.9,
       "coordinates": [
         -68.86266878465,
         -32.981138726293
@@ -4744,11 +4812,11 @@
       }
     },
     {
-      "id": "escuela-0234",
+      "id": "escuela-0231",
       "jurisdictionId": "50",
       "jurisdiction": "Mendoza",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.9,
       "coordinates": [
         -68.844760234172,
         -32.896580289704
@@ -4763,11 +4831,11 @@
       }
     },
     {
-      "id": "escuela-0235",
+      "id": "escuela-0232",
       "jurisdictionId": "50",
       "jurisdiction": "Mendoza",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.8333,
       "coordinates": [
         -67.797389715231,
         -34.817045772401
@@ -4782,11 +4850,11 @@
       }
     },
     {
-      "id": "escuela-0236",
+      "id": "escuela-0233",
       "jurisdictionId": "50",
       "jurisdiction": "Mendoza",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.9,
       "coordinates": [
         -67.924531688367,
         -34.831593297136
@@ -4801,11 +4869,11 @@
       }
     },
     {
-      "id": "escuela-0237",
+      "id": "escuela-0234",
       "jurisdictionId": "50",
       "jurisdiction": "Mendoza",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.9,
       "coordinates": [
         -68.794053912781,
         -32.974539860931
@@ -4820,11 +4888,11 @@
       }
     },
     {
-      "id": "escuela-0238",
+      "id": "escuela-0235",
       "jurisdictionId": "50",
       "jurisdiction": "Mendoza",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.9,
       "coordinates": [
         -68.766239267571,
         -33.034758476387
@@ -4839,11 +4907,11 @@
       }
     },
     {
-      "id": "escuela-0239",
+      "id": "escuela-0236",
       "jurisdictionId": "50",
       "jurisdiction": "Mendoza",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.9,
       "coordinates": [
         -67.694549214566,
         -34.974448331689
@@ -4858,11 +4926,11 @@
       }
     },
     {
-      "id": "escuela-0240",
+      "id": "escuela-0237",
       "jurisdictionId": "50",
       "jurisdiction": "Mendoza",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.8333,
       "coordinates": [
         -68.38796651,
         -32.9060255
@@ -4877,11 +4945,11 @@
       }
     },
     {
-      "id": "escuela-0241",
+      "id": "escuela-0238",
       "jurisdictionId": "50",
       "jurisdiction": "Mendoza",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.8333,
       "coordinates": [
         -67.153927129532,
         -33.402102966495
@@ -4896,11 +4964,30 @@
       }
     },
     {
-      "id": "escuela-0242",
+      "id": "escuela-0239",
       "jurisdictionId": "50",
       "jurisdiction": "Mendoza",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.8333,
+      "coordinates": [
+        -68.07634369,
+        -35.52812185
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, pero comparte la tarea con otras funciones (por ejemplo, docente de taller, jefe/a de taller, directivo/a).",
+        "q_2_2_3": "Sí, se remite y aprueba formalmente todos los años",
+        "q_2_2_5": "Predominantemente \"internas\"",
+        "q_3_4": "Sí, contamos con un registro en fichas (soporte papel)",
+        "q_4_2": "Es suficiente para cubrir las Prácticas Profesionalizantes (PP) de la matrícula de la escuela",
+        "q_5_6": "Sí, mediante un análisis de coherencia entre las actividades realizadas en la práctica y la planificación inicial del proyecto"
+      }
+    },
+    {
+      "id": "escuela-0240",
+      "jurisdictionId": "50",
+      "jurisdiction": "Mendoza",
+      "caseType": "titular",
+      "weight": 4.9,
       "coordinates": [
         -69.114667537155,
         -33.625472843494
@@ -4915,11 +5002,11 @@
       }
     },
     {
-      "id": "escuela-0243",
+      "id": "escuela-0241",
       "jurisdictionId": "50",
       "jurisdiction": "Mendoza",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.8333,
       "coordinates": [
         -69.1502322,
         -33.45894655
@@ -4934,11 +5021,11 @@
       }
     },
     {
-      "id": "escuela-0244",
+      "id": "escuela-0242",
       "jurisdictionId": "50",
       "jurisdiction": "Mendoza",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.9,
       "coordinates": [
         -69.600595040073,
         -35.482115731992
@@ -4953,11 +5040,11 @@
       }
     },
     {
-      "id": "escuela-0245",
+      "id": "escuela-0243",
       "jurisdictionId": "54",
       "jurisdiction": "Misiones",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 6.6667,
       "coordinates": [
         -55.53868597,
         -27.31111528
@@ -4972,11 +5059,11 @@
       }
     },
     {
-      "id": "escuela-0246",
+      "id": "escuela-0244",
       "jurisdictionId": "54",
       "jurisdiction": "Misiones",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.3636,
       "coordinates": [
         -54.576866468746,
         -25.598116272336
@@ -4991,11 +5078,11 @@
       }
     },
     {
-      "id": "escuela-0247",
+      "id": "escuela-0245",
       "jurisdictionId": "54",
       "jurisdiction": "Misiones",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 7.0,
       "coordinates": null,
       "answers": {
         "q_2_1_1": "Sí, pero comparte la tarea con otras funciones (por ejemplo, docente de taller, jefe/a de taller, directivo/a).",
@@ -5007,11 +5094,11 @@
       }
     },
     {
-      "id": "escuela-0248",
+      "id": "escuela-0246",
       "jurisdictionId": "54",
       "jurisdiction": "Misiones",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.0,
       "coordinates": [
         -54.561,
         -25.9718
@@ -5026,11 +5113,11 @@
       }
     },
     {
-      "id": "escuela-0249",
+      "id": "escuela-0247",
       "jurisdictionId": "54",
       "jurisdiction": "Misiones",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.3636,
       "coordinates": [
         -55.899400000003,
         -27.363399999999
@@ -5045,11 +5132,11 @@
       }
     },
     {
-      "id": "escuela-0250",
+      "id": "escuela-0248",
       "jurisdictionId": "54",
       "jurisdiction": "Misiones",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.3636,
       "coordinates": [
         -55.949708437558,
         -27.419489659735
@@ -5064,11 +5151,11 @@
       }
     },
     {
-      "id": "escuela-0251",
+      "id": "escuela-0249",
       "jurisdictionId": "54",
       "jurisdiction": "Misiones",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.0,
       "coordinates": null,
       "answers": {
         "q_2_1_1": "Sí, pero comparte la tarea con otras funciones (por ejemplo, docente de taller, jefe/a de taller, directivo/a).",
@@ -5080,11 +5167,11 @@
       }
     },
     {
-      "id": "escuela-0252",
+      "id": "escuela-0250",
       "jurisdictionId": "54",
       "jurisdiction": "Misiones",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.3636,
       "coordinates": [
         -54.490988962656,
         -26.995578336319
@@ -5099,11 +5186,11 @@
       }
     },
     {
-      "id": "escuela-0253",
+      "id": "escuela-0251",
       "jurisdictionId": "54",
       "jurisdiction": "Misiones",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.3636,
       "coordinates": [
         -54.055730230069,
         -25.669305060675
@@ -5118,11 +5205,11 @@
       }
     },
     {
-      "id": "escuela-0254",
+      "id": "escuela-0252",
       "jurisdictionId": "54",
       "jurisdiction": "Misiones",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.3636,
       "coordinates": [
         -53.650161459529,
         -26.250218053877
@@ -5137,11 +5224,11 @@
       }
     },
     {
-      "id": "escuela-0255",
+      "id": "escuela-0253",
       "jurisdictionId": "54",
       "jurisdiction": "Misiones",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 6.6667,
       "coordinates": [
         -54.614029420459,
         -26.281348428563
@@ -5156,11 +5243,11 @@
       }
     },
     {
-      "id": "escuela-0256",
+      "id": "escuela-0254",
       "jurisdictionId": "54",
       "jurisdiction": "Misiones",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.3636,
       "coordinates": [
         -53.768274407457,
         -26.047880254677
@@ -5175,11 +5262,11 @@
       }
     },
     {
-      "id": "escuela-0257",
+      "id": "escuela-0255",
       "jurisdictionId": "58",
       "jurisdiction": "Neuquén",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.1667,
       "coordinates": [
         -68.101003,
         -38.941541
@@ -5194,11 +5281,11 @@
       }
     },
     {
-      "id": "escuela-0258",
+      "id": "escuela-0256",
       "jurisdictionId": "58",
       "jurisdiction": "Neuquén",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.1667,
       "coordinates": [
         -68.1186,
         -38.95051
@@ -5213,11 +5300,11 @@
       }
     },
     {
-      "id": "escuela-0259",
+      "id": "escuela-0257",
       "jurisdictionId": "58",
       "jurisdiction": "Neuquén",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.1667,
       "coordinates": [
         -68.221299,
         -38.954779
@@ -5232,11 +5319,11 @@
       }
     },
     {
-      "id": "escuela-0260",
+      "id": "escuela-0258",
       "jurisdictionId": "58",
       "jurisdiction": "Neuquén",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.1667,
       "coordinates": [
         -70.062901,
         -38.894412
@@ -5251,11 +5338,11 @@
       }
     },
     {
-      "id": "escuela-0261",
+      "id": "escuela-0259",
       "jurisdictionId": "58",
       "jurisdiction": "Neuquén",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.1667,
       "coordinates": [
         -68.221003,
         -38.942002
@@ -5270,11 +5357,11 @@
       }
     },
     {
-      "id": "escuela-0262",
+      "id": "escuela-0260",
       "jurisdictionId": "58",
       "jurisdiction": "Neuquén",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.1667,
       "coordinates": [
         -71.336120665673,
         -40.143707677698
@@ -5289,11 +5376,11 @@
       }
     },
     {
-      "id": "escuela-0263",
+      "id": "escuela-0261",
       "jurisdictionId": "58",
       "jurisdiction": "Neuquén",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.0,
       "coordinates": [
         -68.917514613665,
         -37.385554788158
@@ -5308,11 +5395,11 @@
       }
     },
     {
-      "id": "escuela-0264",
+      "id": "escuela-0262",
       "jurisdictionId": "62",
       "jurisdiction": "Río Negro",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.0,
       "coordinates": [
         -67.57019166,
         -39.03474578
@@ -5327,11 +5414,11 @@
       }
     },
     {
-      "id": "escuela-0265",
+      "id": "escuela-0263",
       "jurisdictionId": "62",
       "jurisdiction": "Río Negro",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.3,
       "coordinates": [
         -64.089324913454,
         -38.991459258798
@@ -5346,11 +5433,11 @@
       }
     },
     {
-      "id": "escuela-0266",
+      "id": "escuela-0264",
       "jurisdictionId": "62",
       "jurisdiction": "Río Negro",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.3,
       "coordinates": [
         -71.283125569025,
         -41.129201750046
@@ -5365,11 +5452,11 @@
       }
     },
     {
-      "id": "escuela-0267",
+      "id": "escuela-0265",
       "jurisdictionId": "62",
       "jurisdiction": "Río Negro",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.3,
       "coordinates": [
         -67.83207098,
         -38.97941449
@@ -5384,11 +5471,11 @@
       }
     },
     {
-      "id": "escuela-0268",
+      "id": "escuela-0266",
       "jurisdictionId": "62",
       "jurisdiction": "Río Negro",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.3,
       "coordinates": [
         -63.006424920005,
         -40.812952539996
@@ -5403,11 +5490,11 @@
       }
     },
     {
-      "id": "escuela-0269",
+      "id": "escuela-0267",
       "jurisdictionId": "62",
       "jurisdiction": "Río Negro",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.3,
       "coordinates": [
         -67.797448979875,
         -37.879830570998
@@ -5422,11 +5509,11 @@
       }
     },
     {
-      "id": "escuela-0270",
+      "id": "escuela-0268",
       "jurisdictionId": "62",
       "jurisdiction": "Río Negro",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 3.0,
       "coordinates": [
         -67.82808714,
         -38.96960264
@@ -5441,11 +5528,11 @@
       }
     },
     {
-      "id": "escuela-0271",
+      "id": "escuela-0269",
       "jurisdictionId": "62",
       "jurisdiction": "Río Negro",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.3,
       "coordinates": [
         -67.97429,
         -38.928308019997
@@ -5460,11 +5547,11 @@
       }
     },
     {
-      "id": "escuela-0272",
+      "id": "escuela-0270",
       "jurisdictionId": "62",
       "jurisdiction": "Río Negro",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 3.0,
       "coordinates": [
         -67.66005094,
         -39.0899262
@@ -5479,11 +5566,11 @@
       }
     },
     {
-      "id": "escuela-0273",
+      "id": "escuela-0271",
       "jurisdictionId": "62",
       "jurisdiction": "Río Negro",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.3,
       "coordinates": [
         -67.103942813517,
         -39.098263288997
@@ -5498,11 +5585,30 @@
       }
     },
     {
-      "id": "escuela-0274",
+      "id": "escuela-0272",
       "jurisdictionId": "62",
       "jurisdiction": "Río Negro",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.3,
+      "coordinates": [
+        -64.957363000377,
+        -40.735483841124
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
+        "q_2_2_3": "Se remite para notificación, pero no requiere aprobación explícita para iniciar",
+        "q_2_2_5": "Predominantemente \"internas\"",
+        "q_3_4": "No contamos con un registro de oferentes",
+        "q_4_2": "Es insuficiente para cubrir las necesidades de Prácticas Profesionalizantes (PP)",
+        "q_5_6": "Sí, mediante un análisis de coherencia entre las actividades realizadas en la práctica y la planificación inicial del proyecto"
+      }
+    },
+    {
+      "id": "escuela-0273",
+      "jurisdictionId": "62",
+      "jurisdiction": "Río Negro",
+      "caseType": "titular",
+      "weight": 2.0,
       "coordinates": [
         -67.106287646548,
         -39.132369951263
@@ -5517,11 +5623,11 @@
       }
     },
     {
-      "id": "escuela-0275",
+      "id": "escuela-0274",
       "jurisdictionId": "62",
       "jurisdiction": "Río Negro",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 3.0,
       "coordinates": [
         -69.527504420101,
         -41.325720310473
@@ -5536,11 +5642,11 @@
       }
     },
     {
-      "id": "escuela-0276",
+      "id": "escuela-0275",
       "jurisdictionId": "62",
       "jurisdiction": "Río Negro",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.3,
       "coordinates": [
         -68.086103685584,
         -40.843263710826
@@ -5555,11 +5661,11 @@
       }
     },
     {
-      "id": "escuela-0277",
+      "id": "escuela-0276",
       "jurisdictionId": "66",
       "jurisdiction": "Salta",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.75,
       "coordinates": [
         -65.9483683487,
         -25.9695019577
@@ -5574,11 +5680,11 @@
       }
     },
     {
-      "id": "escuela-0278",
+      "id": "escuela-0277",
       "jurisdictionId": "66",
       "jurisdiction": "Salta",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.0,
       "coordinates": [
         -65.975831,
         -26.074728
@@ -5593,11 +5699,11 @@
       }
     },
     {
-      "id": "escuela-0279",
+      "id": "escuela-0278",
       "jurisdictionId": "66",
       "jurisdiction": "Salta",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.4,
       "coordinates": [
         -63.736622,
         -22.239475
@@ -5612,11 +5718,11 @@
       }
     },
     {
-      "id": "escuela-0280",
+      "id": "escuela-0279",
       "jurisdictionId": "66",
       "jurisdiction": "Salta",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.4,
       "coordinates": [
         -63.734526,
         -22.236126
@@ -5631,11 +5737,11 @@
       }
     },
     {
-      "id": "escuela-0281",
+      "id": "escuela-0280",
       "jurisdictionId": "66",
       "jurisdiction": "Salta",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.4,
       "coordinates": [
         -65.425118,
         -24.789026
@@ -5650,11 +5756,11 @@
       }
     },
     {
-      "id": "escuela-0282",
+      "id": "escuela-0281",
       "jurisdictionId": "66",
       "jurisdiction": "Salta",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.4,
       "coordinates": [
         -65.406826,
         -24.714911
@@ -5669,11 +5775,11 @@
       }
     },
     {
-      "id": "escuela-0283",
+      "id": "escuela-0282",
       "jurisdictionId": "66",
       "jurisdiction": "Salta",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.75,
       "coordinates": [
         -66.450616,
         -25.281993
@@ -5688,11 +5794,11 @@
       }
     },
     {
-      "id": "escuela-0284",
+      "id": "escuela-0283",
       "jurisdictionId": "66",
       "jurisdiction": "Salta",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.75,
       "coordinates": [
         -62.82559,
         -22.020292
@@ -5707,11 +5813,11 @@
       }
     },
     {
-      "id": "escuela-0285",
+      "id": "escuela-0284",
       "jurisdictionId": "70",
       "jurisdiction": "San Juan",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.0,
       "coordinates": [
         -68.553191793114,
         -31.526139114584
@@ -5726,11 +5832,11 @@
       }
     },
     {
-      "id": "escuela-0286",
+      "id": "escuela-0285",
       "jurisdictionId": "70",
       "jurisdiction": "San Juan",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.0,
       "coordinates": [
         -68.70555288,
         -30.14345767
@@ -5745,11 +5851,11 @@
       }
     },
     {
-      "id": "escuela-0287",
+      "id": "escuela-0286",
       "jurisdictionId": "70",
       "jurisdiction": "San Juan",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.0,
       "coordinates": [
         -68.501063797506,
         -31.64941034074
@@ -5764,11 +5870,11 @@
       }
     },
     {
-      "id": "escuela-0288",
+      "id": "escuela-0287",
       "jurisdictionId": "70",
       "jurisdiction": "San Juan",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.0,
       "coordinates": [
         -68.521890794083,
         -31.520151114524
@@ -5783,11 +5889,11 @@
       }
     },
     {
-      "id": "escuela-0289",
+      "id": "escuela-0288",
       "jurisdictionId": "70",
       "jurisdiction": "San Juan",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.0,
       "coordinates": [
         -68.539538793475,
         -31.540518114564
@@ -5802,11 +5908,11 @@
       }
     },
     {
-      "id": "escuela-0290",
+      "id": "escuela-0289",
       "jurisdictionId": "70",
       "jurisdiction": "San Juan",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.6667,
       "coordinates": [
         -68.4381938,
         -31.5363211
@@ -5821,11 +5927,11 @@
       }
     },
     {
-      "id": "escuela-0291",
+      "id": "escuela-0290",
       "jurisdictionId": "70",
       "jurisdiction": "San Juan",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.0,
       "coordinates": [
         -68.71943000001,
         -31.525410000001
@@ -5840,11 +5946,11 @@
       }
     },
     {
-      "id": "escuela-0292",
+      "id": "escuela-0291",
       "jurisdictionId": "70",
       "jurisdiction": "San Juan",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.0,
       "coordinates": [
         -68.517445794157,
         -31.535426114521
@@ -5859,11 +5965,11 @@
       }
     },
     {
-      "id": "escuela-0293",
+      "id": "escuela-0292",
       "jurisdictionId": "74",
       "jurisdiction": "San Luis",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.6667,
       "coordinates": [
         -65.257319444444,
         -35.113088888889
@@ -5878,11 +5984,11 @@
       }
     },
     {
-      "id": "escuela-0294",
+      "id": "escuela-0293",
       "jurisdictionId": "74",
       "jurisdiction": "San Luis",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.4,
       "coordinates": [
         -65.802683333333,
         -32.228641666667
@@ -5897,11 +6003,11 @@
       }
     },
     {
-      "id": "escuela-0295",
+      "id": "escuela-0294",
       "jurisdictionId": "74",
       "jurisdiction": "San Luis",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.25,
       "coordinates": [
         -66.125911111111,
         -32.598519444444
@@ -5916,11 +6022,11 @@
       }
     },
     {
-      "id": "escuela-0296",
+      "id": "escuela-0295",
       "jurisdictionId": "74",
       "jurisdiction": "San Luis",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.4,
       "coordinates": [
         -66.423227777778,
         -33.324863888889
@@ -5935,11 +6041,11 @@
       }
     },
     {
-      "id": "escuela-0297",
+      "id": "escuela-0296",
       "jurisdictionId": "74",
       "jurisdiction": "San Luis",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.6667,
       "coordinates": [
         -66.339269444444,
         -33.272930555556
@@ -5954,11 +6060,11 @@
       }
     },
     {
-      "id": "escuela-0298",
+      "id": "escuela-0297",
       "jurisdictionId": "74",
       "jurisdiction": "San Luis",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.4,
       "coordinates": [
         -65.503777777778,
         -33.677197222222
@@ -5973,11 +6079,11 @@
       }
     },
     {
-      "id": "escuela-0299",
+      "id": "escuela-0298",
       "jurisdictionId": "74",
       "jurisdiction": "San Luis",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.25,
       "coordinates": [
         -66.343463888889,
         -33.300527777778
@@ -5992,11 +6098,11 @@
       }
     },
     {
-      "id": "escuela-0300",
+      "id": "escuela-0299",
       "jurisdictionId": "74",
       "jurisdiction": "San Luis",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.25,
       "coordinates": [
         -65.468738888889,
         -33.667413888889
@@ -6011,11 +6117,11 @@
       }
     },
     {
-      "id": "escuela-0301",
+      "id": "escuela-0300",
       "jurisdictionId": "74",
       "jurisdiction": "San Luis",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.4,
       "coordinates": [
         -65.371194444444,
         -32.918891666667
@@ -6030,11 +6136,11 @@
       }
     },
     {
-      "id": "escuela-0302",
+      "id": "escuela-0301",
       "jurisdictionId": "74",
       "jurisdiction": "San Luis",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.6667,
       "coordinates": [
         -65.241713888889,
         -32.556161111111
@@ -6049,11 +6155,11 @@
       }
     },
     {
-      "id": "escuela-0303",
+      "id": "escuela-0302",
       "jurisdictionId": "74",
       "jurisdiction": "San Luis",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.6667,
       "coordinates": [
         -66.250877777778,
         -33.288108333333
@@ -6068,11 +6174,11 @@
       }
     },
     {
-      "id": "escuela-0304",
+      "id": "escuela-0303",
       "jurisdictionId": "74",
       "jurisdiction": "San Luis",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.25,
       "coordinates": [
         -66.346691666667,
         -33.306286111111
@@ -6087,11 +6193,11 @@
       }
     },
     {
-      "id": "escuela-0305",
+      "id": "escuela-0304",
       "jurisdictionId": "74",
       "jurisdiction": "San Luis",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.6667,
       "coordinates": [
         -64.990344444444,
         -32.505513888889
@@ -6106,11 +6212,11 @@
       }
     },
     {
-      "id": "escuela-0306",
+      "id": "escuela-0305",
       "jurisdictionId": "78",
       "jurisdiction": "Santa Cruz",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.25,
       "coordinates": [
         -72.331928384998,
         -51.536046771702
@@ -6125,11 +6231,11 @@
       }
     },
     {
-      "id": "escuela-0307",
+      "id": "escuela-0306",
       "jurisdictionId": "78",
       "jurisdiction": "Santa Cruz",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.5,
       "coordinates": [
         -67.50899613652,
         -46.461035834853
@@ -6144,11 +6250,11 @@
       }
     },
     {
-      "id": "escuela-0308",
+      "id": "escuela-0307",
       "jurisdictionId": "78",
       "jurisdiction": "Santa Cruz",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.25,
       "coordinates": [
         -69.209433882356,
         -51.621938091507
@@ -6163,11 +6269,11 @@
       }
     },
     {
-      "id": "escuela-0309",
+      "id": "escuela-0308",
       "jurisdictionId": "78",
       "jurisdiction": "Santa Cruz",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.25,
       "coordinates": [
         -68.932533594233,
         -46.545380632248
@@ -6182,11 +6288,11 @@
       }
     },
     {
-      "id": "escuela-0310",
+      "id": "escuela-0309",
       "jurisdictionId": "78",
       "jurisdiction": "Santa Cruz",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.25,
       "coordinates": [
         -67.725176939538,
         -49.30912367258
@@ -6201,11 +6307,11 @@
       }
     },
     {
-      "id": "escuela-0311",
+      "id": "escuela-0310",
       "jurisdictionId": "78",
       "jurisdiction": "Santa Cruz",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.25,
       "coordinates": [
         -67.511739319109,
         -46.450398803191
@@ -6220,11 +6326,11 @@
       }
     },
     {
-      "id": "escuela-0312",
+      "id": "escuela-0311",
       "jurisdictionId": "78",
       "jurisdiction": "Santa Cruz",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.25,
       "coordinates": [
         -70.93059229386,
         -46.587996427592
@@ -6239,11 +6345,11 @@
       }
     },
     {
-      "id": "escuela-0313",
+      "id": "escuela-0312",
       "jurisdictionId": "78",
       "jurisdiction": "Santa Cruz",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.25,
       "coordinates": [
         -68.922939406723,
         -49.979416295708
@@ -6258,49 +6364,30 @@
       }
     },
     {
-      "id": "escuela-0314",
+      "id": "escuela-0313",
       "jurisdictionId": "78",
       "jurisdiction": "Santa Cruz",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.5,
       "coordinates": [
-        -69.218861183807,
-        -51.634826508149
-      ],
-      "answers": {
-        "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
-        "q_2_2_3": "Sí, se remite y aprueba formalmente todos los años",
-        "q_2_2_5": "Modalidad mixta (se realizan ambos formatos sin que uno predomine)",
-        "q_3_4": "Sí, contamos con un registro en fichas (soporte papel)",
-        "q_4_2": "Es insuficiente para cubrir las necesidades de Prácticas Profesionalizantes (PP)",
-        "q_5_6": "Parcialmente; se prioriza la experiencia laboral general por sobre la especificidad del título"
-      }
-    },
-    {
-      "id": "escuela-0315",
-      "jurisdictionId": "78",
-      "jurisdiction": "Santa Cruz",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
-      "coordinates": [
-        -71.631787871001,
-        -46.547419689266
+        -68.533427337381,
+        -50.018456524078
       ],
       "answers": {
         "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
         "q_2_2_3": "Sí, se remite y aprueba formalmente todos los años",
         "q_2_2_5": "Modalidad mixta (se realizan ambos formatos sin que uno predomine)",
         "q_3_4": "No contamos con un registro de oferentes",
-        "q_4_2": "Es insuficiente para cubrir las necesidades de Prácticas Profesionalizantes (PP)",
-        "q_5_6": "Parcialmente; se prioriza la experiencia laboral general por sobre la especificidad del título"
+        "q_4_2": "Es suficiente para cubrir las Prácticas Profesionalizantes (PP) de la matrícula de la escuela",
+        "q_5_6": "Sí, mediante un análisis de coherencia entre las actividades realizadas en la práctica y la planificación inicial del proyecto"
       }
     },
     {
-      "id": "escuela-0316",
+      "id": "escuela-0314",
       "jurisdictionId": "78",
       "jurisdiction": "Santa Cruz",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.0,
       "coordinates": null,
       "answers": {
         "q_2_1_1": "Sí, pero comparte la tarea con otras funciones (por ejemplo, docente de taller, jefe/a de taller, directivo/a).",
@@ -6312,11 +6399,11 @@
       }
     },
     {
-      "id": "escuela-0317",
+      "id": "escuela-0315",
       "jurisdictionId": "82",
       "jurisdiction": "Santa Fe",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 3.4286,
       "coordinates": [
         -60.712985339712,
         -31.645670530985
@@ -6331,11 +6418,11 @@
       }
     },
     {
-      "id": "escuela-0318",
+      "id": "escuela-0316",
       "jurisdictionId": "82",
       "jurisdiction": "Santa Fe",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.05,
       "coordinates": [
         -60.726839692965,
         -32.791569305393
@@ -6350,11 +6437,11 @@
       }
     },
     {
-      "id": "escuela-0319",
+      "id": "escuela-0317",
       "jurisdictionId": "82",
       "jurisdiction": "Santa Fe",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.6667,
       "coordinates": [
         -62.702165232784,
         -34.251584280626
@@ -6369,11 +6456,11 @@
       }
     },
     {
-      "id": "escuela-0320",
+      "id": "escuela-0318",
       "jurisdictionId": "82",
       "jurisdiction": "Santa Fe",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.75,
       "coordinates": [
         -61.241227784113,
         -30.329525115149
@@ -6388,11 +6475,11 @@
       }
     },
     {
-      "id": "escuela-0321",
+      "id": "escuela-0319",
       "jurisdictionId": "82",
       "jurisdiction": "Santa Fe",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.75,
       "coordinates": [
         -60.314712398502,
         -30.040300900542
@@ -6407,11 +6494,11 @@
       }
     },
     {
-      "id": "escuela-0322",
+      "id": "escuela-0320",
       "jurisdictionId": "82",
       "jurisdiction": "Santa Fe",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.05,
       "coordinates": [
         -61.699734746438,
         -32.197171889096
@@ -6426,11 +6513,11 @@
       }
     },
     {
-      "id": "escuela-0323",
+      "id": "escuela-0321",
       "jurisdictionId": "82",
       "jurisdiction": "Santa Fe",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 3.4286,
       "coordinates": [
         -60.68058167843,
         -32.957053346607
@@ -6445,11 +6532,11 @@
       }
     },
     {
-      "id": "escuela-0324",
+      "id": "escuela-0322",
       "jurisdictionId": "82",
       "jurisdiction": "Santa Fe",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 3.4286,
       "coordinates": [
         -59.644589031062,
         -29.150398338609
@@ -6464,11 +6551,11 @@
       }
     },
     {
-      "id": "escuela-0325",
+      "id": "escuela-0323",
       "jurisdictionId": "82",
       "jurisdiction": "Santa Fe",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 3.4286,
       "coordinates": [
         -60.659295128752,
         -32.942724556628
@@ -6483,11 +6570,11 @@
       }
     },
     {
-      "id": "escuela-0326",
+      "id": "escuela-0324",
       "jurisdictionId": "82",
       "jurisdiction": "Santa Fe",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 4.6667,
       "coordinates": [
         -61.161340211439,
         -33.045434152536
@@ -6502,11 +6589,11 @@
       }
     },
     {
-      "id": "escuela-0327",
+      "id": "escuela-0325",
       "jurisdictionId": "82",
       "jurisdiction": "Santa Fe",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.05,
       "coordinates": [
         -60.718871434899,
         -31.66486811446
@@ -6521,11 +6608,11 @@
       }
     },
     {
-      "id": "escuela-0328",
+      "id": "escuela-0326",
       "jurisdictionId": "82",
       "jurisdiction": "Santa Fe",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.05,
       "coordinates": [
         -60.672772361394,
         -32.92490472716
@@ -6540,11 +6627,11 @@
       }
     },
     {
-      "id": "escuela-0329",
+      "id": "escuela-0327",
       "jurisdictionId": "82",
       "jurisdiction": "Santa Fe",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.05,
       "coordinates": [
         -60.75973569211,
         -31.682765781276
@@ -6559,11 +6646,11 @@
       }
     },
     {
-      "id": "escuela-0330",
+      "id": "escuela-0328",
       "jurisdictionId": "82",
       "jurisdiction": "Santa Fe",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 8.0,
       "coordinates": [
         -61.43171760955,
         -30.994340614114
@@ -6578,11 +6665,11 @@
       }
     },
     {
-      "id": "escuela-0331",
+      "id": "escuela-0329",
       "jurisdictionId": "82",
       "jurisdiction": "Santa Fe",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.05,
       "coordinates": [
         -61.770163789993,
         -29.230649934038
@@ -6597,11 +6684,11 @@
       }
     },
     {
-      "id": "escuela-0332",
+      "id": "escuela-0330",
       "jurisdictionId": "82",
       "jurisdiction": "Santa Fe",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.75,
       "coordinates": [
         -61.944368512359,
         -29.876665904332
@@ -6616,11 +6703,11 @@
       }
     },
     {
-      "id": "escuela-0333",
+      "id": "escuela-0331",
       "jurisdictionId": "82",
       "jurisdiction": "Santa Fe",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.05,
       "coordinates": [
         -61.492350434006,
         -33.455658963994
@@ -6635,11 +6722,11 @@
       }
     },
     {
-      "id": "escuela-0334",
+      "id": "escuela-0332",
       "jurisdictionId": "82",
       "jurisdiction": "Santa Fe",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.05,
       "coordinates": [
         -59.359846219875,
         -28.490583985807
@@ -6654,11 +6741,11 @@
       }
     },
     {
-      "id": "escuela-0335",
+      "id": "escuela-0333",
       "jurisdictionId": "82",
       "jurisdiction": "Santa Fe",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.05,
       "coordinates": [
         -60.934549550093,
         -31.583753641977
@@ -6673,11 +6760,11 @@
       }
     },
     {
-      "id": "escuela-0336",
+      "id": "escuela-0334",
       "jurisdictionId": "82",
       "jurisdiction": "Santa Fe",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.75,
       "coordinates": [
         -60.009926468081,
         -30.803441813892
@@ -6692,11 +6779,11 @@
       }
     },
     {
-      "id": "escuela-0337",
+      "id": "escuela-0335",
       "jurisdictionId": "82",
       "jurisdiction": "Santa Fe",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.05,
       "coordinates": [
         -59.565800395653,
         -28.944615247926
@@ -6711,11 +6798,11 @@
       }
     },
     {
-      "id": "escuela-0338",
+      "id": "escuela-0336",
       "jurisdictionId": "82",
       "jurisdiction": "Santa Fe",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.05,
       "coordinates": [
         -61.862225194053,
         -31.905341954157
@@ -6730,11 +6817,11 @@
       }
     },
     {
-      "id": "escuela-0339",
+      "id": "escuela-0337",
       "jurisdictionId": "82",
       "jurisdiction": "Santa Fe",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 3.4286,
       "coordinates": [
         -61.494645843143,
         -31.254772333362
@@ -6749,11 +6836,11 @@
       }
     },
     {
-      "id": "escuela-0340",
+      "id": "escuela-0338",
       "jurisdictionId": "82",
       "jurisdiction": "Santa Fe",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.05,
       "coordinates": [
         -60.70509919269,
         -32.969543738739
@@ -6768,11 +6855,11 @@
       }
     },
     {
-      "id": "escuela-0341",
+      "id": "escuela-0339",
       "jurisdictionId": "82",
       "jurisdiction": "Santa Fe",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 5.05,
       "coordinates": [
         -60.793619868078,
         -32.667203878766
@@ -6787,11 +6874,11 @@
       }
     },
     {
-      "id": "escuela-0342",
+      "id": "escuela-0340",
       "jurisdictionId": "86",
       "jurisdiction": "Santiago del Estero",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 3.5,
       "coordinates": [
         -62.111398461631,
         -30.058473967172
@@ -6806,11 +6893,11 @@
       }
     },
     {
-      "id": "escuela-0343",
+      "id": "escuela-0341",
       "jurisdictionId": "86",
       "jurisdiction": "Santiago del Estero",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.5714,
       "coordinates": [
         -64.245420555026,
         -26.193783290045
@@ -6825,11 +6912,30 @@
       }
     },
     {
-      "id": "escuela-0344",
+      "id": "escuela-0342",
       "jurisdictionId": "86",
       "jurisdiction": "Santiago del Estero",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.25,
+      "coordinates": [
+        -65.08397,
+        -28.545560000004
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
+        "q_2_2_3": "No se remite a nivel jurisdiccional; queda aprobado a nivel interno o institucional",
+        "q_2_2_5": "Predominantemente \"internas\"",
+        "q_3_4": "No contamos con un registro de oferentes",
+        "q_4_2": "Es suficiente para cubrir las Prácticas Profesionalizantes (PP) de la matrícula de la escuela",
+        "q_5_6": "No se realiza una evaluación formal de la pertinencia del perfil"
+      }
+    },
+    {
+      "id": "escuela-0343",
+      "jurisdictionId": "86",
+      "jurisdiction": "Santiago del Estero",
+      "caseType": "titular",
+      "weight": 2.25,
       "coordinates": [
         -62.834114514234,
         -28.456389810404
@@ -6844,11 +6950,11 @@
       }
     },
     {
-      "id": "escuela-0345",
+      "id": "escuela-0344",
       "jurisdictionId": "86",
       "jurisdiction": "Santiago del Estero",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.25,
       "coordinates": [
         -64.261365545137,
         -27.798130064858
@@ -6863,11 +6969,11 @@
       }
     },
     {
-      "id": "escuela-0346",
+      "id": "escuela-0345",
       "jurisdictionId": "86",
       "jurisdiction": "Santiago del Estero",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.5714,
       "coordinates": [
         -62.059409999877,
         -26.131759999998
@@ -6882,11 +6988,30 @@
       }
     },
     {
+      "id": "escuela-0346",
+      "jurisdictionId": "86",
+      "jurisdiction": "Santiago del Estero",
+      "caseType": "titular",
+      "weight": 1.5714,
+      "coordinates": [
+        -62.437109999936,
+        -29.348830000002
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
+        "q_2_2_3": "Se remite para notificación, pero no requiere aprobación explícita para iniciar",
+        "q_2_2_5": "Predominantemente \"externas\"",
+        "q_3_4": "No contamos con un registro de oferentes",
+        "q_4_2": "Es insuficiente para cubrir las necesidades de Prácticas Profesionalizantes (PP)",
+        "q_5_6": "Sí, mediante un análisis de coherencia entre las actividades realizadas en la práctica y la planificación inicial del proyecto"
+      }
+    },
+    {
       "id": "escuela-0347",
       "jurisdictionId": "86",
       "jurisdiction": "Santiago del Estero",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.5714,
       "coordinates": [
         -64.492775345527,
         -27.167876145715
@@ -6904,8 +7029,8 @@
       "id": "escuela-0348",
       "jurisdictionId": "86",
       "jurisdiction": "Santiago del Estero",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.5,
       "coordinates": [
         -64.191712341886,
         -28.30259274991
@@ -6923,8 +7048,8 @@
       "id": "escuela-0349",
       "jurisdictionId": "90",
       "jurisdiction": "Tucumán",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.4,
       "coordinates": [
         -65.622023024217,
         -27.594077622197
@@ -6942,8 +7067,8 @@
       "id": "escuela-0350",
       "jurisdictionId": "90",
       "jurisdiction": "Tucumán",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 3.5,
       "coordinates": [
         -65.68931,
         -27.472580000005
@@ -6961,8 +7086,8 @@
       "id": "escuela-0351",
       "jurisdictionId": "90",
       "jurisdiction": "Tucumán",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.4,
       "coordinates": [
         -65.490364153067,
         -27.169997155527
@@ -6980,8 +7105,8 @@
       "id": "escuela-0352",
       "jurisdictionId": "90",
       "jurisdiction": "Tucumán",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.4,
       "coordinates": [
         -65.197859320981,
         -26.837043965661
@@ -6999,8 +7124,8 @@
       "id": "escuela-0353",
       "jurisdictionId": "90",
       "jurisdiction": "Tucumán",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.0,
       "coordinates": [
         -65.208848228174,
         -26.831830746143
@@ -7018,8 +7143,8 @@
       "id": "escuela-0354",
       "jurisdictionId": "90",
       "jurisdiction": "Tucumán",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.4,
       "coordinates": [
         -65.594193041361,
         -27.347770241326
@@ -7037,8 +7162,8 @@
       "id": "escuela-0355",
       "jurisdictionId": "90",
       "jurisdiction": "Tucumán",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.4,
       "coordinates": [
         -65.27478372341,
         -26.23795036171
@@ -7056,8 +7181,8 @@
       "id": "escuela-0356",
       "jurisdictionId": "90",
       "jurisdiction": "Tucumán",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.4,
       "coordinates": [
         -65.558809106664,
         -27.267111997201
@@ -7075,8 +7200,8 @@
       "id": "escuela-0357",
       "jurisdictionId": "90",
       "jurisdiction": "Tucumán",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 3.5,
       "coordinates": [
         -65.6322768,
         -27.5988493
@@ -7094,8 +7219,8 @@
       "id": "escuela-0358",
       "jurisdictionId": "90",
       "jurisdiction": "Tucumán",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.4,
       "coordinates": [
         -65.696613457305,
         -26.940465281094
@@ -7113,8 +7238,8 @@
       "id": "escuela-0359",
       "jurisdictionId": "90",
       "jurisdiction": "Tucumán",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 2.4,
       "coordinates": [
         -65.53959827857,
         -27.094161364345
@@ -7132,8 +7257,8 @@
       "id": "escuela-0360",
       "jurisdictionId": "90",
       "jurisdiction": "Tucumán",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 3.5,
       "coordinates": [
         -65.361820737243,
         -27.269467520408
@@ -7151,8 +7276,8 @@
       "id": "escuela-0361",
       "jurisdictionId": "94",
       "jurisdiction": "Tierra del Fuego",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.0,
       "coordinates": [
         -67.702607282532,
         -53.786736126476
@@ -7170,8 +7295,8 @@
       "id": "escuela-0362",
       "jurisdictionId": "94",
       "jurisdiction": "Tierra del Fuego",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.0,
       "coordinates": [
         -68.324284335974,
         -54.809349909483
@@ -7189,8 +7314,8 @@
       "id": "escuela-0363",
       "jurisdictionId": "94",
       "jurisdiction": "Tierra del Fuego",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.0,
       "coordinates": [
         -68.345603446389,
         -54.818960282983
@@ -7208,8 +7333,8 @@
       "id": "escuela-0364",
       "jurisdictionId": "94",
       "jurisdiction": "Tierra del Fuego",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.0,
       "coordinates": [
         -67.712152213374,
         -53.791791875564
@@ -7227,8 +7352,8 @@
       "id": "escuela-0365",
       "jurisdictionId": "94",
       "jurisdiction": "Tierra del Fuego",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.0,
       "coordinates": null,
       "answers": {
         "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
@@ -7243,8 +7368,8 @@
       "id": "escuela-0366",
       "jurisdictionId": "94",
       "jurisdiction": "Tierra del Fuego",
-      "caseType": "muestra_provisional",
-      "sampleId": null,
+      "caseType": "titular",
+      "weight": 1.0,
       "coordinates": [
         -68.275486815428,
         -54.783209409098

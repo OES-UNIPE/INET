@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import csv
 import hashlib
 import json
 import re
@@ -81,6 +82,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("public_json", type=Path)
     parser.add_argument("validation_json", type=Path)
     parser.add_argument("--internal-json", type=Path)
+    parser.add_argument("--weighted-base", type=Path)
     return parser.parse_args()
 
 
@@ -133,9 +135,22 @@ def main() -> None:
                 "note": str(row.get("observacion") or "").strip(),
             }
 
-    response_headers, response_rows = rows_as_dicts(workbook["RESPUESTAS"])
-    cue_header = find_header(response_headers, ("1.1.4. cue",))
-    timestamp_header = find_header(response_headers, ("marca temporal",))
+    weighted_rows: list[dict[str, object]] = []
+    if args.weighted_base:
+        with args.weighted_base.open(encoding="utf-8-sig", newline="") as source:
+            reader = csv.DictReader(source)
+            response_headers = list(reader.fieldnames or [])
+            weighted_rows = [dict(row) for row in reader]
+        required_weighted_headers = {"cue_norm", "ponderador_num", "estado_respuesta", "jurisdiction", "id", "rol"}
+        missing_weighted_headers = sorted(required_weighted_headers - set(response_headers))
+        if missing_weighted_headers:
+            raise ValueError(f"Faltan columnas en la base ponderada: {', '.join(missing_weighted_headers)}")
+        response_rows = [row for row in weighted_rows if str(row.get("estado_respuesta") or "").strip() == "Con respuesta"]
+        cue_header = "cue_norm"
+        sample_total = len(weighted_rows)
+    else:
+        response_headers, response_rows = rows_as_dicts(workbook["RESPUESTAS"])
+        cue_header = find_header(response_headers, ("1.1.4. cue",))
     question_headers = {
         "q_2_1_1": find_header(response_headers, ("2.1.1.", "personal asignado formalmente")),
         "q_2_2_3": find_header(response_headers, ("2.2.3.", "remitido formalmente")),
@@ -187,6 +202,7 @@ def main() -> None:
     internal_records = []
     private_issues = []
     covered_sample_ids: set[str] = set()
+    covered_sample_ids_by_jurisdiction: dict[str, set[str]] = defaultdict(set)
     counts_by_jurisdiction: dict[str, Counter] = defaultdict(Counter)
     pending_classification = 0
     unmatched_geo = 0
@@ -197,12 +213,20 @@ def main() -> None:
         jurisdiction_name = JURISDICTIONS.get(jurisdiction_id, "Jurisdicción sin clasificar")
         sample_match = sample_by_cue.get(cue, {})
         manual = classifications.get(cue, {})
-        case_type = manual.get("type") or sample_match.get("role") or "muestra_provisional"
-        sample_id = manual.get("sampleId") or sample_match.get("sampleId") or ""
+        if args.weighted_base:
+            role = str(row.get("rol") or "").strip().lower()
+            case_type = "reemplazo" if role.startswith("reemplazo") else "titular"
+            sample_id = str(row.get("id") or "").strip()
+            weight = float(str(row.get("ponderador_num") or "0").replace(",", "."))
+        else:
+            case_type = manual.get("type") or sample_match.get("role") or "muestra_provisional"
+            sample_id = manual.get("sampleId") or sample_match.get("sampleId") or ""
+            weight = 1.0
         if case_type == "muestra_provisional":
             pending_classification += 1
         if case_type != "complementaria" and sample_id:
             covered_sample_ids.add(sample_id)
+            covered_sample_ids_by_jurisdiction[jurisdiction_id].add(sample_id)
 
         point = points_by_cue.get(cue)
         if not point:
@@ -216,7 +240,7 @@ def main() -> None:
             "jurisdictionId": jurisdiction_id,
             "jurisdiction": jurisdiction_name,
             "caseType": case_type,
-            "sampleId": sample_id or None,
+            "weight": weight,
             "coordinates": point,
             "answers": answers,
         }
@@ -231,36 +255,85 @@ def main() -> None:
         else:
             counts_by_jurisdiction[jurisdiction_id]["sampleResponses"] += 1
 
-    mapping_complete = len(sample_by_cue) >= sample_total and pending_classification == 0
     jurisdictions = []
+    mapping_complete = bool(args.weighted_base) or (len(sample_by_cue) >= sample_total and pending_classification == 0)
     provisional_covered_total = 0
-    for jurisdiction_id in sorted(jurisdiction_targets):
-        target = jurisdiction_targets[jurisdiction_id]
-        counts = counts_by_jurisdiction[jurisdiction_id]
-        if mapping_complete:
-            covered = len(
+    weighted_base_total = 0.0
+    weighted_response_total = 0.0
+    if args.weighted_base:
+        jurisdiction_by_name = {name: code for code, name in JURISDICTIONS.items()}
+        weighted_by_jurisdiction: dict[str, Counter] = defaultdict(Counter)
+        for row in weighted_rows:
+            jurisdiction_name = str(row.get("jurisdiction") or "").strip().replace("Santa Fé", "Santa Fe")
+            jurisdiction_id = jurisdiction_by_name.get(jurisdiction_name)
+            if not jurisdiction_id:
+                raise ValueError(f"Jurisdicción sin código INDEC en la base ponderada: {jurisdiction_name}")
+            weight = float(str(row.get("ponderador_num") or "0").replace(",", "."))
+            stats = weighted_by_jurisdiction[jurisdiction_id]
+            stats["sample"] += 1
+            stats["weightTotal"] += weight
+            if str(row.get("estado_respuesta") or "").strip() == "Con respuesta":
+                stats["responses"] += 1
+                stats["weightResponses"] += weight
+
+        for jurisdiction_id in sorted(jurisdiction_targets):
+            target = jurisdiction_targets[jurisdiction_id]
+            counts = counts_by_jurisdiction[jurisdiction_id]
+            stats = weighted_by_jurisdiction[jurisdiction_id]
+            sample_count = int(stats["sample"])
+            response_count = int(stats["responses"])
+            weighted_base = float(stats["weightTotal"])
+            weighted_responses = float(stats["weightResponses"])
+            provisional_covered_total += response_count
+            weighted_base_total += weighted_base
+            weighted_response_total += weighted_responses
+            jurisdictions.append(
                 {
-                    record["sampleId"]
-                    for record in public_records
-                    if record["jurisdictionId"] == jurisdiction_id and record["caseType"] != "complementaria" and record["sampleId"]
+                    **target,
+                    "target": sample_count,
+                    "respondentSchools": response_count,
+                    "sampleResponses": response_count,
+                    "nonResponse": sample_count - response_count,
+                    "covered": response_count,
+                    "coverage": response_count / sample_count if sample_count else None,
+                    "weightedBase": weighted_base,
+                    "weightedResponses": weighted_responses,
+                    "weightedNonResponse": weighted_base - weighted_responses,
+                    "weightedCoverage": weighted_responses / weighted_base if weighted_base else None,
+                    "replacements": int(counts["replacements"]),
+                    "complementary": 0,
                 }
             )
-        else:
-            covered = min(int(counts["sampleResponses"]), int(target["target"]))
-        provisional_covered_total += covered
-        jurisdictions.append(
-            {
-                **target,
-                "respondentSchools": int(counts["schools"]),
-                "sampleResponses": int(counts["sampleResponses"]),
-                "covered": covered,
-                "coverage": covered / int(target["target"]) if target["target"] else None,
-                "replacements": int(counts["replacements"]),
-                "complementary": int(counts["complementary"]),
-            }
-        )
+    else:
+        for jurisdiction_id in sorted(jurisdiction_targets):
+            target = jurisdiction_targets[jurisdiction_id]
+            counts = counts_by_jurisdiction[jurisdiction_id]
+            if mapping_complete:
+                covered = len(covered_sample_ids_by_jurisdiction[jurisdiction_id])
+            else:
+                covered = min(int(counts["sampleResponses"]), int(target["target"]))
+            provisional_covered_total += covered
+            jurisdictions.append(
+                {
+                    **target,
+                    "respondentSchools": int(counts["schools"]),
+                    "sampleResponses": int(counts["sampleResponses"]),
+                    "nonResponse": int(target["target"]) - covered,
+                    "covered": covered,
+                    "coverage": covered / int(target["target"]) if target["target"] else None,
+                    "weightedBase": float(target["target"]),
+                    "weightedResponses": float(covered),
+                    "weightedNonResponse": float(int(target["target"]) - covered),
+                    "weightedCoverage": covered / int(target["target"]) if target["target"] else None,
+                    "replacements": int(counts["replacements"]),
+                    "complementary": int(counts["complementary"]),
+                }
+            )
+        weighted_base_total = float(sample_total)
+        weighted_response_total = float(provisional_covered_total)
 
-    source_hash = hashlib.sha256(args.excel.read_bytes()).hexdigest()
+    source_path = args.weighted_base or args.excel
+    source_hash = hashlib.sha256(source_path.read_bytes()).hexdigest()
     public_payload = {
         "metadata": {
             "generatedAt": datetime.now().astimezone().isoformat(timespec="seconds"),
@@ -275,9 +348,14 @@ def main() -> None:
             "geolocatedSchools": len(public_records) - unmatched_geo,
             "unmatchedGeo": unmatched_geo,
             "coveredSamplePositions": len(covered_sample_ids) if mapping_complete else provisional_covered_total,
-            "coverage": (len(covered_sample_ids) if mapping_complete else provisional_covered_total) / sample_total if sample_total else None,
+            "coverage": provisional_covered_total / sample_total if sample_total else None,
+            "weightedBase": weighted_base_total,
+            "weightedResponses": weighted_response_total,
+            "weightedNonResponse": weighted_base_total - weighted_response_total,
+            "weightedCoverage": weighted_response_total / weighted_base_total if weighted_base_total else None,
             "coverageStatus": "confirmada" if mapping_complete else "provisional",
             "pendingClassification": pending_classification,
+            "sourceKind": "weighted_sample" if args.weighted_base else "responses_workbook",
             "access": "public",
         },
         "questions": questions,
@@ -305,6 +383,9 @@ def main() -> None:
             "sampleTarget": sample_total,
             "pendingClassification": pending_classification,
             "coverageStatus": public_payload["metadata"]["coverageStatus"],
+            "weightedBase": weighted_base_total,
+            "weightedResponses": weighted_response_total,
+            "weightedCoverage": public_payload["metadata"]["weightedCoverage"],
         },
         "duplicateDetails": [{"cue": cue, "rows": count} for cue, count in sorted(duplicates.items())],
         "issues": private_issues,
