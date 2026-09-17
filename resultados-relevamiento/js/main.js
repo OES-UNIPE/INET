@@ -213,23 +213,51 @@ function renderCoverageTable() {
     </tr>`).join("");
 }
 
+function distributionScope() {
+  const meta = state.data.metadata;
+  const row = state.jurisdictionId ? jurisdictionRow(state.jurisdictionId) : null;
+  const rawBase = row?.target ?? meta.sampleTarget;
+  const rawResponses = row?.respondentSchools ?? meta.respondentSchools;
+  const weightedBase = row?.weightedBase ?? meta.weightedBase;
+  const weightedResponses = row?.weightedResponses ?? meta.weightedResponses;
+  return {
+    rawBase,
+    rawResponses,
+    rawNonResponse: row?.nonResponse ?? Math.max(0, rawBase - rawResponses),
+    weightedBase,
+    weightedResponses,
+    weightedNonResponse: row?.weightedNonResponse ?? Math.max(0, weightedBase - weightedResponses),
+  };
+}
+
 function responseDistribution(records, questionId) {
   const counts = new Map();
-  let rawBase = 0;
-  let weightedBase = 0;
+  let rawResponses = 0;
+  let weightedResponses = 0;
   records.forEach((record) => {
     const value = String(record.answers?.[questionId] || "").trim();
     if (!value) return;
     const weight = state.weightMode === "weighted" ? Number(record.weight) || 0 : 1;
     counts.set(value, (counts.get(value) || 0) + weight);
-    rawBase += 1;
-    weightedBase += Number(record.weight) || 0;
+    rawResponses += 1;
+    weightedResponses += Number(record.weight) || 0;
   });
+  const scope = distributionScope();
+  const rawNonResponse = Math.max(0, scope.rawBase - rawResponses);
+  const weightedNonResponse = Math.max(0, scope.weightedBase - weightedResponses);
+  const items = Array.from(counts, ([label, value]) => ({ label, value }))
+    .sort((a, b) => b.value - a.value || a.label.localeCompare(b.label, "es"));
+  const nonResponseValue = state.weightMode === "weighted" ? weightedNonResponse : rawNonResponse;
+  if (nonResponseValue > 0) items.push({ label: "Sin respuesta", value: nonResponseValue });
   return {
-    items: Array.from(counts, ([label, value]) => ({ label, value })).sort((a, b) => b.value - a.value || a.label.localeCompare(b.label, "es")),
-    base: state.weightMode === "weighted" ? weightedBase : rawBase,
-    rawBase,
-    weightedBase,
+    items,
+    base: state.weightMode === "weighted" ? scope.weightedBase : scope.rawBase,
+    rawBase: scope.rawBase,
+    rawResponses,
+    rawNonResponse,
+    weightedBase: scope.weightedBase,
+    weightedResponses,
+    weightedNonResponse,
   };
 }
 
@@ -241,7 +269,7 @@ function renderQuestions() {
   el.responsesTitle.textContent = selected ? "Respuesta de la escuela seleccionada" : "Distribución de respuestas";
   el.responsesContext.textContent = selected
     ? `${selected.schoolName || "Escuela seleccionada"}. Se muestran sus respuestas y las distribuciones ${modeLabel} de referencia en ${territory}.`
-    : `Distribuciones ${modeLabel} calculadas sobre las respuestas válidas de ${intFormat.format(records.length)} escuelas en ${territory}.`;
+    : `Distribuciones ${modeLabel} calculadas sobre la muestra completa de ${intFormat.format(distributionScope().rawBase)} posiciones en ${territory}, incluida la categoría Sin respuesta.`;
   el.clearSchool.hidden = !selected;
   el.questionGrid.innerHTML = state.data.questions.map((question) => {
     const distribution = responseDistribution(records, question.id);
@@ -256,8 +284,8 @@ function renderQuestions() {
           <div class="bar-track"><div class="bar-fill" style="width:${base ? (item.value / base) * 100 : 0}%"></div></div>
         </div>`).join("")}</div>
       <p class="question-base">${state.weightMode === "weighted"
-        ? `Base ponderada: ${decimalFormat.format(distribution.weightedBase)} escuelas representadas · ${intFormat.format(distribution.rawBase)} respuestas válidas`
-        : `Base: ${intFormat.format(distribution.rawBase)} respuestas válidas`}</p>
+        ? `Base ponderada completa: ${decimalFormat.format(distribution.weightedBase)} escuelas representadas · ${intFormat.format(distribution.rawBase)} posiciones (${intFormat.format(distribution.rawResponses)} respuestas y ${intFormat.format(distribution.rawNonResponse)} sin respuesta)`
+        : `Base completa: ${intFormat.format(distribution.rawBase)} posiciones (${intFormat.format(distribution.rawResponses)} respuestas y ${intFormat.format(distribution.rawNonResponse)} sin respuesta)`}</p>
     </article>`;
   }).join("");
 }
