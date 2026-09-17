@@ -155,25 +155,29 @@ def main() -> None:
         "q_2_1_1": find_header(response_headers, ("2.1.1.", "personal asignado formalmente")),
         "q_2_2_3": find_header(response_headers, ("2.2.3.", "remitido formalmente")),
         "q_2_2_5": find_header(response_headers, ("2.2.5.", "formato se estructuran")),
+        "q_3_3": find_header(response_headers, ("3.3.", "sistematización")),
         "q_3_4": find_header(response_headers, ("3.4.", "registro actualizado")),
         "q_4_2": find_header(response_headers, ("4.2.", "vinculación con el sector")),
+        "q_5_5": find_header(response_headers, ("5.5.", "oferentes o tutores externos")),
         "q_5_6": find_header(response_headers, ("5.6.", "capacidades profesionales")),
     }
 
     _, question_rows = rows_as_dicts(workbook["PREGUNTAS"])
+    question_config = {
+        str(row.get("id_pregunta") or ""): row
+        for row in question_rows
+        if str(row.get("id_pregunta") or "")
+    }
     questions = []
-    for row in question_rows:
-        question_id = str(row.get("id_pregunta") or "")
-        if not question_id:
-            continue
+    for order, (question_id, header) in enumerate(question_headers.items(), start=1):
+        row = question_config.get(question_id, {})
         questions.append(
             {
                 "id": question_id,
-                "title": question_headers.get(question_id) or str(row.get("titulo_publico") or ""),
-                "order": int(row.get("orden") or 0),
+                "title": header or str(row.get("titulo_publico") or ""),
+                "order": order,
             }
         )
-    questions.sort(key=lambda item: item["order"])
 
     responses_by_cue: dict[str, list[dict[str, object]]] = defaultdict(list)
     empty_cue_rows = 0
