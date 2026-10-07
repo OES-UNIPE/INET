@@ -105,6 +105,7 @@ La aplicacion esta organizada como una SPA modular sin dependencias de build. Us
 ## Funcionalidades principales
 
 - Coloreo de provincias por nivel de institucionalizacion.
+- Seleccion de Global o de cualquiera de las cuatro dimensiones desde los encabezados de la tabla para actualizar los colores, el titulo y las etiquetas del mapa.
 - Seleccion desde mapa o tabla.
 - Deseleccion con segundo click en provincia o click sobre zona vacia del mapa.
 - Zoom automatico a la provincia seleccionada.

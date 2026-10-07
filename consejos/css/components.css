@@ -61,6 +61,37 @@ body.is-transitioning-selection #fichaConsejo{
   text-transform:uppercase;
 }
 
+.table-map-hint{
+  margin:0;
+  padding:8px 16px;
+  color:var(--muted);
+  font-size:11px;
+  border-bottom:1px solid var(--border);
+}
+
+.dimension-map-btn{
+  width:100%;
+  border:1px solid var(--border);
+  border-radius:4px;
+  padding:7px 8px;
+  background:#fff;
+  color:var(--blue);
+  font:inherit;
+  text-align:left;
+  text-transform:inherit;
+  letter-spacing:inherit;
+  cursor:pointer;
+}
+
+.dimension-map-btn:hover{border-color:var(--blue);}
+.dimension-map-btn[aria-pressed="true"]{
+  background:var(--navy);
+  border-color:var(--navy);
+  color:#fff;
+}
+.dimension-map-btn:focus-visible{outline:2px solid var(--blue);outline-offset:2px;}
+th.map-dimension-active, td.map-dimension-active{background:rgba(26,74,122,.08);}
+
 .table-actions{
   display:flex;
   align-items:center;

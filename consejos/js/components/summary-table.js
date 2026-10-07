@@ -8,6 +8,11 @@ function levelClass(level) {
 export function renderSummaryTable(container, results, selectedKey, onSelect, options = {}) {
   const order = { Consolidado: 3, Intermedio: 2, Incipiente: 1 };
   const dimensionHeaders = results[0]?.dimResults || [];
+  const selectedDimension = options.selectedDimension || 'global';
+  const dimensionHeader = (id, title) => `<th scope="col" class="${id === selectedDimension ? 'map-dimension-active' : ''}">
+    <button type="button" class="dimension-map-btn" data-dimension="${escapeHTML(id)}"
+      aria-pressed="${id === selectedDimension}" title="Colorear el mapa por ${escapeHTML(title)}">${escapeHTML(title)}</button>
+  </th>`;
   const sorted = [...results].sort((a, b) => {
     const byLevel = order[b.level] - order[a.level];
     if (byLevel) return byLevel;
@@ -26,13 +31,14 @@ export function renderSummaryTable(container, results, selectedKey, onSelect, op
           ${options.collapsed ? '<button class="small-btn" id="expandGeneral" type="button">Ver tabla</button>' : ''}
         </div>
       </div>
+      <p class="table-map-hint">Seleccioná Global o una dimensión en los encabezados para colorear el mapa.</p>
       <div class="table-scroll ${options.collapsed ? 'is-hidden' : ''}">
         <table>
           <thead>
             <tr>
-              <th>Jurisdicción</th>
-              <th>Global</th>
-              ${dimensionHeaders.map(dimension => `<th>${escapeHTML(dimension.title)}</th>`).join('')}
+              <th scope="col">Jurisdicción</th>
+              ${dimensionHeader('global', 'Global')}
+              ${dimensionHeaders.map(dimension => dimensionHeader(dimension.id, dimension.title)).join('')}
             </tr>
           </thead>
           <tbody>
@@ -41,9 +47,9 @@ export function renderSummaryTable(container, results, selectedKey, onSelect, op
               return `
                 <tr class="${key === selectedKey ? 'selected' : ''}" data-key="${escapeHTML(key)}">
                   <td>${escapeHTML(get(result.row, 'jurisdiccion'))}</td>
-                  <td><span class="pill ${levelClass(result.level)}">${escapeHTML(result.level)}</span></td>
+                  <td class="${selectedDimension === 'global' ? 'map-dimension-active' : ''}"><span class="pill ${levelClass(result.level)}">${escapeHTML(result.level)}</span></td>
                   ${result.dimResults.map(dimension => `
-                    <td>
+                    <td class="${selectedDimension === dimension.id ? 'map-dimension-active' : ''}">
                       <span class="mini-level ${levelClass(dimension.level)}">${escapeHTML(dimension.level)}</span>
                       <span class="score-frac">${formatNumber(dimension.totalValue)} / ${formatNumber(dimension.maxValue)}</span>
                     </td>
@@ -57,6 +63,10 @@ export function renderSummaryTable(container, results, selectedKey, onSelect, op
 
   const expandButton = container.querySelector('#expandGeneral');
   if (expandButton && options.onExpand) expandButton.addEventListener('click', options.onExpand);
+
+  container.querySelectorAll('[data-dimension]').forEach(button => {
+    button.addEventListener('click', () => options.onDimensionSelect?.(button.dataset.dimension));
+  });
 
   container.querySelectorAll('tr[data-key]').forEach(row => {
     row.addEventListener('click', () => onSelect(row.dataset.key));

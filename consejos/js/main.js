@@ -1,5 +1,5 @@
 import { loadJurisdictionRows } from './services/data-service.js';
-import { evaluateRows } from './services/institutionalization-service.js';
+import { dimensions, evaluateRows } from './services/institutionalization-service.js';
 import { resultKey } from './services/geo-service.js';
 import { renderSummaryTable } from './components/summary-table.js';
 import { renderInstitutionalizationDetail } from './components/institutionalization-detail.js';
@@ -25,6 +25,7 @@ const state = {
   rows: [],
   results: [],
   selectedKey: null,
+  selectedDimension: 'global',
   mapView: null,
   normativeRepository: null,
   generalCollapsed: false,
@@ -117,8 +118,22 @@ function expandGeneralView() {
 function renderGeneralView() {
   renderSummaryTable(summaryTable, state.results, state.selectedKey, key => selectJurisdiction(key, { scrollDetail: true }), {
     collapsed: state.generalCollapsed,
+    selectedDimension: state.selectedDimension,
+    onDimensionSelect: selectDimension,
     onExpand: expandGeneralView
   });
+}
+
+function selectDimension(id) {
+  if (id !== 'global' && !dimensions.some(dimension => dimension.id === id)) return;
+  state.selectedDimension = id;
+  state.mapView.setDimension(id);
+  const dimension = dimensions.find(dimension => dimension.id === id);
+  document.querySelector('#mapDimensionTitle').textContent = dimension
+    ? `${dimension.id} · ${dimension.title}`
+    : 'Provincias según nivel global de institucionalización';
+  renderGeneralView();
+  summaryTable.querySelector(`[data-dimension="${id}"]`)?.focus({ preventScroll: true });
 }
 
 function initNormativeRepository() {

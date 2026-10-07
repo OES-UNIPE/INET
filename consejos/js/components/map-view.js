@@ -1,5 +1,5 @@
 import { indexResultsByProvince, provinceKey, provinceName } from '../services/geo-service.js';
-import { normalize } from '../utils/normalize.js';
+import { escapeHTML, normalize } from '../utils/normalize.js';
 
 const LEVEL_COLORS = {
   Consolidado: '#27AE60',
@@ -50,9 +50,13 @@ function selectedStyle() {
   return { color: '#0A2340', weight: 2.5, fillOpacity: 0.9 };
 }
 
-function featureStyle(result, isSelected) {
-  if (isSelected) return selectedStyle();
-  if (!result) {
+function mappedLevel(result, dimensionId) {
+  return dimensionId === 'global' ? result?.level : result?.dimResults.find(dimension => dimension.id === dimensionId)?.level;
+}
+
+function featureStyle(result, isSelected, dimensionId) {
+  const level = mappedLevel(result, dimensionId);
+  if (!level) {
     return {
       fillColor: LEVEL_COLORS.SinDatos,
       fillOpacity: 0.22,
@@ -62,10 +66,11 @@ function featureStyle(result, isSelected) {
   }
 
   return {
-    fillColor: LEVEL_COLORS[result.level],
+    fillColor: LEVEL_COLORS[level],
     fillOpacity: 0.62,
-    color: LEVEL_COLORS[result.level],
-    weight: 1.2
+    color: LEVEL_COLORS[level],
+    weight: 1.2,
+    ...(isSelected ? selectedStyle() : {})
   };
 }
 
@@ -79,6 +84,7 @@ export class MapView {
     this.results = [];
     this.resultIndex = new Map();
     this.selectedKey = null;
+    this.dimensionId = 'global';
     this.schoolsData = null;
     this.schoolsLayer = null;
     this.schoolsActive = false;
@@ -116,13 +122,13 @@ export class MapView {
     this.layer = L.geoJSON(geojson, {
       style: feature => {
         const key = provinceKey(feature);
-        return featureStyle(this.resultIndex.get(key), key === this.selectedKey);
+        return featureStyle(this.resultIndex.get(key), key === this.selectedKey, this.dimensionId);
       },
       onEachFeature: (feature, layer) => {
         const key = provinceKey(feature);
         const result = this.resultIndex.get(key);
         this.featureLayers.set(key, layer);
-        layer.bindTooltip(provinceName(feature), {
+        layer.bindTooltip(this.tooltipContent(feature, result), {
           permanent: false,
           direction: 'center',
           className: 'map-tooltip'
@@ -171,8 +177,22 @@ export class MapView {
     if (!this.layer) return;
     this.layer.eachLayer(layer => {
       const key = provinceKey(layer.feature);
-      layer.setStyle(featureStyle(this.resultIndex.get(key), key === this.selectedKey));
+      const result = this.resultIndex.get(key);
+      layer.setStyle(featureStyle(result, key === this.selectedKey, this.dimensionId));
+      layer.setTooltipContent(this.tooltipContent(layer.feature, result));
     });
+  }
+
+  setDimension(id) {
+    this.dimensionId = id;
+    this.refreshStyles();
+  }
+
+  tooltipContent(feature, result) {
+    const dimension = result?.dimResults.find(item => item.id === this.dimensionId);
+    const title = this.dimensionId === 'global' ? 'Global' : dimension?.title || this.dimensionId;
+    const level = mappedLevel(result, this.dimensionId) || 'Sin datos';
+    return `${escapeHTML(provinceName(feature))}<br>${escapeHTML(title)}: ${escapeHTML(level)}`;
   }
 
   zoomToSelected() {
