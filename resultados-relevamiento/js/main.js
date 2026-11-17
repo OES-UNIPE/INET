@@ -1,7 +1,7 @@
 const LOCAL_HOSTS = new Set(["localhost", "127.0.0.1"]);
 const DATA_URL = LOCAL_HOSTS.has(window.location.hostname)
   ? "assets/data/respuestas-internas.json"
-  : "assets/data/respuestas-publicas.json";
+  : "assets/data/respuestas-publicas.json?v=20261117";
 const PROVINCES_URL = "../practicas-profesionalizantes/assets/Argentina.geojson";
 const NATIONAL_VIEW = { center: [-39.5, -64], zoom: 4 };
 const TIERRA_DEL_FUEGO_BOUNDS = [[-55.2, -68.9], [-52.8, -65.3]];

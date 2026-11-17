@@ -1,22 +1,22 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-17T10:46:52-03:00",
+    "generatedAt": "2026-11-17T10:24:57-03:00",
     "sourceDate": null,
-    "sourceSha256": "9ee63d5257ce2f692fc4c34855e89e05f95f0eade5388b63cdfcf38625b260a4",
+    "sourceSha256": "2e154f52d2160309285cba8bbb06ca4bf61e8c159b1c5ec20153aa9a7768555e",
     "universe": 1750,
     "sampleTarget": 492,
     "sampleShare": 0.28114285714285714,
-    "sourceRows": 366,
-    "respondentSchools": 366,
+    "sourceRows": 430,
+    "respondentSchools": 430,
     "duplicateExtraRows": 0,
-    "geolocatedSchools": 354,
-    "unmatchedGeo": 12,
-    "coveredSamplePositions": 366,
-    "coverage": 0.7439024390243902,
+    "geolocatedSchools": 430,
+    "unmatchedGeo": 0,
+    "coveredSamplePositions": 430,
+    "coverage": 0.8739837398373984,
     "weightedBase": 1716.9977999999999,
-    "weightedResponses": 1271.0045999999998,
-    "weightedNonResponse": 445.9932000000001,
-    "weightedCoverage": 0.7402482402714784,
+    "weightedResponses": 1496.9563999999998,
+    "weightedNonResponse": 220.04140000000007,
+    "weightedCoverage": 0.8718452638669659,
     "coverageStatus": "confirmada",
     "pendingClassification": 0,
     "sourceKind": "weighted_sample",
@@ -70,15 +70,15 @@
       "name": "Ciudad de Buenos Aires",
       "universe": 54,
       "target": 15,
-      "respondentSchools": 14,
-      "sampleResponses": 14,
-      "nonResponse": 1,
-      "covered": 14,
-      "coverage": 0.9333333333333333,
+      "respondentSchools": 15,
+      "sampleResponses": 15,
+      "nonResponse": 0,
+      "covered": 15,
+      "coverage": 1.0,
       "weightedBase": 51.99999999999999,
-      "weightedResponses": 49.199999999999996,
-      "weightedNonResponse": 2.799999999999997,
-      "weightedCoverage": 0.9461538461538462,
+      "weightedResponses": 51.99999999999999,
+      "weightedNonResponse": 0.0,
+      "weightedCoverage": 1.0,
       "replacements": 0,
       "complementary": 0
     },
@@ -87,16 +87,16 @@
       "name": "Buenos Aires",
       "universe": 457,
       "target": 91,
-      "respondentSchools": 63,
-      "sampleResponses": 63,
-      "nonResponse": 28,
-      "covered": 63,
-      "coverage": 0.6923076923076923,
+      "respondentSchools": 72,
+      "sampleResponses": 72,
+      "nonResponse": 19,
+      "covered": 72,
+      "coverage": 0.7912087912087912,
       "weightedBase": 452.99669999999986,
-      "weightedResponses": 314.42559999999986,
-      "weightedNonResponse": 138.5711,
-      "weightedCoverage": 0.6941013036077304,
-      "replacements": 3,
+      "weightedResponses": 358.0372999999999,
+      "weightedNonResponse": 94.95939999999996,
+      "weightedCoverage": 0.7903750733724992,
+      "replacements": 0,
       "complementary": 0
     },
     {
@@ -104,15 +104,15 @@
       "name": "Catamarca",
       "universe": 18,
       "target": 15,
-      "respondentSchools": 12,
-      "sampleResponses": 12,
-      "nonResponse": 3,
-      "covered": 12,
-      "coverage": 0.8,
+      "respondentSchools": 14,
+      "sampleResponses": 14,
+      "nonResponse": 1,
+      "covered": 14,
+      "coverage": 0.9333333333333333,
       "weightedBase": 16.999800000000004,
-      "weightedResponses": 13.333200000000001,
-      "weightedNonResponse": 3.6666000000000025,
-      "weightedCoverage": 0.7843151095895244,
+      "weightedResponses": 15.777600000000003,
+      "weightedNonResponse": 1.2222000000000008,
+      "weightedCoverage": 0.9281050365298414,
       "replacements": 0,
       "complementary": 0
     },
@@ -121,15 +121,15 @@
       "name": "Córdoba",
       "universe": 256,
       "target": 51,
-      "respondentSchools": 42,
-      "sampleResponses": 42,
-      "nonResponse": 9,
-      "covered": 42,
-      "coverage": 0.8235294117647058,
+      "respondentSchools": 49,
+      "sampleResponses": 49,
+      "nonResponse": 2,
+      "covered": 49,
+      "coverage": 0.9607843137254902,
       "weightedBase": 255.00029999999998,
-      "weightedResponses": 210.46060000000003,
-      "weightedNonResponse": 44.539699999999954,
-      "weightedCoverage": 0.825334715292492,
+      "weightedResponses": 245.9262,
+      "weightedNonResponse": 9.074099999999987,
+      "weightedCoverage": 0.9644153359819577,
       "replacements": 0,
       "complementary": 0
     },
@@ -138,15 +138,15 @@
       "name": "Corrientes",
       "universe": 61,
       "target": 15,
-      "respondentSchools": 11,
-      "sampleResponses": 11,
-      "nonResponse": 4,
-      "covered": 11,
-      "coverage": 0.7333333333333333,
+      "respondentSchools": 13,
+      "sampleResponses": 13,
+      "nonResponse": 2,
+      "covered": 13,
+      "coverage": 0.8666666666666667,
       "weightedBase": 61.0,
-      "weightedResponses": 43.0,
-      "weightedNonResponse": 18.0,
-      "weightedCoverage": 0.7049180327868853,
+      "weightedResponses": 52.0,
+      "weightedNonResponse": 9.0,
+      "weightedCoverage": 0.8524590163934426,
       "replacements": 0,
       "complementary": 0
     },
@@ -155,15 +155,15 @@
       "name": "Chaco",
       "universe": 40,
       "target": 15,
-      "respondentSchools": 12,
-      "sampleResponses": 12,
-      "nonResponse": 3,
-      "covered": 12,
-      "coverage": 0.8,
+      "respondentSchools": 15,
+      "sampleResponses": 15,
+      "nonResponse": 0,
+      "covered": 15,
+      "coverage": 1.0,
       "weightedBase": 40.00039999999999,
-      "weightedResponses": 26.889199999999995,
-      "weightedNonResponse": 13.111199999999997,
-      "weightedCoverage": 0.6722232777672223,
+      "weightedResponses": 40.00039999999999,
+      "weightedNonResponse": 0.0,
+      "weightedCoverage": 1.0,
       "replacements": 0,
       "complementary": 0
     },
@@ -172,16 +172,16 @@
       "name": "Chubut",
       "universe": 28,
       "target": 15,
-      "respondentSchools": 14,
-      "sampleResponses": 14,
-      "nonResponse": 1,
-      "covered": 14,
-      "coverage": 0.9333333333333333,
+      "respondentSchools": 15,
+      "sampleResponses": 15,
+      "nonResponse": 0,
+      "covered": 15,
+      "coverage": 1.0,
       "weightedBase": 26.000199999999996,
-      "weightedResponses": 24.333499999999997,
-      "weightedNonResponse": 1.6666999999999987,
-      "weightedCoverage": 0.9358966469488696,
-      "replacements": 1,
+      "weightedResponses": 26.000199999999996,
+      "weightedNonResponse": 0.0,
+      "weightedCoverage": 1.0,
+      "replacements": 2,
       "complementary": 0
     },
     {
@@ -189,15 +189,15 @@
       "name": "Entre Ríos",
       "universe": 88,
       "target": 18,
-      "respondentSchools": 15,
-      "sampleResponses": 15,
-      "nonResponse": 3,
-      "covered": 15,
-      "coverage": 0.8333333333333334,
+      "respondentSchools": 16,
+      "sampleResponses": 16,
+      "nonResponse": 2,
+      "covered": 16,
+      "coverage": 0.8888888888888888,
       "weightedBase": 85.00020000000002,
-      "weightedResponses": 71.9466,
-      "weightedNonResponse": 13.053600000000017,
-      "weightedCoverage": 0.8464285966385959,
+      "weightedResponses": 74.9466,
+      "weightedNonResponse": 10.053600000000017,
+      "weightedCoverage": 0.8817226312408675,
       "replacements": 0,
       "complementary": 0
     },
@@ -206,15 +206,15 @@
       "name": "Formosa",
       "universe": 24,
       "target": 15,
-      "respondentSchools": 8,
-      "sampleResponses": 8,
-      "nonResponse": 7,
-      "covered": 8,
-      "coverage": 0.5333333333333333,
+      "respondentSchools": 10,
+      "sampleResponses": 10,
+      "nonResponse": 5,
+      "covered": 10,
+      "coverage": 0.6666666666666666,
       "weightedBase": 22.9997,
-      "weightedResponses": 13.333199999999998,
-      "weightedNonResponse": 9.666500000000003,
-      "weightedCoverage": 0.5797119092857732,
+      "weightedResponses": 15.999799999999997,
+      "weightedNonResponse": 6.999900000000004,
+      "weightedCoverage": 0.6956525519898084,
       "replacements": 0,
       "complementary": 0
     },
@@ -223,15 +223,15 @@
       "name": "Jujuy",
       "universe": 29,
       "target": 15,
-      "respondentSchools": 9,
-      "sampleResponses": 9,
-      "nonResponse": 6,
-      "covered": 9,
-      "coverage": 0.6,
+      "respondentSchools": 12,
+      "sampleResponses": 12,
+      "nonResponse": 3,
+      "covered": 12,
+      "coverage": 0.8,
       "weightedBase": 29.0,
-      "weightedResponses": 17.575,
-      "weightedNonResponse": 11.425,
-      "weightedCoverage": 0.6060344827586207,
+      "weightedResponses": 22.85,
+      "weightedNonResponse": 6.149999999999999,
+      "weightedCoverage": 0.7879310344827587,
       "replacements": 0,
       "complementary": 0
     },
@@ -274,15 +274,15 @@
       "name": "Mendoza",
       "universe": 84,
       "target": 17,
-      "respondentSchools": 13,
-      "sampleResponses": 13,
-      "nonResponse": 4,
-      "covered": 13,
-      "coverage": 0.7647058823529411,
+      "respondentSchools": 17,
+      "sampleResponses": 17,
+      "nonResponse": 0,
+      "covered": 17,
+      "coverage": 1.0,
       "weightedBase": 82.99980000000001,
-      "weightedResponses": 63.3665,
-      "weightedNonResponse": 19.633300000000006,
-      "weightedCoverage": 0.7634536468762575,
+      "weightedResponses": 82.99980000000001,
+      "weightedNonResponse": 0.0,
+      "weightedCoverage": 1.0,
       "replacements": 0,
       "complementary": 0
     },
@@ -291,15 +291,15 @@
       "name": "Misiones",
       "universe": 87,
       "target": 17,
-      "respondentSchools": 12,
-      "sampleResponses": 12,
-      "nonResponse": 5,
-      "covered": 12,
-      "coverage": 0.7058823529411765,
+      "respondentSchools": 15,
+      "sampleResponses": 15,
+      "nonResponse": 2,
+      "covered": 15,
+      "coverage": 0.8823529411764706,
       "weightedBase": 84.9997,
-      "weightedResponses": 60.87859999999999,
-      "weightedNonResponse": 24.121100000000013,
-      "weightedCoverage": 0.7162213513694753,
+      "weightedResponses": 76.27250000000001,
+      "weightedNonResponse": 8.727199999999996,
+      "weightedCoverage": 0.897326696447164,
       "replacements": 0,
       "complementary": 0
     },
@@ -308,15 +308,15 @@
       "name": "Neuquén",
       "universe": 35,
       "target": 15,
-      "respondentSchools": 7,
-      "sampleResponses": 7,
-      "nonResponse": 8,
-      "covered": 7,
-      "coverage": 0.4666666666666667,
+      "respondentSchools": 9,
+      "sampleResponses": 9,
+      "nonResponse": 6,
+      "covered": 9,
+      "coverage": 0.6,
       "weightedBase": 32.0004,
-      "weightedResponses": 15.000200000000003,
-      "weightedNonResponse": 17.000199999999996,
-      "weightedCoverage": 0.46875039062011736,
+      "weightedResponses": 19.166900000000002,
+      "weightedNonResponse": 12.833499999999997,
+      "weightedCoverage": 0.5989581380232748,
       "replacements": 0,
       "complementary": 0
     },
@@ -342,15 +342,15 @@
       "name": "Salta",
       "universe": 70,
       "target": 15,
-      "respondentSchools": 8,
-      "sampleResponses": 8,
-      "nonResponse": 7,
-      "covered": 8,
-      "coverage": 0.5333333333333333,
+      "respondentSchools": 11,
+      "sampleResponses": 11,
+      "nonResponse": 4,
+      "covered": 11,
+      "coverage": 0.7333333333333333,
       "weightedBase": 69.0,
-      "weightedResponses": 36.85,
-      "weightedNonResponse": 32.15,
-      "weightedCoverage": 0.5340579710144928,
+      "weightedResponses": 51.4,
+      "weightedNonResponse": 17.6,
+      "weightedCoverage": 0.744927536231884,
       "replacements": 0,
       "complementary": 0
     },
@@ -359,15 +359,15 @@
       "name": "San Juan",
       "universe": 32,
       "target": 15,
-      "respondentSchools": 8,
-      "sampleResponses": 8,
-      "nonResponse": 7,
-      "covered": 8,
-      "coverage": 0.5333333333333333,
+      "respondentSchools": 9,
+      "sampleResponses": 9,
+      "nonResponse": 6,
+      "covered": 9,
+      "coverage": 0.6,
       "weightedBase": 29.000099999999996,
-      "weightedResponses": 15.6667,
-      "weightedNonResponse": 13.333399999999996,
-      "weightedCoverage": 0.5402291716235462,
+      "weightedResponses": 17.6667,
+      "weightedNonResponse": 11.333399999999997,
+      "weightedCoverage": 0.6091944510536171,
       "replacements": 0,
       "complementary": 0
     },
@@ -376,15 +376,15 @@
       "name": "San Luis",
       "universe": 32,
       "target": 15,
-      "respondentSchools": 13,
-      "sampleResponses": 13,
-      "nonResponse": 2,
-      "covered": 13,
-      "coverage": 0.8666666666666667,
+      "respondentSchools": 15,
+      "sampleResponses": 15,
+      "nonResponse": 0,
+      "covered": 15,
+      "coverage": 1.0,
       "weightedBase": 32.00019999999999,
-      "weightedResponses": 27.9335,
-      "weightedNonResponse": 4.066699999999994,
-      "weightedCoverage": 0.8729164192723797,
+      "weightedResponses": 32.00019999999999,
+      "weightedNonResponse": 0.0,
+      "weightedCoverage": 1.0,
       "replacements": 0,
       "complementary": 0
     },
@@ -393,15 +393,15 @@
       "name": "Santa Cruz",
       "universe": 20,
       "target": 15,
-      "respondentSchools": 10,
-      "sampleResponses": 10,
-      "nonResponse": 5,
-      "covered": 10,
-      "coverage": 0.6666666666666666,
+      "respondentSchools": 15,
+      "sampleResponses": 15,
+      "nonResponse": 0,
+      "covered": 15,
+      "coverage": 1.0,
       "weightedBase": 19.0,
-      "weightedResponses": 12.75,
-      "weightedNonResponse": 6.25,
-      "weightedCoverage": 0.6710526315789473,
+      "weightedResponses": 19.0,
+      "weightedNonResponse": 0.0,
+      "weightedCoverage": 1.0,
       "replacements": 0,
       "complementary": 0
     },
@@ -410,15 +410,15 @@
       "name": "Santa Fe",
       "universe": 173,
       "target": 35,
-      "respondentSchools": 25,
-      "sampleResponses": 25,
-      "nonResponse": 10,
-      "covered": 25,
-      "coverage": 0.7142857142857143,
+      "respondentSchools": 31,
+      "sampleResponses": 31,
+      "nonResponse": 4,
+      "covered": 31,
+      "coverage": 0.8857142857142857,
       "weightedBase": 170.00029999999998,
-      "weightedResponses": 123.12639999999999,
-      "weightedNonResponse": 46.87389999999999,
-      "weightedCoverage": 0.7242716630500065,
+      "weightedResponses": 150.18359999999996,
+      "weightedNonResponse": 19.816700000000026,
+      "weightedCoverage": 0.8834313821799137,
       "replacements": 0,
       "complementary": 0
     },
@@ -427,15 +427,15 @@
       "name": "Santiago del Estero",
       "universe": 30,
       "target": 15,
-      "respondentSchools": 9,
-      "sampleResponses": 9,
-      "nonResponse": 6,
-      "covered": 9,
-      "coverage": 0.6,
+      "respondentSchools": 14,
+      "sampleResponses": 14,
+      "nonResponse": 1,
+      "covered": 14,
+      "coverage": 0.9333333333333333,
       "weightedBase": 29.999800000000004,
-      "weightedResponses": 18.0356,
-      "weightedNonResponse": 11.964200000000005,
-      "weightedCoverage": 0.6011906746044973,
+      "weightedResponses": 28.428400000000003,
+      "weightedNonResponse": 1.5714000000000006,
+      "weightedCoverage": 0.947619650797672,
       "replacements": 0,
       "complementary": 0
     },
@@ -444,15 +444,15 @@
       "name": "Tucumán",
       "universe": 42,
       "target": 15,
-      "respondentSchools": 12,
-      "sampleResponses": 12,
-      "nonResponse": 3,
-      "covered": 12,
-      "coverage": 0.8,
+      "respondentSchools": 13,
+      "sampleResponses": 13,
+      "nonResponse": 2,
+      "covered": 13,
+      "coverage": 0.8666666666666667,
       "weightedBase": 39.99999999999999,
-      "weightedResponses": 31.699999999999996,
-      "weightedNonResponse": 8.299999999999997,
-      "weightedCoverage": 0.7925,
+      "weightedResponses": 34.099999999999994,
+      "weightedNonResponse": 5.899999999999999,
+      "weightedCoverage": 0.8525,
       "replacements": 0,
       "complementary": 0
     },
@@ -461,15 +461,15 @@
       "name": "Tierra del Fuego",
       "universe": 8,
       "target": 8,
-      "respondentSchools": 6,
-      "sampleResponses": 6,
-      "nonResponse": 2,
-      "covered": 6,
-      "coverage": 0.75,
+      "respondentSchools": 7,
+      "sampleResponses": 7,
+      "nonResponse": 1,
+      "covered": 7,
+      "coverage": 0.875,
       "weightedBase": 8.0,
-      "weightedResponses": 6.0,
-      "weightedNonResponse": 2.0,
-      "weightedCoverage": 0.75,
+      "weightedResponses": 7.0,
+      "weightedNonResponse": 1.0,
+      "weightedCoverage": 0.875,
       "replacements": 0,
       "complementary": 0
     }
@@ -565,7 +565,10 @@
       "jurisdiction": "Ciudad de Buenos Aires",
       "caseType": "titular",
       "weight": 5.5,
-      "coordinates": null,
+      "coordinates": [
+        -58.439779302787,
+        -34.578231518349
+      ],
       "answers": {
         "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
         "q_2_2_3": "No se remite a nivel jurisdiccional; queda aprobado a nivel interno o institucional",
@@ -666,8 +669,32 @@
       "jurisdictionId": "02",
       "jurisdiction": "Ciudad de Buenos Aires",
       "caseType": "titular",
+      "weight": 2.8,
+      "coordinates": [
+        -58.390844169005,
+        -34.602958653418
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
+        "q_2_2_3": "Sí, se remite y aprueba formalmente todos los años",
+        "q_2_2_5": "Predominantemente \"externas\"",
+        "q_3_3": "Se sistematiza y analiza la información para generar insumos para la toma de decisiones",
+        "q_3_4": "Sí, contamos con un registro digital que se actualiza anualmente",
+        "q_4_2": "Es insuficiente para cubrir las necesidades de Prácticas Profesionalizantes (PP)",
+        "q_5_5": "Sí",
+        "q_5_6": "Sí, mediante un análisis de coherencia entre las actividades realizadas en la práctica y la planificación inicial del proyecto"
+      }
+    },
+    {
+      "id": "escuela-0011",
+      "jurisdictionId": "02",
+      "jurisdiction": "Ciudad de Buenos Aires",
+      "caseType": "titular",
       "weight": 2.0,
-      "coordinates": null,
+      "coordinates": [
+        -58.483383280304,
+        -34.548907306291
+      ],
       "answers": {
         "q_2_1_1": "Sí, pero comparte la tarea con otras funciones (por ejemplo, docente de taller, jefe/a de taller, directivo/a).",
         "q_2_2_3": "No se remite a nivel jurisdiccional; queda aprobado a nivel interno o institucional",
@@ -680,7 +707,7 @@
       }
     },
     {
-      "id": "escuela-0011",
+      "id": "escuela-0012",
       "jurisdictionId": "02",
       "jurisdiction": "Ciudad de Buenos Aires",
       "caseType": "titular",
@@ -701,7 +728,7 @@
       }
     },
     {
-      "id": "escuela-0012",
+      "id": "escuela-0013",
       "jurisdictionId": "02",
       "jurisdiction": "Ciudad de Buenos Aires",
       "caseType": "titular",
@@ -722,12 +749,15 @@
       }
     },
     {
-      "id": "escuela-0013",
+      "id": "escuela-0014",
       "jurisdictionId": "02",
       "jurisdiction": "Ciudad de Buenos Aires",
       "caseType": "titular",
       "weight": 5.5,
-      "coordinates": null,
+      "coordinates": [
+        -58.478652696733,
+        -34.650188112647
+      ],
       "answers": {
         "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
         "q_2_2_3": "Se remite para notificación, pero no requiere aprobación explícita para iniciar",
@@ -740,7 +770,7 @@
       }
     },
     {
-      "id": "escuela-0014",
+      "id": "escuela-0015",
       "jurisdictionId": "02",
       "jurisdiction": "Ciudad de Buenos Aires",
       "caseType": "titular",
@@ -761,7 +791,7 @@
       }
     },
     {
-      "id": "escuela-0015",
+      "id": "escuela-0016",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -782,7 +812,7 @@
       }
     },
     {
-      "id": "escuela-0016",
+      "id": "escuela-0017",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -803,10 +833,10 @@
       }
     },
     {
-      "id": "escuela-0017",
+      "id": "escuela-0018",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "reemplazo",
+      "caseType": "titular",
       "weight": 5.3191,
       "coordinates": [
         -59.277824124084,
@@ -824,7 +854,7 @@
       }
     },
     {
-      "id": "escuela-0018",
+      "id": "escuela-0019",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -845,7 +875,7 @@
       }
     },
     {
-      "id": "escuela-0019",
+      "id": "escuela-0020",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -866,7 +896,7 @@
       }
     },
     {
-      "id": "escuela-0020",
+      "id": "escuela-0021",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -887,10 +917,10 @@
       }
     },
     {
-      "id": "escuela-0021",
+      "id": "escuela-0022",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "reemplazo",
+      "caseType": "titular",
       "weight": 5.3191,
       "coordinates": [
         -58.017698075106,
@@ -908,7 +938,7 @@
       }
     },
     {
-      "id": "escuela-0022",
+      "id": "escuela-0023",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -929,7 +959,7 @@
       }
     },
     {
-      "id": "escuela-0023",
+      "id": "escuela-0024",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -950,7 +980,7 @@
       }
     },
     {
-      "id": "escuela-0024",
+      "id": "escuela-0025",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -971,7 +1001,7 @@
       }
     },
     {
-      "id": "escuela-0025",
+      "id": "escuela-0026",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -992,7 +1022,7 @@
       }
     },
     {
-      "id": "escuela-0026",
+      "id": "escuela-0027",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -1013,7 +1043,7 @@
       }
     },
     {
-      "id": "escuela-0027",
+      "id": "escuela-0028",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -1034,7 +1064,7 @@
       }
     },
     {
-      "id": "escuela-0028",
+      "id": "escuela-0029",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -1055,7 +1085,7 @@
       }
     },
     {
-      "id": "escuela-0029",
+      "id": "escuela-0030",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -1076,7 +1106,7 @@
       }
     },
     {
-      "id": "escuela-0030",
+      "id": "escuela-0031",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -1097,7 +1127,7 @@
       }
     },
     {
-      "id": "escuela-0031",
+      "id": "escuela-0032",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -1118,11 +1148,11 @@
       }
     },
     {
-      "id": "escuela-0032",
+      "id": "escuela-0033",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
-      "weight": 3.7,
+      "weight": 5.3191,
       "coordinates": [
         -58.518519465695,
         -34.524712235164
@@ -1139,7 +1169,7 @@
       }
     },
     {
-      "id": "escuela-0033",
+      "id": "escuela-0034",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -1160,7 +1190,7 @@
       }
     },
     {
-      "id": "escuela-0034",
+      "id": "escuela-0035",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -1181,7 +1211,7 @@
       }
     },
     {
-      "id": "escuela-0035",
+      "id": "escuela-0036",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -1202,7 +1232,7 @@
       }
     },
     {
-      "id": "escuela-0036",
+      "id": "escuela-0037",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -1223,7 +1253,7 @@
       }
     },
     {
-      "id": "escuela-0037",
+      "id": "escuela-0038",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -1244,7 +1274,7 @@
       }
     },
     {
-      "id": "escuela-0038",
+      "id": "escuela-0039",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -1265,7 +1295,7 @@
       }
     },
     {
-      "id": "escuela-0039",
+      "id": "escuela-0040",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -1286,7 +1316,28 @@
       }
     },
     {
-      "id": "escuela-0040",
+      "id": "escuela-0041",
+      "jurisdictionId": "06",
+      "jurisdiction": "Buenos Aires",
+      "caseType": "titular",
+      "weight": 4.5,
+      "coordinates": [
+        -58.226140143852,
+        -37.84123856161
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
+        "q_2_2_3": "Sí, se remite y aprueba formalmente todos los años",
+        "q_2_2_5": "Predominantemente \"externas\"",
+        "q_3_3": "Se sistematiza y analiza la información para generar insumos para la toma de decisiones",
+        "q_3_4": "Sí, contamos con un registro digital que se actualiza anualmente",
+        "q_4_2": "Es suficiente para cubrir las Prácticas Profesionalizantes (PP) de la matrícula de la escuela",
+        "q_5_5": "Sí",
+        "q_5_6": "Sí, mediante un análisis de coherencia entre las actividades realizadas en la práctica y la planificación inicial del proyecto"
+      }
+    },
+    {
+      "id": "escuela-0042",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -1307,7 +1358,7 @@
       }
     },
     {
-      "id": "escuela-0041",
+      "id": "escuela-0043",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -1328,7 +1379,7 @@
       }
     },
     {
-      "id": "escuela-0042",
+      "id": "escuela-0044",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -1349,10 +1400,10 @@
       }
     },
     {
-      "id": "escuela-0043",
+      "id": "escuela-0045",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
-      "caseType": "reemplazo",
+      "caseType": "titular",
       "weight": 5.3191,
       "coordinates": [
         -60.097782730788,
@@ -1370,7 +1421,7 @@
       }
     },
     {
-      "id": "escuela-0044",
+      "id": "escuela-0046",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -1391,7 +1442,7 @@
       }
     },
     {
-      "id": "escuela-0045",
+      "id": "escuela-0047",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -1412,7 +1463,28 @@
       }
     },
     {
-      "id": "escuela-0046",
+      "id": "escuela-0048",
+      "jurisdictionId": "06",
+      "jurisdiction": "Buenos Aires",
+      "caseType": "titular",
+      "weight": 5.3191,
+      "coordinates": [
+        -58.054041731241,
+        -34.951089561234
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
+        "q_2_2_3": "Sí, se remite y aprueba formalmente todos los años",
+        "q_2_2_5": "Modalidad mixta (se realizan ambos formatos sin que uno predomine)",
+        "q_3_3": "Se registra la información, pero no se realiza una sistematización ni un análisis posterior",
+        "q_3_4": "Sí, contamos con un registro en fichas (soporte papel)",
+        "q_4_2": "Es insuficiente para cubrir las necesidades de Prácticas Profesionalizantes (PP)",
+        "q_5_5": "No",
+        "q_5_6": "Parcialmente; se prioriza la experiencia laboral general por sobre la especificidad del título"
+      }
+    },
+    {
+      "id": "escuela-0049",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -1433,7 +1505,7 @@
       }
     },
     {
-      "id": "escuela-0047",
+      "id": "escuela-0050",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -1454,7 +1526,28 @@
       }
     },
     {
-      "id": "escuela-0048",
+      "id": "escuela-0051",
+      "jurisdictionId": "06",
+      "jurisdiction": "Buenos Aires",
+      "caseType": "titular",
+      "weight": 4.8636,
+      "coordinates": [
+        -61.52057921322,
+        -34.869772624578
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
+        "q_2_2_3": "Se remite para notificación, pero no requiere aprobación explícita para iniciar",
+        "q_2_2_5": "Modalidad mixta (se realizan ambos formatos sin que uno predomine)",
+        "q_3_3": "Se sistematiza y analiza la información para generar insumos para la toma de decisiones",
+        "q_3_4": "Sí, contamos con un registro en fichas (soporte papel)",
+        "q_4_2": "Es suficiente para cubrir las Prácticas Profesionalizantes (PP) de la matrícula de la escuela",
+        "q_5_5": "Sí",
+        "q_5_6": "Sí, mediante un análisis de coherencia entre las actividades realizadas en la práctica y la planificación inicial del proyecto"
+      }
+    },
+    {
+      "id": "escuela-0052",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -1475,7 +1568,7 @@
       }
     },
     {
-      "id": "escuela-0049",
+      "id": "escuela-0053",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -1496,7 +1589,28 @@
       }
     },
     {
-      "id": "escuela-0050",
+      "id": "escuela-0054",
+      "jurisdictionId": "06",
+      "jurisdiction": "Buenos Aires",
+      "caseType": "titular",
+      "weight": 4.8636,
+      "coordinates": [
+        -60.802191613452,
+        -37.542179555242
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, pero comparte la tarea con otras funciones (por ejemplo, docente de taller, jefe/a de taller, directivo/a).",
+        "q_2_2_3": "Sí, se remite y aprueba formalmente todos los años",
+        "q_2_2_5": "Modalidad mixta (se realizan ambos formatos sin que uno predomine)",
+        "q_3_3": "No se dispone de información registrada que permita realizar sistematización y análisis",
+        "q_3_4": "Sí, contamos con un registro digital que se actualiza anualmente",
+        "q_4_2": "Es suficiente para cubrir las Prácticas Profesionalizantes (PP) de la matrícula de la escuela",
+        "q_5_5": "Sí",
+        "q_5_6": "Sí, mediante un análisis de coherencia entre las actividades realizadas en la práctica y la planificación inicial del proyecto"
+      }
+    },
+    {
+      "id": "escuela-0055",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -1517,7 +1631,7 @@
       }
     },
     {
-      "id": "escuela-0051",
+      "id": "escuela-0056",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -1538,7 +1652,28 @@
       }
     },
     {
-      "id": "escuela-0052",
+      "id": "escuela-0057",
+      "jurisdictionId": "06",
+      "jurisdiction": "Buenos Aires",
+      "caseType": "titular",
+      "weight": 4.8636,
+      "coordinates": [
+        -58.269727819912,
+        -34.74873759291
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, pero comparte la tarea con otras funciones (por ejemplo, docente de taller, jefe/a de taller, directivo/a).",
+        "q_2_2_3": "Sí, se remite y aprueba formalmente todos los años",
+        "q_2_2_5": "Modalidad mixta (se realizan ambos formatos sin que uno predomine)",
+        "q_3_3": "Se sistematiza y analiza la información para generar insumos para la toma de decisiones",
+        "q_3_4": "Sí, contamos con un registro digital que se actualiza anualmente",
+        "q_4_2": "Es suficiente para cubrir las Prácticas Profesionalizantes (PP) de la matrícula de la escuela",
+        "q_5_5": "No",
+        "q_5_6": "Parcialmente; se prioriza la experiencia laboral general por sobre la especificidad del título"
+      }
+    },
+    {
+      "id": "escuela-0058",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -1559,7 +1694,28 @@
       }
     },
     {
-      "id": "escuela-0053",
+      "id": "escuela-0059",
+      "jurisdictionId": "06",
+      "jurisdiction": "Buenos Aires",
+      "caseType": "titular",
+      "weight": 5.3191,
+      "coordinates": [
+        -59.498362163711,
+        -33.806744465382
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
+        "q_2_2_3": "Sí, se remite y aprueba formalmente todos los años",
+        "q_2_2_5": "Modalidad mixta (se realizan ambos formatos sin que uno predomine)",
+        "q_3_3": "Se registra la información, pero no se realiza una sistematización ni un análisis posterior",
+        "q_3_4": "Sí, contamos con un registro digital que se actualiza anualmente",
+        "q_4_2": "Es insuficiente para cubrir las necesidades de Prácticas Profesionalizantes (PP)",
+        "q_5_5": "No",
+        "q_5_6": "Sí, mediante un análisis de coherencia entre las actividades realizadas en la práctica y la planificación inicial del proyecto"
+      }
+    },
+    {
+      "id": "escuela-0060",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -1580,7 +1736,7 @@
       }
     },
     {
-      "id": "escuela-0054",
+      "id": "escuela-0061",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -1601,7 +1757,7 @@
       }
     },
     {
-      "id": "escuela-0055",
+      "id": "escuela-0062",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -1622,7 +1778,7 @@
       }
     },
     {
-      "id": "escuela-0056",
+      "id": "escuela-0063",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -1643,7 +1799,7 @@
       }
     },
     {
-      "id": "escuela-0057",
+      "id": "escuela-0064",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -1664,7 +1820,7 @@
       }
     },
     {
-      "id": "escuela-0058",
+      "id": "escuela-0065",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -1685,7 +1841,7 @@
       }
     },
     {
-      "id": "escuela-0059",
+      "id": "escuela-0066",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -1706,7 +1862,7 @@
       }
     },
     {
-      "id": "escuela-0060",
+      "id": "escuela-0067",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -1727,7 +1883,7 @@
       }
     },
     {
-      "id": "escuela-0061",
+      "id": "escuela-0068",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -1748,7 +1904,7 @@
       }
     },
     {
-      "id": "escuela-0062",
+      "id": "escuela-0069",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -1769,7 +1925,7 @@
       }
     },
     {
-      "id": "escuela-0063",
+      "id": "escuela-0070",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -1790,7 +1946,28 @@
       }
     },
     {
-      "id": "escuela-0064",
+      "id": "escuela-0071",
+      "jurisdictionId": "06",
+      "jurisdiction": "Buenos Aires",
+      "caseType": "titular",
+      "weight": 3.7,
+      "coordinates": [
+        -58.327084773758,
+        -34.726806731702
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
+        "q_2_2_3": "Sí, se remite y aprueba formalmente todos los años",
+        "q_2_2_5": "Modalidad mixta (se realizan ambos formatos sin que uno predomine)",
+        "q_3_3": "Se registra la información, pero no se realiza una sistematización ni un análisis posterior",
+        "q_3_4": "Sí, contamos con un registro en fichas (soporte papel)",
+        "q_4_2": "Es insuficiente para cubrir las necesidades de Prácticas Profesionalizantes (PP)",
+        "q_5_5": "No",
+        "q_5_6": "Sí, mediante un análisis de coherencia entre las actividades realizadas en la práctica y la planificación inicial del proyecto"
+      }
+    },
+    {
+      "id": "escuela-0072",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -1811,7 +1988,7 @@
       }
     },
     {
-      "id": "escuela-0065",
+      "id": "escuela-0073",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -1832,7 +2009,7 @@
       }
     },
     {
-      "id": "escuela-0066",
+      "id": "escuela-0074",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -1853,7 +2030,28 @@
       }
     },
     {
-      "id": "escuela-0067",
+      "id": "escuela-0075",
+      "jurisdictionId": "06",
+      "jurisdiction": "Buenos Aires",
+      "caseType": "titular",
+      "weight": 4.8636,
+      "coordinates": [
+        -57.65395361107,
+        -35.184676999044
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
+        "q_2_2_3": "Sí, se remite y aprueba formalmente todos los años",
+        "q_2_2_5": "Modalidad mixta (se realizan ambos formatos sin que uno predomine)",
+        "q_3_3": "Se sistematiza y analiza la información para generar insumos para la toma de decisiones",
+        "q_3_4": "Sí, contamos con un registro en fichas (soporte papel)",
+        "q_4_2": "Es suficiente para cubrir las Prácticas Profesionalizantes (PP) de la matrícula de la escuela",
+        "q_5_5": "Sí",
+        "q_5_6": "Sí, mediante un análisis de coherencia entre las actividades realizadas en la práctica y la planificación inicial del proyecto"
+      }
+    },
+    {
+      "id": "escuela-0076",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -1874,7 +2072,7 @@
       }
     },
     {
-      "id": "escuela-0068",
+      "id": "escuela-0077",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -1895,7 +2093,7 @@
       }
     },
     {
-      "id": "escuela-0069",
+      "id": "escuela-0078",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -1916,7 +2114,7 @@
       }
     },
     {
-      "id": "escuela-0070",
+      "id": "escuela-0079",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -1937,7 +2135,7 @@
       }
     },
     {
-      "id": "escuela-0071",
+      "id": "escuela-0080",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -1958,12 +2156,36 @@
       }
     },
     {
-      "id": "escuela-0072",
+      "id": "escuela-0081",
+      "jurisdictionId": "06",
+      "jurisdiction": "Buenos Aires",
+      "caseType": "titular",
+      "weight": 3.7,
+      "coordinates": [
+        -58.798161658234,
+        -34.44789875952
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, pero comparte la tarea con otras funciones (por ejemplo, docente de taller, jefe/a de taller, directivo/a).",
+        "q_2_2_3": "Sí, se remite y aprueba formalmente todos los años",
+        "q_2_2_5": "Modalidad mixta (se realizan ambos formatos sin que uno predomine)",
+        "q_3_3": "Se registra la información, pero no se realiza una sistematización ni un análisis posterior",
+        "q_3_4": "No contamos con un registro de oferentes",
+        "q_4_2": "Es insuficiente para cubrir las necesidades de Prácticas Profesionalizantes (PP)",
+        "q_5_5": "No",
+        "q_5_6": "Sí, mediante un análisis de coherencia entre las actividades realizadas en la práctica y la planificación inicial del proyecto"
+      }
+    },
+    {
+      "id": "escuela-0082",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
       "weight": 4.5,
-      "coordinates": null,
+      "coordinates": [
+        -58.472815815255,
+        -34.747582563013
+      ],
       "answers": {
         "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
         "q_2_2_3": "Sí, se remite y aprueba formalmente todos los años",
@@ -1976,7 +2198,7 @@
       }
     },
     {
-      "id": "escuela-0073",
+      "id": "escuela-0083",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -1997,7 +2219,7 @@
       }
     },
     {
-      "id": "escuela-0074",
+      "id": "escuela-0084",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -2018,12 +2240,15 @@
       }
     },
     {
-      "id": "escuela-0075",
+      "id": "escuela-0085",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
       "weight": 5.3191,
-      "coordinates": null,
+      "coordinates": [
+        -58.70609675122,
+        -34.505467683902
+      ],
       "answers": {
         "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
         "q_2_2_3": "No se remite a nivel jurisdiccional; queda aprobado a nivel interno o institucional",
@@ -2036,7 +2261,7 @@
       }
     },
     {
-      "id": "escuela-0076",
+      "id": "escuela-0086",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -2057,7 +2282,7 @@
       }
     },
     {
-      "id": "escuela-0077",
+      "id": "escuela-0087",
       "jurisdictionId": "06",
       "jurisdiction": "Buenos Aires",
       "caseType": "titular",
@@ -2078,7 +2303,7 @@
       }
     },
     {
-      "id": "escuela-0078",
+      "id": "escuela-0088",
       "jurisdictionId": "10",
       "jurisdiction": "Catamarca",
       "caseType": "titular",
@@ -2099,7 +2324,7 @@
       }
     },
     {
-      "id": "escuela-0079",
+      "id": "escuela-0089",
       "jurisdictionId": "10",
       "jurisdiction": "Catamarca",
       "caseType": "titular",
@@ -2120,7 +2345,7 @@
       }
     },
     {
-      "id": "escuela-0080",
+      "id": "escuela-0090",
       "jurisdictionId": "10",
       "jurisdiction": "Catamarca",
       "caseType": "titular",
@@ -2141,7 +2366,7 @@
       }
     },
     {
-      "id": "escuela-0081",
+      "id": "escuela-0091",
       "jurisdictionId": "10",
       "jurisdiction": "Catamarca",
       "caseType": "titular",
@@ -2162,7 +2387,7 @@
       }
     },
     {
-      "id": "escuela-0082",
+      "id": "escuela-0092",
       "jurisdictionId": "10",
       "jurisdiction": "Catamarca",
       "caseType": "titular",
@@ -2183,7 +2408,28 @@
       }
     },
     {
-      "id": "escuela-0083",
+      "id": "escuela-0093",
+      "jurisdictionId": "10",
+      "jurisdiction": "Catamarca",
+      "caseType": "titular",
+      "weight": 1.2222,
+      "coordinates": [
+        -67.562341387237,
+        -28.062748604042
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
+        "q_2_2_3": "Sí, se remite y aprueba formalmente todos los años",
+        "q_2_2_5": "Modalidad mixta (se realizan ambos formatos sin que uno predomine)",
+        "q_3_3": "Se sistematiza y analiza la información para generar insumos para la toma de decisiones",
+        "q_3_4": "No contamos con un registro de oferentes",
+        "q_4_2": "Es insuficiente para cubrir las necesidades de Prácticas Profesionalizantes (PP)",
+        "q_5_5": "No",
+        "q_5_6": "Sí, mediante un análisis de coherencia entre las actividades realizadas en la práctica y la planificación inicial del proyecto"
+      }
+    },
+    {
+      "id": "escuela-0094",
       "jurisdictionId": "10",
       "jurisdiction": "Catamarca",
       "caseType": "titular",
@@ -2204,7 +2450,7 @@
       }
     },
     {
-      "id": "escuela-0084",
+      "id": "escuela-0095",
       "jurisdictionId": "10",
       "jurisdiction": "Catamarca",
       "caseType": "titular",
@@ -2225,7 +2471,7 @@
       }
     },
     {
-      "id": "escuela-0085",
+      "id": "escuela-0096",
       "jurisdictionId": "10",
       "jurisdiction": "Catamarca",
       "caseType": "titular",
@@ -2246,7 +2492,7 @@
       }
     },
     {
-      "id": "escuela-0086",
+      "id": "escuela-0097",
       "jurisdictionId": "10",
       "jurisdiction": "Catamarca",
       "caseType": "titular",
@@ -2267,7 +2513,7 @@
       }
     },
     {
-      "id": "escuela-0087",
+      "id": "escuela-0098",
       "jurisdictionId": "10",
       "jurisdiction": "Catamarca",
       "caseType": "titular",
@@ -2288,7 +2534,28 @@
       }
     },
     {
-      "id": "escuela-0088",
+      "id": "escuela-0099",
+      "jurisdictionId": "10",
+      "jurisdiction": "Catamarca",
+      "caseType": "titular",
+      "weight": 1.2222,
+      "coordinates": [
+        -66.32066916,
+        -27.57902378
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, pero comparte la tarea con otras funciones (por ejemplo, docente de taller, jefe/a de taller, directivo/a).",
+        "q_2_2_3": "Se remite para notificación, pero no requiere aprobación explícita para iniciar",
+        "q_2_2_5": "Predominantemente \"externas\"",
+        "q_3_3": "Se sistematiza y analiza la información para generar insumos para la toma de decisiones",
+        "q_3_4": "Sí, contamos con un registro digital que se actualiza anualmente",
+        "q_4_2": "Es suficiente para cubrir las Prácticas Profesionalizantes (PP) de la matrícula de la escuela",
+        "q_5_5": "Sí",
+        "q_5_6": "Sí, mediante un análisis de coherencia entre las actividades realizadas en la práctica y la planificación inicial del proyecto"
+      }
+    },
+    {
+      "id": "escuela-0100",
       "jurisdictionId": "10",
       "jurisdiction": "Catamarca",
       "caseType": "titular",
@@ -2309,7 +2576,7 @@
       }
     },
     {
-      "id": "escuela-0089",
+      "id": "escuela-0101",
       "jurisdictionId": "10",
       "jurisdiction": "Catamarca",
       "caseType": "titular",
@@ -2330,7 +2597,7 @@
       }
     },
     {
-      "id": "escuela-0090",
+      "id": "escuela-0102",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
       "caseType": "titular",
@@ -2351,7 +2618,28 @@
       }
     },
     {
-      "id": "escuela-0091",
+      "id": "escuela-0103",
+      "jurisdictionId": "14",
+      "jurisdiction": "Córdoba",
+      "caseType": "titular",
+      "weight": 5.0741,
+      "coordinates": [
+        -64.163976364497,
+        -31.422881739544
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
+        "q_2_2_3": "Se remite para notificación, pero no requiere aprobación explícita para iniciar",
+        "q_2_2_5": "Modalidad mixta (se realizan ambos formatos sin que uno predomine)",
+        "q_3_3": "Se registra la información, pero no se realiza una sistematización ni un análisis posterior",
+        "q_3_4": "Sí, contamos con un registro en fichas (soporte papel)",
+        "q_4_2": "Es suficiente para cubrir las Prácticas Profesionalizantes (PP) de la matrícula de la escuela",
+        "q_5_5": "No",
+        "q_5_6": "Sí, mediante un análisis de coherencia entre las actividades realizadas en la práctica y la planificación inicial del proyecto"
+      }
+    },
+    {
+      "id": "escuela-0104",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
       "caseType": "titular",
@@ -2372,7 +2660,7 @@
       }
     },
     {
-      "id": "escuela-0092",
+      "id": "escuela-0105",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
       "caseType": "titular",
@@ -2393,7 +2681,7 @@
       }
     },
     {
-      "id": "escuela-0093",
+      "id": "escuela-0106",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
       "caseType": "titular",
@@ -2414,7 +2702,7 @@
       }
     },
     {
-      "id": "escuela-0094",
+      "id": "escuela-0107",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
       "caseType": "titular",
@@ -2435,7 +2723,7 @@
       }
     },
     {
-      "id": "escuela-0095",
+      "id": "escuela-0108",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
       "caseType": "titular",
@@ -2456,7 +2744,7 @@
       }
     },
     {
-      "id": "escuela-0096",
+      "id": "escuela-0109",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
       "caseType": "titular",
@@ -2477,7 +2765,7 @@
       }
     },
     {
-      "id": "escuela-0097",
+      "id": "escuela-0110",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
       "caseType": "titular",
@@ -2498,7 +2786,7 @@
       }
     },
     {
-      "id": "escuela-0098",
+      "id": "escuela-0111",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
       "caseType": "titular",
@@ -2519,7 +2807,7 @@
       }
     },
     {
-      "id": "escuela-0099",
+      "id": "escuela-0112",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
       "caseType": "titular",
@@ -2540,7 +2828,7 @@
       }
     },
     {
-      "id": "escuela-0100",
+      "id": "escuela-0113",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
       "caseType": "titular",
@@ -2561,7 +2849,28 @@
       }
     },
     {
-      "id": "escuela-0101",
+      "id": "escuela-0114",
+      "jurisdictionId": "14",
+      "jurisdiction": "Córdoba",
+      "caseType": "titular",
+      "weight": 4.0,
+      "coordinates": [
+        -62.464185305545,
+        -32.915266930221
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, pero comparte la tarea con otras funciones (por ejemplo, docente de taller, jefe/a de taller, directivo/a).",
+        "q_2_2_3": "No se remite a nivel jurisdiccional; queda aprobado a nivel interno o institucional",
+        "q_2_2_5": "Predominantemente \"externas\"",
+        "q_3_3": "Se sistematiza y analiza la información para generar insumos para la toma de decisiones",
+        "q_3_4": "No contamos con un registro de oferentes",
+        "q_4_2": "Es suficiente para cubrir las Prácticas Profesionalizantes (PP) de la matrícula de la escuela",
+        "q_5_5": "Sí",
+        "q_5_6": "Parcialmente; se prioriza la experiencia laboral general por sobre la especificidad del título"
+      }
+    },
+    {
+      "id": "escuela-0115",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
       "caseType": "titular",
@@ -2582,7 +2891,7 @@
       }
     },
     {
-      "id": "escuela-0102",
+      "id": "escuela-0116",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
       "caseType": "titular",
@@ -2603,7 +2912,28 @@
       }
     },
     {
-      "id": "escuela-0103",
+      "id": "escuela-0117",
+      "jurisdictionId": "14",
+      "jurisdiction": "Córdoba",
+      "caseType": "titular",
+      "weight": 6.4,
+      "coordinates": [
+        -64.087420900688,
+        -31.467550172975
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, pero comparte la tarea con otras funciones (por ejemplo, docente de taller, jefe/a de taller, directivo/a).",
+        "q_2_2_3": "No se remite a nivel jurisdiccional; queda aprobado a nivel interno o institucional",
+        "q_2_2_5": "Predominantemente \"internas\"",
+        "q_3_3": "Se sistematiza y analiza la información para generar insumos para la toma de decisiones",
+        "q_3_4": "Sí, contamos con un registro digital que se actualiza anualmente",
+        "q_4_2": "Es insuficiente para cubrir las necesidades de Prácticas Profesionalizantes (PP)",
+        "q_5_5": "Sí",
+        "q_5_6": "Sí, mediante un análisis de coherencia entre las actividades realizadas en la práctica y la planificación inicial del proyecto"
+      }
+    },
+    {
+      "id": "escuela-0118",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
       "caseType": "titular",
@@ -2624,7 +2954,7 @@
       }
     },
     {
-      "id": "escuela-0104",
+      "id": "escuela-0119",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
       "caseType": "titular",
@@ -2645,7 +2975,7 @@
       }
     },
     {
-      "id": "escuela-0105",
+      "id": "escuela-0120",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
       "caseType": "titular",
@@ -2666,7 +2996,7 @@
       }
     },
     {
-      "id": "escuela-0106",
+      "id": "escuela-0121",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
       "caseType": "titular",
@@ -2687,7 +3017,7 @@
       }
     },
     {
-      "id": "escuela-0107",
+      "id": "escuela-0122",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
       "caseType": "titular",
@@ -2708,7 +3038,7 @@
       }
     },
     {
-      "id": "escuela-0108",
+      "id": "escuela-0123",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
       "caseType": "titular",
@@ -2729,7 +3059,7 @@
       }
     },
     {
-      "id": "escuela-0109",
+      "id": "escuela-0124",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
       "caseType": "titular",
@@ -2750,7 +3080,7 @@
       }
     },
     {
-      "id": "escuela-0110",
+      "id": "escuela-0125",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
       "caseType": "titular",
@@ -2771,7 +3101,7 @@
       }
     },
     {
-      "id": "escuela-0111",
+      "id": "escuela-0126",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
       "caseType": "titular",
@@ -2792,7 +3122,7 @@
       }
     },
     {
-      "id": "escuela-0112",
+      "id": "escuela-0127",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
       "caseType": "titular",
@@ -2813,7 +3143,7 @@
       }
     },
     {
-      "id": "escuela-0113",
+      "id": "escuela-0128",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
       "caseType": "titular",
@@ -2834,7 +3164,7 @@
       }
     },
     {
-      "id": "escuela-0114",
+      "id": "escuela-0129",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
       "caseType": "titular",
@@ -2855,7 +3185,7 @@
       }
     },
     {
-      "id": "escuela-0115",
+      "id": "escuela-0130",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
       "caseType": "titular",
@@ -2876,7 +3206,7 @@
       }
     },
     {
-      "id": "escuela-0116",
+      "id": "escuela-0131",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
       "caseType": "titular",
@@ -2897,7 +3227,7 @@
       }
     },
     {
-      "id": "escuela-0117",
+      "id": "escuela-0132",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
       "caseType": "titular",
@@ -2918,7 +3248,7 @@
       }
     },
     {
-      "id": "escuela-0118",
+      "id": "escuela-0133",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
       "caseType": "titular",
@@ -2939,7 +3269,7 @@
       }
     },
     {
-      "id": "escuela-0119",
+      "id": "escuela-0134",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
       "caseType": "titular",
@@ -2960,7 +3290,28 @@
       }
     },
     {
-      "id": "escuela-0120",
+      "id": "escuela-0135",
+      "jurisdictionId": "14",
+      "jurisdiction": "Córdoba",
+      "caseType": "titular",
+      "weight": 4.7692,
+      "coordinates": [
+        -63.2668503502,
+        -34.2969723547
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, pero comparte la tarea con otras funciones (por ejemplo, docente de taller, jefe/a de taller, directivo/a).",
+        "q_2_2_3": "Sí, se remite y aprueba formalmente todos los años",
+        "q_2_2_5": "Modalidad mixta (se realizan ambos formatos sin que uno predomine)",
+        "q_3_3": "No se dispone de información registrada que permita realizar sistematización y análisis",
+        "q_3_4": "Sí, contamos con un registro en fichas (soporte papel)",
+        "q_4_2": "Es suficiente para cubrir las Prácticas Profesionalizantes (PP) de la matrícula de la escuela",
+        "q_5_5": "No",
+        "q_5_6": "Sí, mediante un análisis de coherencia entre las actividades realizadas en la práctica y la planificación inicial del proyecto"
+      }
+    },
+    {
+      "id": "escuela-0136",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
       "caseType": "titular",
@@ -2981,7 +3332,7 @@
       }
     },
     {
-      "id": "escuela-0121",
+      "id": "escuela-0137",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
       "caseType": "titular",
@@ -3002,7 +3353,28 @@
       }
     },
     {
-      "id": "escuela-0122",
+      "id": "escuela-0138",
+      "jurisdictionId": "14",
+      "jurisdiction": "Córdoba",
+      "caseType": "titular",
+      "weight": 5.0741,
+      "coordinates": [
+        -64.164414000101,
+        -31.277845994894
+      ],
+      "answers": {
+        "q_2_1_1": "No contamos con personal específico; la tarea se distribuye informalmente.",
+        "q_2_2_3": "Sí, se remite y aprueba formalmente todos los años",
+        "q_2_2_5": "Modalidad mixta (se realizan ambos formatos sin que uno predomine)",
+        "q_3_3": "Se registra la información, pero no se realiza una sistematización ni un análisis posterior",
+        "q_3_4": "No contamos con un registro de oferentes",
+        "q_4_2": "Es insuficiente para cubrir las necesidades de Prácticas Profesionalizantes (PP)",
+        "q_5_5": "No",
+        "q_5_6": "Parcialmente; se prioriza la experiencia laboral general por sobre la especificidad del título"
+      }
+    },
+    {
+      "id": "escuela-0139",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
       "caseType": "titular",
@@ -3023,7 +3395,7 @@
       }
     },
     {
-      "id": "escuela-0123",
+      "id": "escuela-0140",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
       "caseType": "titular",
@@ -3044,7 +3416,7 @@
       }
     },
     {
-      "id": "escuela-0124",
+      "id": "escuela-0141",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
       "caseType": "titular",
@@ -3065,7 +3437,7 @@
       }
     },
     {
-      "id": "escuela-0125",
+      "id": "escuela-0142",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
       "caseType": "titular",
@@ -3086,7 +3458,7 @@
       }
     },
     {
-      "id": "escuela-0126",
+      "id": "escuela-0143",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
       "caseType": "titular",
@@ -3107,7 +3479,7 @@
       }
     },
     {
-      "id": "escuela-0127",
+      "id": "escuela-0144",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
       "caseType": "titular",
@@ -3128,7 +3500,7 @@
       }
     },
     {
-      "id": "escuela-0128",
+      "id": "escuela-0145",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
       "caseType": "titular",
@@ -3149,7 +3521,7 @@
       }
     },
     {
-      "id": "escuela-0129",
+      "id": "escuela-0146",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
       "caseType": "titular",
@@ -3170,7 +3542,7 @@
       }
     },
     {
-      "id": "escuela-0130",
+      "id": "escuela-0147",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
       "caseType": "titular",
@@ -3191,7 +3563,49 @@
       }
     },
     {
-      "id": "escuela-0131",
+      "id": "escuela-0148",
+      "jurisdictionId": "14",
+      "jurisdiction": "Córdoba",
+      "caseType": "titular",
+      "weight": 5.0741,
+      "coordinates": [
+        -64.109903894384,
+        -31.449543461463
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, pero comparte la tarea con otras funciones (por ejemplo, docente de taller, jefe/a de taller, directivo/a).",
+        "q_2_2_3": "Sí, se remite y aprueba formalmente todos los años",
+        "q_2_2_5": "Modalidad mixta (se realizan ambos formatos sin que uno predomine)",
+        "q_3_3": "Se sistematiza y analiza la información para generar insumos para la toma de decisiones",
+        "q_3_4": "Sí, contamos con un registro en fichas (soporte papel)",
+        "q_4_2": "Es suficiente para cubrir las Prácticas Profesionalizantes (PP) de la matrícula de la escuela",
+        "q_5_5": "No",
+        "q_5_6": "Sí, mediante un análisis de coherencia entre las actividades realizadas en la práctica y la planificación inicial del proyecto"
+      }
+    },
+    {
+      "id": "escuela-0149",
+      "jurisdictionId": "14",
+      "jurisdiction": "Córdoba",
+      "caseType": "titular",
+      "weight": 5.0741,
+      "coordinates": [
+        -64.532242134549,
+        -32.073418267243
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
+        "q_2_2_3": "Se remite para notificación, pero no requiere aprobación explícita para iniciar",
+        "q_2_2_5": "Modalidad mixta (se realizan ambos formatos sin que uno predomine)",
+        "q_3_3": "Se sistematiza y analiza la información para generar insumos para la toma de decisiones",
+        "q_3_4": "Sí, contamos con un registro en fichas (soporte papel)",
+        "q_4_2": "Es insuficiente para cubrir las necesidades de Prácticas Profesionalizantes (PP)",
+        "q_5_5": "Sí",
+        "q_5_6": "Sí, mediante un análisis de coherencia entre las actividades realizadas en la práctica y la planificación inicial del proyecto"
+      }
+    },
+    {
+      "id": "escuela-0150",
       "jurisdictionId": "14",
       "jurisdiction": "Córdoba",
       "caseType": "titular",
@@ -3212,7 +3626,7 @@
       }
     },
     {
-      "id": "escuela-0132",
+      "id": "escuela-0151",
       "jurisdictionId": "18",
       "jurisdiction": "Corrientes",
       "caseType": "titular",
@@ -3233,7 +3647,28 @@
       }
     },
     {
-      "id": "escuela-0133",
+      "id": "escuela-0152",
+      "jurisdictionId": "18",
+      "jurisdiction": "Corrientes",
+      "caseType": "titular",
+      "weight": 5.0,
+      "coordinates": [
+        -59.257306769432,
+        -29.142385509143
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, pero comparte la tarea con otras funciones (por ejemplo, docente de taller, jefe/a de taller, directivo/a).",
+        "q_2_2_3": "Sí, se remite y aprueba formalmente todos los años",
+        "q_2_2_5": "Modalidad mixta (se realizan ambos formatos sin que uno predomine)",
+        "q_3_3": "Se sistematiza y analiza la información para generar insumos para la toma de decisiones",
+        "q_3_4": "No contamos con un registro de oferentes",
+        "q_4_2": "Es insuficiente para cubrir las necesidades de Prácticas Profesionalizantes (PP)",
+        "q_5_5": "Sí",
+        "q_5_6": "Sí, mediante un análisis de coherencia entre las actividades realizadas en la práctica y la planificación inicial del proyecto"
+      }
+    },
+    {
+      "id": "escuela-0153",
       "jurisdictionId": "18",
       "jurisdiction": "Corrientes",
       "caseType": "titular",
@@ -3254,7 +3689,7 @@
       }
     },
     {
-      "id": "escuela-0134",
+      "id": "escuela-0154",
       "jurisdictionId": "18",
       "jurisdiction": "Corrientes",
       "caseType": "titular",
@@ -3275,7 +3710,7 @@
       }
     },
     {
-      "id": "escuela-0135",
+      "id": "escuela-0155",
       "jurisdictionId": "18",
       "jurisdiction": "Corrientes",
       "caseType": "titular",
@@ -3296,7 +3731,7 @@
       }
     },
     {
-      "id": "escuela-0136",
+      "id": "escuela-0156",
       "jurisdictionId": "18",
       "jurisdiction": "Corrientes",
       "caseType": "titular",
@@ -3317,7 +3752,7 @@
       }
     },
     {
-      "id": "escuela-0137",
+      "id": "escuela-0157",
       "jurisdictionId": "18",
       "jurisdiction": "Corrientes",
       "caseType": "titular",
@@ -3338,7 +3773,7 @@
       }
     },
     {
-      "id": "escuela-0138",
+      "id": "escuela-0158",
       "jurisdictionId": "18",
       "jurisdiction": "Corrientes",
       "caseType": "titular",
@@ -3359,7 +3794,28 @@
       }
     },
     {
-      "id": "escuela-0139",
+      "id": "escuela-0159",
+      "jurisdictionId": "18",
+      "jurisdiction": "Corrientes",
+      "caseType": "titular",
+      "weight": 4.0,
+      "coordinates": [
+        -59.366326801971,
+        -30.260428823579
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
+        "q_2_2_3": "No se remite a nivel jurisdiccional; queda aprobado a nivel interno o institucional",
+        "q_2_2_5": "Modalidad mixta (se realizan ambos formatos sin que uno predomine)",
+        "q_3_3": "Se sistematiza y analiza la información para generar insumos para la toma de decisiones",
+        "q_3_4": "Sí, contamos con un registro en fichas (soporte papel)",
+        "q_4_2": "Es suficiente para cubrir las Prácticas Profesionalizantes (PP) de la matrícula de la escuela",
+        "q_5_5": "Sí",
+        "q_5_6": "Sí, mediante un análisis de coherencia entre las actividades realizadas en la práctica y la planificación inicial del proyecto"
+      }
+    },
+    {
+      "id": "escuela-0160",
       "jurisdictionId": "18",
       "jurisdiction": "Corrientes",
       "caseType": "titular",
@@ -3380,7 +3836,7 @@
       }
     },
     {
-      "id": "escuela-0140",
+      "id": "escuela-0161",
       "jurisdictionId": "18",
       "jurisdiction": "Corrientes",
       "caseType": "titular",
@@ -3401,7 +3857,7 @@
       }
     },
     {
-      "id": "escuela-0141",
+      "id": "escuela-0162",
       "jurisdictionId": "18",
       "jurisdiction": "Corrientes",
       "caseType": "titular",
@@ -3422,7 +3878,7 @@
       }
     },
     {
-      "id": "escuela-0142",
+      "id": "escuela-0163",
       "jurisdictionId": "18",
       "jurisdiction": "Corrientes",
       "caseType": "titular",
@@ -3443,7 +3899,7 @@
       }
     },
     {
-      "id": "escuela-0143",
+      "id": "escuela-0164",
       "jurisdictionId": "22",
       "jurisdiction": "Chaco",
       "caseType": "titular",
@@ -3464,7 +3920,7 @@
       }
     },
     {
-      "id": "escuela-0144",
+      "id": "escuela-0165",
       "jurisdictionId": "22",
       "jurisdiction": "Chaco",
       "caseType": "titular",
@@ -3485,7 +3941,28 @@
       }
     },
     {
-      "id": "escuela-0145",
+      "id": "escuela-0166",
+      "jurisdictionId": "22",
+      "jurisdiction": "Chaco",
+      "caseType": "titular",
+      "weight": 8.0,
+      "coordinates": [
+        -59.373421900818,
+        -26.454729048914
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
+        "q_2_2_3": "Se remite para notificación, pero no requiere aprobación explícita para iniciar",
+        "q_2_2_5": "Modalidad mixta (se realizan ambos formatos sin que uno predomine)",
+        "q_3_3": "Se sistematiza y analiza la información para generar insumos para la toma de decisiones",
+        "q_3_4": "Sí, contamos con un registro en fichas (soporte papel)",
+        "q_4_2": "Es insuficiente para cubrir las necesidades de Prácticas Profesionalizantes (PP)",
+        "q_5_5": "Sí",
+        "q_5_6": "Sí, mediante un análisis de coherencia entre las actividades realizadas en la práctica y la planificación inicial del proyecto"
+      }
+    },
+    {
+      "id": "escuela-0167",
       "jurisdictionId": "22",
       "jurisdiction": "Chaco",
       "caseType": "titular",
@@ -3506,7 +3983,7 @@
       }
     },
     {
-      "id": "escuela-0146",
+      "id": "escuela-0168",
       "jurisdictionId": "22",
       "jurisdiction": "Chaco",
       "caseType": "titular",
@@ -3527,7 +4004,7 @@
       }
     },
     {
-      "id": "escuela-0147",
+      "id": "escuela-0169",
       "jurisdictionId": "22",
       "jurisdiction": "Chaco",
       "caseType": "titular",
@@ -3548,7 +4025,7 @@
       }
     },
     {
-      "id": "escuela-0148",
+      "id": "escuela-0170",
       "jurisdictionId": "22",
       "jurisdiction": "Chaco",
       "caseType": "titular",
@@ -3569,7 +4046,7 @@
       }
     },
     {
-      "id": "escuela-0149",
+      "id": "escuela-0171",
       "jurisdictionId": "22",
       "jurisdiction": "Chaco",
       "caseType": "titular",
@@ -3590,7 +4067,7 @@
       }
     },
     {
-      "id": "escuela-0150",
+      "id": "escuela-0172",
       "jurisdictionId": "22",
       "jurisdiction": "Chaco",
       "caseType": "titular",
@@ -3611,7 +4088,28 @@
       }
     },
     {
-      "id": "escuela-0151",
+      "id": "escuela-0173",
+      "jurisdictionId": "22",
+      "jurisdiction": "Chaco",
+      "caseType": "titular",
+      "weight": 2.5556,
+      "coordinates": [
+        -58.978583026735,
+        -27.450578013823
+      ],
+      "answers": {
+        "q_2_1_1": "No contamos con personal específico; la tarea se distribuye informalmente.",
+        "q_2_2_3": "Se remite para notificación, pero no requiere aprobación explícita para iniciar",
+        "q_2_2_5": "Predominantemente \"externas\"",
+        "q_3_3": "Se registra la información, pero no se realiza una sistematización ni un análisis posterior",
+        "q_3_4": "Sí, contamos con un registro en fichas (soporte papel)",
+        "q_4_2": "Es insuficiente para cubrir las necesidades de Prácticas Profesionalizantes (PP)",
+        "q_5_5": "No",
+        "q_5_6": "Sí, mediante un análisis de coherencia entre las actividades realizadas en la práctica y la planificación inicial del proyecto"
+      }
+    },
+    {
+      "id": "escuela-0174",
       "jurisdictionId": "22",
       "jurisdiction": "Chaco",
       "caseType": "titular",
@@ -3632,7 +4130,7 @@
       }
     },
     {
-      "id": "escuela-0152",
+      "id": "escuela-0175",
       "jurisdictionId": "22",
       "jurisdiction": "Chaco",
       "caseType": "titular",
@@ -3653,7 +4151,28 @@
       }
     },
     {
-      "id": "escuela-0153",
+      "id": "escuela-0176",
+      "jurisdictionId": "22",
+      "jurisdiction": "Chaco",
+      "caseType": "titular",
+      "weight": 2.5556,
+      "coordinates": [
+        -63.263331944094,
+        -25.615440235726
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
+        "q_2_2_3": "Sí, se remite y aprueba formalmente todos los años",
+        "q_2_2_5": "Modalidad mixta (se realizan ambos formatos sin que uno predomine)",
+        "q_3_3": "Se registra la información, pero no se realiza una sistematización ni un análisis posterior",
+        "q_3_4": "No contamos con un registro de oferentes",
+        "q_4_2": "Es insuficiente para cubrir las necesidades de Prácticas Profesionalizantes (PP)",
+        "q_5_5": "No",
+        "q_5_6": "Parcialmente; se prioriza la experiencia laboral general por sobre la especificidad del título"
+      }
+    },
+    {
+      "id": "escuela-0177",
       "jurisdictionId": "22",
       "jurisdiction": "Chaco",
       "caseType": "titular",
@@ -3674,7 +4193,7 @@
       }
     },
     {
-      "id": "escuela-0154",
+      "id": "escuela-0178",
       "jurisdictionId": "22",
       "jurisdiction": "Chaco",
       "caseType": "titular",
@@ -3695,7 +4214,7 @@
       }
     },
     {
-      "id": "escuela-0155",
+      "id": "escuela-0179",
       "jurisdictionId": "26",
       "jurisdiction": "Chubut",
       "caseType": "titular",
@@ -3716,7 +4235,7 @@
       }
     },
     {
-      "id": "escuela-0156",
+      "id": "escuela-0180",
       "jurisdictionId": "26",
       "jurisdiction": "Chubut",
       "caseType": "titular",
@@ -3737,7 +4256,7 @@
       }
     },
     {
-      "id": "escuela-0157",
+      "id": "escuela-0181",
       "jurisdictionId": "26",
       "jurisdiction": "Chubut",
       "caseType": "titular",
@@ -3758,7 +4277,7 @@
       }
     },
     {
-      "id": "escuela-0158",
+      "id": "escuela-0182",
       "jurisdictionId": "26",
       "jurisdiction": "Chubut",
       "caseType": "titular",
@@ -3779,7 +4298,7 @@
       }
     },
     {
-      "id": "escuela-0159",
+      "id": "escuela-0183",
       "jurisdictionId": "26",
       "jurisdiction": "Chubut",
       "caseType": "titular",
@@ -3800,7 +4319,7 @@
       }
     },
     {
-      "id": "escuela-0160",
+      "id": "escuela-0184",
       "jurisdictionId": "26",
       "jurisdiction": "Chubut",
       "caseType": "titular",
@@ -3821,7 +4340,7 @@
       }
     },
     {
-      "id": "escuela-0161",
+      "id": "escuela-0185",
       "jurisdictionId": "26",
       "jurisdiction": "Chubut",
       "caseType": "reemplazo",
@@ -3842,7 +4361,7 @@
       }
     },
     {
-      "id": "escuela-0162",
+      "id": "escuela-0186",
       "jurisdictionId": "26",
       "jurisdiction": "Chubut",
       "caseType": "titular",
@@ -3863,7 +4382,7 @@
       }
     },
     {
-      "id": "escuela-0163",
+      "id": "escuela-0187",
       "jurisdictionId": "26",
       "jurisdiction": "Chubut",
       "caseType": "titular",
@@ -3884,12 +4403,15 @@
       }
     },
     {
-      "id": "escuela-0164",
+      "id": "escuela-0188",
       "jurisdictionId": "26",
       "jurisdiction": "Chubut",
       "caseType": "titular",
       "weight": 1.25,
-      "coordinates": null,
+      "coordinates": [
+        -71.31212825394,
+        -42.901249622038
+      ],
       "answers": {
         "q_2_1_1": "Sí, pero comparte la tarea con otras funciones (por ejemplo, docente de taller, jefe/a de taller, directivo/a).",
         "q_2_2_3": "Sí, se remite y aprueba formalmente todos los años",
@@ -3902,7 +4424,7 @@
       }
     },
     {
-      "id": "escuela-0165",
+      "id": "escuela-0189",
       "jurisdictionId": "26",
       "jurisdiction": "Chubut",
       "caseType": "titular",
@@ -3923,7 +4445,7 @@
       }
     },
     {
-      "id": "escuela-0166",
+      "id": "escuela-0190",
       "jurisdictionId": "26",
       "jurisdiction": "Chubut",
       "caseType": "titular",
@@ -3944,7 +4466,7 @@
       }
     },
     {
-      "id": "escuela-0167",
+      "id": "escuela-0191",
       "jurisdictionId": "26",
       "jurisdiction": "Chubut",
       "caseType": "titular",
@@ -3965,7 +4487,7 @@
       }
     },
     {
-      "id": "escuela-0168",
+      "id": "escuela-0192",
       "jurisdictionId": "26",
       "jurisdiction": "Chubut",
       "caseType": "titular",
@@ -3986,7 +4508,28 @@
       }
     },
     {
-      "id": "escuela-0169",
+      "id": "escuela-0193",
+      "jurisdictionId": "26",
+      "jurisdiction": "Chubut",
+      "caseType": "reemplazo",
+      "weight": 1.6667,
+      "coordinates": [
+        -71.521514483544,
+        -42.060906925146
+      ],
+      "answers": {
+        "q_2_1_1": "No contamos con personal específico; la tarea se distribuye informalmente.",
+        "q_2_2_3": "Sí, se remite y aprueba formalmente todos los años",
+        "q_2_2_5": "Modalidad mixta (se realizan ambos formatos sin que uno predomine)",
+        "q_3_3": "Se sistematiza y analiza la información para generar insumos para la toma de decisiones",
+        "q_3_4": "No contamos con un registro de oferentes",
+        "q_4_2": "Es insuficiente para cubrir las necesidades de Prácticas Profesionalizantes (PP)",
+        "q_5_5": "Sí",
+        "q_5_6": "Parcialmente; se prioriza la experiencia laboral general por sobre la especificidad del título"
+      }
+    },
+    {
+      "id": "escuela-0194",
       "jurisdictionId": "30",
       "jurisdiction": "Entre Ríos",
       "caseType": "titular",
@@ -4007,7 +4550,28 @@
       }
     },
     {
-      "id": "escuela-0170",
+      "id": "escuela-0195",
+      "jurisdictionId": "30",
+      "jurisdiction": "Entre Ríos",
+      "caseType": "titular",
+      "weight": 3.0,
+      "coordinates": [
+        -60.530398072756,
+        -31.728365172181
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
+        "q_2_2_3": "Sí, se remite y aprueba formalmente todos los años",
+        "q_2_2_5": "Modalidad mixta (se realizan ambos formatos sin que uno predomine)",
+        "q_3_3": "Se sistematiza y analiza la información para generar insumos para la toma de decisiones",
+        "q_3_4": "No contamos con un registro de oferentes",
+        "q_4_2": "Es insuficiente para cubrir las necesidades de Prácticas Profesionalizantes (PP)",
+        "q_5_5": "No",
+        "q_5_6": "Sí, mediante un análisis de coherencia entre las actividades realizadas en la práctica y la planificación inicial del proyecto"
+      }
+    },
+    {
+      "id": "escuela-0196",
       "jurisdictionId": "30",
       "jurisdiction": "Entre Ríos",
       "caseType": "titular",
@@ -4028,7 +4592,7 @@
       }
     },
     {
-      "id": "escuela-0171",
+      "id": "escuela-0197",
       "jurisdictionId": "30",
       "jurisdiction": "Entre Ríos",
       "caseType": "titular",
@@ -4049,7 +4613,7 @@
       }
     },
     {
-      "id": "escuela-0172",
+      "id": "escuela-0198",
       "jurisdictionId": "30",
       "jurisdiction": "Entre Ríos",
       "caseType": "titular",
@@ -4070,7 +4634,7 @@
       }
     },
     {
-      "id": "escuela-0173",
+      "id": "escuela-0199",
       "jurisdictionId": "30",
       "jurisdiction": "Entre Ríos",
       "caseType": "titular",
@@ -4091,7 +4655,7 @@
       }
     },
     {
-      "id": "escuela-0174",
+      "id": "escuela-0200",
       "jurisdictionId": "30",
       "jurisdiction": "Entre Ríos",
       "caseType": "titular",
@@ -4112,7 +4676,7 @@
       }
     },
     {
-      "id": "escuela-0175",
+      "id": "escuela-0201",
       "jurisdictionId": "30",
       "jurisdiction": "Entre Ríos",
       "caseType": "titular",
@@ -4133,12 +4697,15 @@
       }
     },
     {
-      "id": "escuela-0176",
+      "id": "escuela-0202",
       "jurisdictionId": "30",
       "jurisdiction": "Entre Ríos",
       "caseType": "titular",
       "weight": 4.4286,
-      "coordinates": null,
+      "coordinates": [
+        -60.330990653073,
+        -31.734017742243
+      ],
       "answers": {
         "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
         "q_2_2_3": "Sí, se remite y aprueba formalmente todos los años",
@@ -4151,7 +4718,7 @@
       }
     },
     {
-      "id": "escuela-0177",
+      "id": "escuela-0203",
       "jurisdictionId": "30",
       "jurisdiction": "Entre Ríos",
       "caseType": "titular",
@@ -4172,7 +4739,7 @@
       }
     },
     {
-      "id": "escuela-0178",
+      "id": "escuela-0204",
       "jurisdictionId": "30",
       "jurisdiction": "Entre Ríos",
       "caseType": "titular",
@@ -4193,7 +4760,7 @@
       }
     },
     {
-      "id": "escuela-0179",
+      "id": "escuela-0205",
       "jurisdictionId": "30",
       "jurisdiction": "Entre Ríos",
       "caseType": "titular",
@@ -4214,7 +4781,7 @@
       }
     },
     {
-      "id": "escuela-0180",
+      "id": "escuela-0206",
       "jurisdictionId": "30",
       "jurisdiction": "Entre Ríos",
       "caseType": "titular",
@@ -4235,7 +4802,7 @@
       }
     },
     {
-      "id": "escuela-0181",
+      "id": "escuela-0207",
       "jurisdictionId": "30",
       "jurisdiction": "Entre Ríos",
       "caseType": "titular",
@@ -4256,7 +4823,7 @@
       }
     },
     {
-      "id": "escuela-0182",
+      "id": "escuela-0208",
       "jurisdictionId": "30",
       "jurisdiction": "Entre Ríos",
       "caseType": "titular",
@@ -4277,7 +4844,7 @@
       }
     },
     {
-      "id": "escuela-0183",
+      "id": "escuela-0209",
       "jurisdictionId": "30",
       "jurisdiction": "Entre Ríos",
       "caseType": "titular",
@@ -4298,7 +4865,7 @@
       }
     },
     {
-      "id": "escuela-0184",
+      "id": "escuela-0210",
       "jurisdictionId": "34",
       "jurisdiction": "Formosa",
       "caseType": "titular",
@@ -4319,7 +4886,7 @@
       }
     },
     {
-      "id": "escuela-0185",
+      "id": "escuela-0211",
       "jurisdictionId": "34",
       "jurisdiction": "Formosa",
       "caseType": "titular",
@@ -4340,7 +4907,7 @@
       }
     },
     {
-      "id": "escuela-0186",
+      "id": "escuela-0212",
       "jurisdictionId": "34",
       "jurisdiction": "Formosa",
       "caseType": "titular",
@@ -4361,7 +4928,7 @@
       }
     },
     {
-      "id": "escuela-0187",
+      "id": "escuela-0213",
       "jurisdictionId": "34",
       "jurisdiction": "Formosa",
       "caseType": "titular",
@@ -4382,7 +4949,7 @@
       }
     },
     {
-      "id": "escuela-0188",
+      "id": "escuela-0214",
       "jurisdictionId": "34",
       "jurisdiction": "Formosa",
       "caseType": "titular",
@@ -4403,7 +4970,7 @@
       }
     },
     {
-      "id": "escuela-0189",
+      "id": "escuela-0215",
       "jurisdictionId": "34",
       "jurisdiction": "Formosa",
       "caseType": "titular",
@@ -4424,7 +4991,28 @@
       }
     },
     {
-      "id": "escuela-0190",
+      "id": "escuela-0216",
+      "jurisdictionId": "34",
+      "jurisdiction": "Formosa",
+      "caseType": "titular",
+      "weight": 1.3333,
+      "coordinates": [
+        -61.24320844,
+        -24.26273536
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, pero comparte la tarea con otras funciones (por ejemplo, docente de taller, jefe/a de taller, directivo/a).",
+        "q_2_2_3": "No se remite a nivel jurisdiccional; queda aprobado a nivel interno o institucional",
+        "q_2_2_5": "Modalidad mixta (se realizan ambos formatos sin que uno predomine)",
+        "q_3_3": "Se sistematiza y analiza la información para generar insumos para la toma de decisiones",
+        "q_3_4": "Sí, contamos con un registro en fichas (soporte papel)",
+        "q_4_2": "Es suficiente para cubrir las Prácticas Profesionalizantes (PP) de la matrícula de la escuela",
+        "q_5_5": "Sí",
+        "q_5_6": "Sí, mediante un análisis de coherencia entre las actividades realizadas en la práctica y la planificación inicial del proyecto"
+      }
+    },
+    {
+      "id": "escuela-0217",
       "jurisdictionId": "34",
       "jurisdiction": "Formosa",
       "caseType": "titular",
@@ -4437,7 +5025,28 @@
         "q_2_1_1": "Sí, pero comparte la tarea con otras funciones (por ejemplo, docente de taller, jefe/a de taller, directivo/a).",
         "q_2_2_3": "Se remite para notificación, pero no requiere aprobación explícita para iniciar",
         "q_2_2_5": "Modalidad mixta (se realizan ambos formatos sin que uno predomine)",
-        "q_3_3": "Se registra la información, pero no se realiza una sistematización ni un análisis posterior",
+        "q_3_3": "No se dispone de información registrada que permita realizar sistematización y análisis",
+        "q_3_4": "Sí, contamos con un registro en fichas (soporte papel)",
+        "q_4_2": "Es suficiente para cubrir las Prácticas Profesionalizantes (PP) de la matrícula de la escuela",
+        "q_5_5": "No",
+        "q_5_6": "Parcialmente; se prioriza la experiencia laboral general por sobre la especificidad del título"
+      }
+    },
+    {
+      "id": "escuela-0218",
+      "jurisdictionId": "34",
+      "jurisdiction": "Formosa",
+      "caseType": "titular",
+      "weight": 1.3333,
+      "coordinates": [
+        -59.21983436,
+        -25.86853517
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
+        "q_2_2_3": "No se remite a nivel jurisdiccional; queda aprobado a nivel interno o institucional",
+        "q_2_2_5": "Modalidad mixta (se realizan ambos formatos sin que uno predomine)",
+        "q_3_3": "No se dispone de información registrada que permita realizar sistematización y análisis",
         "q_3_4": "No contamos con un registro de oferentes",
         "q_4_2": "Es suficiente para cubrir las Prácticas Profesionalizantes (PP) de la matrícula de la escuela",
         "q_5_5": "No",
@@ -4445,7 +5054,7 @@
       }
     },
     {
-      "id": "escuela-0191",
+      "id": "escuela-0219",
       "jurisdictionId": "34",
       "jurisdiction": "Formosa",
       "caseType": "titular",
@@ -4466,7 +5075,7 @@
       }
     },
     {
-      "id": "escuela-0192",
+      "id": "escuela-0220",
       "jurisdictionId": "38",
       "jurisdiction": "Jujuy",
       "caseType": "titular",
@@ -4487,7 +5096,28 @@
       }
     },
     {
-      "id": "escuela-0193",
+      "id": "escuela-0221",
+      "jurisdictionId": "38",
+      "jurisdiction": "Jujuy",
+      "caseType": "titular",
+      "weight": 2.4,
+      "coordinates": [
+        -65.118554101729,
+        -24.382212272397
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, pero comparte la tarea con otras funciones (por ejemplo, docente de taller, jefe/a de taller, directivo/a).",
+        "q_2_2_3": "Sí, se remite y aprueba formalmente todos los años",
+        "q_2_2_5": "Predominantemente \"internas\"",
+        "q_3_3": "Se registra la información, pero no se realiza una sistematización ni un análisis posterior",
+        "q_3_4": "No contamos con un registro de oferentes",
+        "q_4_2": "Es insuficiente para cubrir las necesidades de Prácticas Profesionalizantes (PP)",
+        "q_5_5": "Sí",
+        "q_5_6": "Parcialmente; se prioriza la experiencia laboral general por sobre la especificidad del título"
+      }
+    },
+    {
+      "id": "escuela-0222",
       "jurisdictionId": "38",
       "jurisdiction": "Jujuy",
       "caseType": "titular",
@@ -4508,7 +5138,7 @@
       }
     },
     {
-      "id": "escuela-0194",
+      "id": "escuela-0223",
       "jurisdictionId": "38",
       "jurisdiction": "Jujuy",
       "caseType": "titular",
@@ -4529,7 +5159,49 @@
       }
     },
     {
-      "id": "escuela-0195",
+      "id": "escuela-0224",
+      "jurisdictionId": "38",
+      "jurisdiction": "Jujuy",
+      "caseType": "titular",
+      "weight": 1.875,
+      "coordinates": [
+        -64.950055130188,
+        -23.477012187726
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
+        "q_2_2_3": "Sí, se remite y aprueba formalmente todos los años",
+        "q_2_2_5": "Modalidad mixta (se realizan ambos formatos sin que uno predomine)",
+        "q_3_3": "Se registra la información, pero no se realiza una sistematización ni un análisis posterior",
+        "q_3_4": "Sí, contamos con un registro en fichas (soporte papel)",
+        "q_4_2": "Es insuficiente para cubrir las necesidades de Prácticas Profesionalizantes (PP)",
+        "q_5_5": "No",
+        "q_5_6": "Sí, mediante un análisis de coherencia entre las actividades realizadas en la práctica y la planificación inicial del proyecto"
+      }
+    },
+    {
+      "id": "escuela-0225",
+      "jurisdictionId": "38",
+      "jurisdiction": "Jujuy",
+      "caseType": "titular",
+      "weight": 1.0,
+      "coordinates": [
+        -64.792567822439,
+        -23.810159071071
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
+        "q_2_2_3": "Sí, se remite y aprueba formalmente todos los años",
+        "q_2_2_5": "Predominantemente \"externas\"",
+        "q_3_3": "Se sistematiza y analiza la información para generar insumos para la toma de decisiones",
+        "q_3_4": "No contamos con un registro de oferentes",
+        "q_4_2": "Es insuficiente para cubrir las necesidades de Prácticas Profesionalizantes (PP)",
+        "q_5_5": "Sí",
+        "q_5_6": "Parcialmente; se prioriza la experiencia laboral general por sobre la especificidad del título"
+      }
+    },
+    {
+      "id": "escuela-0226",
       "jurisdictionId": "38",
       "jurisdiction": "Jujuy",
       "caseType": "titular",
@@ -4550,7 +5222,7 @@
       }
     },
     {
-      "id": "escuela-0196",
+      "id": "escuela-0227",
       "jurisdictionId": "38",
       "jurisdiction": "Jujuy",
       "caseType": "titular",
@@ -4571,7 +5243,7 @@
       }
     },
     {
-      "id": "escuela-0197",
+      "id": "escuela-0228",
       "jurisdictionId": "38",
       "jurisdiction": "Jujuy",
       "caseType": "titular",
@@ -4592,7 +5264,7 @@
       }
     },
     {
-      "id": "escuela-0198",
+      "id": "escuela-0229",
       "jurisdictionId": "38",
       "jurisdiction": "Jujuy",
       "caseType": "titular",
@@ -4613,7 +5285,7 @@
       }
     },
     {
-      "id": "escuela-0199",
+      "id": "escuela-0230",
       "jurisdictionId": "38",
       "jurisdiction": "Jujuy",
       "caseType": "titular",
@@ -4634,7 +5306,7 @@
       }
     },
     {
-      "id": "escuela-0200",
+      "id": "escuela-0231",
       "jurisdictionId": "38",
       "jurisdiction": "Jujuy",
       "caseType": "titular",
@@ -4655,7 +5327,7 @@
       }
     },
     {
-      "id": "escuela-0201",
+      "id": "escuela-0232",
       "jurisdictionId": "42",
       "jurisdiction": "La Pampa",
       "caseType": "titular",
@@ -4676,7 +5348,7 @@
       }
     },
     {
-      "id": "escuela-0202",
+      "id": "escuela-0233",
       "jurisdictionId": "42",
       "jurisdiction": "La Pampa",
       "caseType": "titular",
@@ -4697,7 +5369,7 @@
       }
     },
     {
-      "id": "escuela-0203",
+      "id": "escuela-0234",
       "jurisdictionId": "42",
       "jurisdiction": "La Pampa",
       "caseType": "titular",
@@ -4718,7 +5390,7 @@
       }
     },
     {
-      "id": "escuela-0204",
+      "id": "escuela-0235",
       "jurisdictionId": "42",
       "jurisdiction": "La Pampa",
       "caseType": "titular",
@@ -4739,7 +5411,7 @@
       }
     },
     {
-      "id": "escuela-0205",
+      "id": "escuela-0236",
       "jurisdictionId": "42",
       "jurisdiction": "La Pampa",
       "caseType": "titular",
@@ -4760,7 +5432,7 @@
       }
     },
     {
-      "id": "escuela-0206",
+      "id": "escuela-0237",
       "jurisdictionId": "42",
       "jurisdiction": "La Pampa",
       "caseType": "titular",
@@ -4781,7 +5453,7 @@
       }
     },
     {
-      "id": "escuela-0207",
+      "id": "escuela-0238",
       "jurisdictionId": "42",
       "jurisdiction": "La Pampa",
       "caseType": "titular",
@@ -4802,7 +5474,7 @@
       }
     },
     {
-      "id": "escuela-0208",
+      "id": "escuela-0239",
       "jurisdictionId": "42",
       "jurisdiction": "La Pampa",
       "caseType": "titular",
@@ -4823,7 +5495,7 @@
       }
     },
     {
-      "id": "escuela-0209",
+      "id": "escuela-0240",
       "jurisdictionId": "42",
       "jurisdiction": "La Pampa",
       "caseType": "titular",
@@ -4844,7 +5516,7 @@
       }
     },
     {
-      "id": "escuela-0210",
+      "id": "escuela-0241",
       "jurisdictionId": "42",
       "jurisdiction": "La Pampa",
       "caseType": "titular",
@@ -4865,7 +5537,7 @@
       }
     },
     {
-      "id": "escuela-0211",
+      "id": "escuela-0242",
       "jurisdictionId": "42",
       "jurisdiction": "La Pampa",
       "caseType": "titular",
@@ -4886,7 +5558,7 @@
       }
     },
     {
-      "id": "escuela-0212",
+      "id": "escuela-0243",
       "jurisdictionId": "42",
       "jurisdiction": "La Pampa",
       "caseType": "titular",
@@ -4907,7 +5579,7 @@
       }
     },
     {
-      "id": "escuela-0213",
+      "id": "escuela-0244",
       "jurisdictionId": "42",
       "jurisdiction": "La Pampa",
       "caseType": "titular",
@@ -4928,7 +5600,7 @@
       }
     },
     {
-      "id": "escuela-0214",
+      "id": "escuela-0245",
       "jurisdictionId": "42",
       "jurisdiction": "La Pampa",
       "caseType": "titular",
@@ -4949,7 +5621,7 @@
       }
     },
     {
-      "id": "escuela-0215",
+      "id": "escuela-0246",
       "jurisdictionId": "42",
       "jurisdiction": "La Pampa",
       "caseType": "titular",
@@ -4970,7 +5642,7 @@
       }
     },
     {
-      "id": "escuela-0216",
+      "id": "escuela-0247",
       "jurisdictionId": "46",
       "jurisdiction": "La Rioja",
       "caseType": "titular",
@@ -4991,7 +5663,7 @@
       }
     },
     {
-      "id": "escuela-0217",
+      "id": "escuela-0248",
       "jurisdictionId": "46",
       "jurisdiction": "La Rioja",
       "caseType": "titular",
@@ -5012,7 +5684,7 @@
       }
     },
     {
-      "id": "escuela-0218",
+      "id": "escuela-0249",
       "jurisdictionId": "46",
       "jurisdiction": "La Rioja",
       "caseType": "titular",
@@ -5033,7 +5705,7 @@
       }
     },
     {
-      "id": "escuela-0219",
+      "id": "escuela-0250",
       "jurisdictionId": "46",
       "jurisdiction": "La Rioja",
       "caseType": "titular",
@@ -5054,12 +5726,15 @@
       }
     },
     {
-      "id": "escuela-0220",
+      "id": "escuela-0251",
       "jurisdictionId": "46",
       "jurisdiction": "La Rioja",
       "caseType": "titular",
       "weight": 1.5,
-      "coordinates": null,
+      "coordinates": [
+        -66.865438437276,
+        -29.411087135991
+      ],
       "answers": {
         "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
         "q_2_2_3": "Sí, se remite y aprueba formalmente todos los años",
@@ -5072,7 +5747,7 @@
       }
     },
     {
-      "id": "escuela-0221",
+      "id": "escuela-0252",
       "jurisdictionId": "46",
       "jurisdiction": "La Rioja",
       "caseType": "titular",
@@ -5093,7 +5768,7 @@
       }
     },
     {
-      "id": "escuela-0222",
+      "id": "escuela-0253",
       "jurisdictionId": "46",
       "jurisdiction": "La Rioja",
       "caseType": "titular",
@@ -5114,7 +5789,7 @@
       }
     },
     {
-      "id": "escuela-0223",
+      "id": "escuela-0254",
       "jurisdictionId": "46",
       "jurisdiction": "La Rioja",
       "caseType": "titular",
@@ -5135,7 +5810,7 @@
       }
     },
     {
-      "id": "escuela-0224",
+      "id": "escuela-0255",
       "jurisdictionId": "46",
       "jurisdiction": "La Rioja",
       "caseType": "titular",
@@ -5156,7 +5831,7 @@
       }
     },
     {
-      "id": "escuela-0225",
+      "id": "escuela-0256",
       "jurisdictionId": "46",
       "jurisdiction": "La Rioja",
       "caseType": "titular",
@@ -5177,7 +5852,7 @@
       }
     },
     {
-      "id": "escuela-0226",
+      "id": "escuela-0257",
       "jurisdictionId": "46",
       "jurisdiction": "La Rioja",
       "caseType": "titular",
@@ -5198,7 +5873,7 @@
       }
     },
     {
-      "id": "escuela-0227",
+      "id": "escuela-0258",
       "jurisdictionId": "46",
       "jurisdiction": "La Rioja",
       "caseType": "titular",
@@ -5219,7 +5894,7 @@
       }
     },
     {
-      "id": "escuela-0228",
+      "id": "escuela-0259",
       "jurisdictionId": "46",
       "jurisdiction": "La Rioja",
       "caseType": "titular",
@@ -5240,7 +5915,7 @@
       }
     },
     {
-      "id": "escuela-0229",
+      "id": "escuela-0260",
       "jurisdictionId": "46",
       "jurisdiction": "La Rioja",
       "caseType": "titular",
@@ -5261,7 +5936,7 @@
       }
     },
     {
-      "id": "escuela-0230",
+      "id": "escuela-0261",
       "jurisdictionId": "50",
       "jurisdiction": "Mendoza",
       "caseType": "titular",
@@ -5282,7 +5957,28 @@
       }
     },
     {
-      "id": "escuela-0231",
+      "id": "escuela-0262",
+      "jurisdictionId": "50",
+      "jurisdiction": "Mendoza",
+      "caseType": "titular",
+      "weight": 4.9,
+      "coordinates": [
+        -68.849384244588,
+        -32.899952779151
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
+        "q_2_2_3": "Sí, se remite y aprueba formalmente todos los años",
+        "q_2_2_5": "Modalidad mixta (se realizan ambos formatos sin que uno predomine)",
+        "q_3_3": "Se sistematiza y analiza la información para generar insumos para la toma de decisiones",
+        "q_3_4": "Sí, contamos con un registro en fichas (soporte papel)",
+        "q_4_2": "Es insuficiente para cubrir las necesidades de Prácticas Profesionalizantes (PP)",
+        "q_5_5": "Sí",
+        "q_5_6": "Sí, mediante un análisis de coherencia entre las actividades realizadas en la práctica y la planificación inicial del proyecto"
+      }
+    },
+    {
+      "id": "escuela-0263",
       "jurisdictionId": "50",
       "jurisdiction": "Mendoza",
       "caseType": "titular",
@@ -5303,7 +5999,7 @@
       }
     },
     {
-      "id": "escuela-0232",
+      "id": "escuela-0264",
       "jurisdictionId": "50",
       "jurisdiction": "Mendoza",
       "caseType": "titular",
@@ -5324,7 +6020,28 @@
       }
     },
     {
-      "id": "escuela-0233",
+      "id": "escuela-0265",
+      "jurisdictionId": "50",
+      "jurisdiction": "Mendoza",
+      "caseType": "titular",
+      "weight": 4.9,
+      "coordinates": [
+        -68.341040609688,
+        -34.616814759728
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
+        "q_2_2_3": "Sí, se remite y aprueba formalmente todos los años",
+        "q_2_2_5": "Predominantemente \"internas\"",
+        "q_3_3": "Se registra la información, pero no se realiza una sistematización ni un análisis posterior",
+        "q_3_4": "Sí, contamos con un registro en fichas (soporte papel)",
+        "q_4_2": "Es insuficiente para cubrir las necesidades de Prácticas Profesionalizantes (PP)",
+        "q_5_5": "Sí",
+        "q_5_6": "Sí, mediante un análisis de coherencia entre las actividades realizadas en la práctica y la planificación inicial del proyecto"
+      }
+    },
+    {
+      "id": "escuela-0266",
       "jurisdictionId": "50",
       "jurisdiction": "Mendoza",
       "caseType": "titular",
@@ -5345,7 +6062,7 @@
       }
     },
     {
-      "id": "escuela-0234",
+      "id": "escuela-0267",
       "jurisdictionId": "50",
       "jurisdiction": "Mendoza",
       "caseType": "titular",
@@ -5366,7 +6083,7 @@
       }
     },
     {
-      "id": "escuela-0235",
+      "id": "escuela-0268",
       "jurisdictionId": "50",
       "jurisdiction": "Mendoza",
       "caseType": "titular",
@@ -5387,7 +6104,28 @@
       }
     },
     {
-      "id": "escuela-0236",
+      "id": "escuela-0269",
+      "jurisdictionId": "50",
+      "jurisdiction": "Mendoza",
+      "caseType": "titular",
+      "weight": 5.0,
+      "coordinates": [
+        -68.82315543462,
+        -32.95357315769
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, pero comparte la tarea con otras funciones (por ejemplo, docente de taller, jefe/a de taller, directivo/a).",
+        "q_2_2_3": "Sí, se remite y aprueba formalmente todos los años",
+        "q_2_2_5": "Predominantemente \"externas\"",
+        "q_3_3": "Se sistematiza y analiza la información para generar insumos para la toma de decisiones",
+        "q_3_4": "No contamos con un registro de oferentes",
+        "q_4_2": "Es suficiente para cubrir las Prácticas Profesionalizantes (PP) de la matrícula de la escuela",
+        "q_5_5": "Sí",
+        "q_5_6": "Sí, mediante un análisis de coherencia entre las actividades realizadas en la práctica y la planificación inicial del proyecto"
+      }
+    },
+    {
+      "id": "escuela-0270",
       "jurisdictionId": "50",
       "jurisdiction": "Mendoza",
       "caseType": "titular",
@@ -5408,7 +6146,7 @@
       }
     },
     {
-      "id": "escuela-0237",
+      "id": "escuela-0271",
       "jurisdictionId": "50",
       "jurisdiction": "Mendoza",
       "caseType": "titular",
@@ -5429,7 +6167,7 @@
       }
     },
     {
-      "id": "escuela-0238",
+      "id": "escuela-0272",
       "jurisdictionId": "50",
       "jurisdiction": "Mendoza",
       "caseType": "titular",
@@ -5450,7 +6188,7 @@
       }
     },
     {
-      "id": "escuela-0239",
+      "id": "escuela-0273",
       "jurisdictionId": "50",
       "jurisdiction": "Mendoza",
       "caseType": "titular",
@@ -5471,7 +6209,7 @@
       }
     },
     {
-      "id": "escuela-0240",
+      "id": "escuela-0274",
       "jurisdictionId": "50",
       "jurisdiction": "Mendoza",
       "caseType": "titular",
@@ -5492,7 +6230,7 @@
       }
     },
     {
-      "id": "escuela-0241",
+      "id": "escuela-0275",
       "jurisdictionId": "50",
       "jurisdiction": "Mendoza",
       "caseType": "titular",
@@ -5513,7 +6251,7 @@
       }
     },
     {
-      "id": "escuela-0242",
+      "id": "escuela-0276",
       "jurisdictionId": "50",
       "jurisdiction": "Mendoza",
       "caseType": "titular",
@@ -5534,7 +6272,28 @@
       }
     },
     {
-      "id": "escuela-0243",
+      "id": "escuela-0277",
+      "jurisdictionId": "50",
+      "jurisdiction": "Mendoza",
+      "caseType": "titular",
+      "weight": 4.8333,
+      "coordinates": [
+        -68.302648502334,
+        -34.562444071889
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
+        "q_2_2_3": "Sí, se remite y aprueba formalmente todos los años",
+        "q_2_2_5": "Predominantemente \"externas\"",
+        "q_3_3": "Se registra la información, pero no se realiza una sistematización ni un análisis posterior",
+        "q_3_4": "No contamos con un registro de oferentes",
+        "q_4_2": "Es insuficiente para cubrir las necesidades de Prácticas Profesionalizantes (PP)",
+        "q_5_5": "No",
+        "q_5_6": "Parcialmente; se prioriza la experiencia laboral general por sobre la especificidad del título"
+      }
+    },
+    {
+      "id": "escuela-0278",
       "jurisdictionId": "54",
       "jurisdiction": "Misiones",
       "caseType": "titular",
@@ -5555,7 +6314,7 @@
       }
     },
     {
-      "id": "escuela-0244",
+      "id": "escuela-0279",
       "jurisdictionId": "54",
       "jurisdiction": "Misiones",
       "caseType": "titular",
@@ -5576,12 +6335,15 @@
       }
     },
     {
-      "id": "escuela-0245",
+      "id": "escuela-0280",
       "jurisdictionId": "54",
       "jurisdiction": "Misiones",
       "caseType": "titular",
       "weight": 7.0,
-      "coordinates": null,
+      "coordinates": [
+        -55.896107438099,
+        -27.363293061037
+      ],
       "answers": {
         "q_2_1_1": "Sí, pero comparte la tarea con otras funciones (por ejemplo, docente de taller, jefe/a de taller, directivo/a).",
         "q_2_2_3": "No se remite a nivel jurisdiccional; queda aprobado a nivel interno o institucional",
@@ -5594,7 +6356,49 @@
       }
     },
     {
-      "id": "escuela-0246",
+      "id": "escuela-0281",
+      "jurisdictionId": "54",
+      "jurisdiction": "Misiones",
+      "caseType": "titular",
+      "weight": 4.3636,
+      "coordinates": [
+        -55.896400000003,
+        -27.387599999999
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
+        "q_2_2_3": "Sí, se remite y aprueba formalmente todos los años",
+        "q_2_2_5": "Modalidad mixta (se realizan ambos formatos sin que uno predomine)",
+        "q_3_3": "Se sistematiza y analiza la información para generar insumos para la toma de decisiones",
+        "q_3_4": "No contamos con un registro de oferentes",
+        "q_4_2": "Es suficiente para cubrir las Prácticas Profesionalizantes (PP) de la matrícula de la escuela",
+        "q_5_5": "Sí",
+        "q_5_6": "Parcialmente; se prioriza la experiencia laboral general por sobre la especificidad del título"
+      }
+    },
+    {
+      "id": "escuela-0282",
+      "jurisdictionId": "54",
+      "jurisdiction": "Misiones",
+      "caseType": "titular",
+      "weight": 6.6667,
+      "coordinates": [
+        -54.108067823076,
+        -26.631247556485
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, pero comparte la tarea con otras funciones (por ejemplo, docente de taller, jefe/a de taller, directivo/a).",
+        "q_2_2_3": "Sí, se remite y aprueba formalmente todos los años",
+        "q_2_2_5": "Predominantemente \"internas\"",
+        "q_3_3": "Se sistematiza y analiza la información para generar insumos para la toma de decisiones",
+        "q_3_4": "Sí, contamos con un registro en fichas (soporte papel)",
+        "q_4_2": "Es suficiente para cubrir las Prácticas Profesionalizantes (PP) de la matrícula de la escuela",
+        "q_5_5": "No",
+        "q_5_6": "Sí, mediante un análisis de coherencia entre las actividades realizadas en la práctica y la planificación inicial del proyecto"
+      }
+    },
+    {
+      "id": "escuela-0283",
       "jurisdictionId": "54",
       "jurisdiction": "Misiones",
       "caseType": "titular",
@@ -5615,7 +6419,7 @@
       }
     },
     {
-      "id": "escuela-0247",
+      "id": "escuela-0284",
       "jurisdictionId": "54",
       "jurisdiction": "Misiones",
       "caseType": "titular",
@@ -5636,7 +6440,7 @@
       }
     },
     {
-      "id": "escuela-0248",
+      "id": "escuela-0285",
       "jurisdictionId": "54",
       "jurisdiction": "Misiones",
       "caseType": "titular",
@@ -5657,12 +6461,15 @@
       }
     },
     {
-      "id": "escuela-0249",
+      "id": "escuela-0286",
       "jurisdictionId": "54",
       "jurisdiction": "Misiones",
       "caseType": "titular",
       "weight": 5.0,
-      "coordinates": null,
+      "coordinates": [
+        -55.129203548137,
+        -27.601042160158
+      ],
       "answers": {
         "q_2_1_1": "Sí, pero comparte la tarea con otras funciones (por ejemplo, docente de taller, jefe/a de taller, directivo/a).",
         "q_2_2_3": "No se remite a nivel jurisdiccional; queda aprobado a nivel interno o institucional",
@@ -5675,7 +6482,28 @@
       }
     },
     {
-      "id": "escuela-0250",
+      "id": "escuela-0287",
+      "jurisdictionId": "54",
+      "jurisdiction": "Misiones",
+      "caseType": "titular",
+      "weight": 4.3636,
+      "coordinates": [
+        -54.616537190243,
+        -26.023617287276
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, pero comparte la tarea con otras funciones (por ejemplo, docente de taller, jefe/a de taller, directivo/a).",
+        "q_2_2_3": "Se remite para notificación, pero no requiere aprobación explícita para iniciar",
+        "q_2_2_5": "Modalidad mixta (se realizan ambos formatos sin que uno predomine)",
+        "q_3_3": "Se sistematiza y analiza la información para generar insumos para la toma de decisiones",
+        "q_3_4": "Sí, contamos con un registro en fichas (soporte papel)",
+        "q_4_2": "Es suficiente para cubrir las Prácticas Profesionalizantes (PP) de la matrícula de la escuela",
+        "q_5_5": "Sí",
+        "q_5_6": "Sí, mediante un análisis de coherencia entre las actividades realizadas en la práctica y la planificación inicial del proyecto"
+      }
+    },
+    {
+      "id": "escuela-0288",
       "jurisdictionId": "54",
       "jurisdiction": "Misiones",
       "caseType": "titular",
@@ -5696,7 +6524,7 @@
       }
     },
     {
-      "id": "escuela-0251",
+      "id": "escuela-0289",
       "jurisdictionId": "54",
       "jurisdiction": "Misiones",
       "caseType": "titular",
@@ -5717,7 +6545,7 @@
       }
     },
     {
-      "id": "escuela-0252",
+      "id": "escuela-0290",
       "jurisdictionId": "54",
       "jurisdiction": "Misiones",
       "caseType": "titular",
@@ -5738,7 +6566,7 @@
       }
     },
     {
-      "id": "escuela-0253",
+      "id": "escuela-0291",
       "jurisdictionId": "54",
       "jurisdiction": "Misiones",
       "caseType": "titular",
@@ -5759,7 +6587,7 @@
       }
     },
     {
-      "id": "escuela-0254",
+      "id": "escuela-0292",
       "jurisdictionId": "54",
       "jurisdiction": "Misiones",
       "caseType": "titular",
@@ -5770,17 +6598,17 @@
       ],
       "answers": {
         "q_2_1_1": "Sí, pero comparte la tarea con otras funciones (por ejemplo, docente de taller, jefe/a de taller, directivo/a).",
-        "q_2_2_3": "No se remite a nivel jurisdiccional; queda aprobado a nivel interno o institucional",
-        "q_2_2_5": "Predominantemente \"internas\"",
-        "q_3_3": "No se dispone de información registrada que permita realizar sistematización y análisis",
-        "q_3_4": "No contamos con un registro de oferentes",
+        "q_2_2_3": "Se remite para notificación, pero no requiere aprobación explícita para iniciar",
+        "q_2_2_5": "Modalidad mixta (se realizan ambos formatos sin que uno predomine)",
+        "q_3_3": "Se sistematiza y analiza la información para generar insumos para la toma de decisiones",
+        "q_3_4": "Sí, contamos con un registro en fichas (soporte papel)",
         "q_4_2": "Es insuficiente para cubrir las necesidades de Prácticas Profesionalizantes (PP)",
-        "q_5_5": "No",
+        "q_5_5": "Sí",
         "q_5_6": "Sí, mediante un análisis de coherencia entre las actividades realizadas en la práctica y la planificación inicial del proyecto"
       }
     },
     {
-      "id": "escuela-0255",
+      "id": "escuela-0293",
       "jurisdictionId": "58",
       "jurisdiction": "Neuquén",
       "caseType": "titular",
@@ -5801,7 +6629,28 @@
       }
     },
     {
-      "id": "escuela-0256",
+      "id": "escuela-0294",
+      "jurisdictionId": "58",
+      "jurisdiction": "Neuquén",
+      "caseType": "titular",
+      "weight": 2.0,
+      "coordinates": [
+        -68.192584,
+        -38.956692
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
+        "q_2_2_3": "Se remite para notificación, pero no requiere aprobación explícita para iniciar",
+        "q_2_2_5": "Modalidad mixta (se realizan ambos formatos sin que uno predomine)",
+        "q_3_3": "No se dispone de información registrada que permita realizar sistematización y análisis",
+        "q_3_4": "No contamos con un registro de oferentes",
+        "q_4_2": "Es insuficiente para cubrir las necesidades de Prácticas Profesionalizantes (PP)",
+        "q_5_5": "No",
+        "q_5_6": "No se realiza una evaluación formal de la pertinencia del perfil"
+      }
+    },
+    {
+      "id": "escuela-0295",
       "jurisdictionId": "58",
       "jurisdiction": "Neuquén",
       "caseType": "titular",
@@ -5822,7 +6671,7 @@
       }
     },
     {
-      "id": "escuela-0257",
+      "id": "escuela-0296",
       "jurisdictionId": "58",
       "jurisdiction": "Neuquén",
       "caseType": "titular",
@@ -5843,7 +6692,7 @@
       }
     },
     {
-      "id": "escuela-0258",
+      "id": "escuela-0297",
       "jurisdictionId": "58",
       "jurisdiction": "Neuquén",
       "caseType": "titular",
@@ -5864,7 +6713,7 @@
       }
     },
     {
-      "id": "escuela-0259",
+      "id": "escuela-0298",
       "jurisdictionId": "58",
       "jurisdiction": "Neuquén",
       "caseType": "titular",
@@ -5885,7 +6734,7 @@
       }
     },
     {
-      "id": "escuela-0260",
+      "id": "escuela-0299",
       "jurisdictionId": "58",
       "jurisdiction": "Neuquén",
       "caseType": "titular",
@@ -5906,7 +6755,7 @@
       }
     },
     {
-      "id": "escuela-0261",
+      "id": "escuela-0300",
       "jurisdictionId": "58",
       "jurisdiction": "Neuquén",
       "caseType": "titular",
@@ -5927,7 +6776,28 @@
       }
     },
     {
-      "id": "escuela-0262",
+      "id": "escuela-0301",
+      "jurisdictionId": "58",
+      "jurisdiction": "Neuquén",
+      "caseType": "titular",
+      "weight": 2.1667,
+      "coordinates": [
+        -68.2320881,
+        -38.9572593
+      ],
+      "answers": {
+        "q_2_1_1": "No contamos con personal específico; la tarea se distribuye informalmente.",
+        "q_2_2_3": "Sí, se remite y aprueba formalmente todos los años",
+        "q_2_2_5": "Modalidad mixta (se realizan ambos formatos sin que uno predomine)",
+        "q_3_3": "Se registra la información, pero no se realiza una sistematización ni un análisis posterior",
+        "q_3_4": "No contamos con un registro de oferentes",
+        "q_4_2": "Es insuficiente para cubrir las necesidades de Prácticas Profesionalizantes (PP)",
+        "q_5_5": "No",
+        "q_5_6": "Parcialmente; se prioriza la experiencia laboral general por sobre la especificidad del título"
+      }
+    },
+    {
+      "id": "escuela-0302",
       "jurisdictionId": "62",
       "jurisdiction": "Río Negro",
       "caseType": "titular",
@@ -5948,7 +6818,7 @@
       }
     },
     {
-      "id": "escuela-0263",
+      "id": "escuela-0303",
       "jurisdictionId": "62",
       "jurisdiction": "Río Negro",
       "caseType": "titular",
@@ -5969,7 +6839,7 @@
       }
     },
     {
-      "id": "escuela-0264",
+      "id": "escuela-0304",
       "jurisdictionId": "62",
       "jurisdiction": "Río Negro",
       "caseType": "titular",
@@ -5990,7 +6860,7 @@
       }
     },
     {
-      "id": "escuela-0265",
+      "id": "escuela-0305",
       "jurisdictionId": "62",
       "jurisdiction": "Río Negro",
       "caseType": "titular",
@@ -6011,7 +6881,7 @@
       }
     },
     {
-      "id": "escuela-0266",
+      "id": "escuela-0306",
       "jurisdictionId": "62",
       "jurisdiction": "Río Negro",
       "caseType": "titular",
@@ -6032,7 +6902,7 @@
       }
     },
     {
-      "id": "escuela-0267",
+      "id": "escuela-0307",
       "jurisdictionId": "62",
       "jurisdiction": "Río Negro",
       "caseType": "titular",
@@ -6053,7 +6923,7 @@
       }
     },
     {
-      "id": "escuela-0268",
+      "id": "escuela-0308",
       "jurisdictionId": "62",
       "jurisdiction": "Río Negro",
       "caseType": "titular",
@@ -6074,7 +6944,7 @@
       }
     },
     {
-      "id": "escuela-0269",
+      "id": "escuela-0309",
       "jurisdictionId": "62",
       "jurisdiction": "Río Negro",
       "caseType": "titular",
@@ -6095,7 +6965,7 @@
       }
     },
     {
-      "id": "escuela-0270",
+      "id": "escuela-0310",
       "jurisdictionId": "62",
       "jurisdiction": "Río Negro",
       "caseType": "titular",
@@ -6116,7 +6986,7 @@
       }
     },
     {
-      "id": "escuela-0271",
+      "id": "escuela-0311",
       "jurisdictionId": "62",
       "jurisdiction": "Río Negro",
       "caseType": "titular",
@@ -6137,7 +7007,7 @@
       }
     },
     {
-      "id": "escuela-0272",
+      "id": "escuela-0312",
       "jurisdictionId": "62",
       "jurisdiction": "Río Negro",
       "caseType": "titular",
@@ -6158,7 +7028,7 @@
       }
     },
     {
-      "id": "escuela-0273",
+      "id": "escuela-0313",
       "jurisdictionId": "62",
       "jurisdiction": "Río Negro",
       "caseType": "titular",
@@ -6179,7 +7049,7 @@
       }
     },
     {
-      "id": "escuela-0274",
+      "id": "escuela-0314",
       "jurisdictionId": "62",
       "jurisdiction": "Río Negro",
       "caseType": "titular",
@@ -6200,7 +7070,7 @@
       }
     },
     {
-      "id": "escuela-0275",
+      "id": "escuela-0315",
       "jurisdictionId": "62",
       "jurisdiction": "Río Negro",
       "caseType": "titular",
@@ -6221,7 +7091,28 @@
       }
     },
     {
-      "id": "escuela-0276",
+      "id": "escuela-0316",
+      "jurisdictionId": "66",
+      "jurisdiction": "Salta",
+      "caseType": "titular",
+      "weight": 5.75,
+      "coordinates": [
+        -65.445374,
+        -24.832014
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, pero comparte la tarea con otras funciones (por ejemplo, docente de taller, jefe/a de taller, directivo/a).",
+        "q_2_2_3": "Se remite para notificación, pero no requiere aprobación explícita para iniciar",
+        "q_2_2_5": "Predominantemente \"internas\"",
+        "q_3_3": "No se dispone de información registrada que permita realizar sistematización y análisis",
+        "q_3_4": "No contamos con un registro de oferentes",
+        "q_4_2": "Es suficiente para cubrir las Prácticas Profesionalizantes (PP) de la matrícula de la escuela",
+        "q_5_5": "No",
+        "q_5_6": "No se realiza una evaluación formal de la pertinencia del perfil"
+      }
+    },
+    {
+      "id": "escuela-0317",
       "jurisdictionId": "66",
       "jurisdiction": "Salta",
       "caseType": "titular",
@@ -6242,7 +7133,7 @@
       }
     },
     {
-      "id": "escuela-0277",
+      "id": "escuela-0318",
       "jurisdictionId": "66",
       "jurisdiction": "Salta",
       "caseType": "titular",
@@ -6263,7 +7154,28 @@
       }
     },
     {
-      "id": "escuela-0278",
+      "id": "escuela-0319",
+      "jurisdictionId": "66",
+      "jurisdiction": "Salta",
+      "caseType": "titular",
+      "weight": 4.4,
+      "coordinates": [
+        -64.971752,
+        -25.500286
+      ],
+      "answers": {
+        "q_2_1_1": "No contamos con personal específico; la tarea se distribuye informalmente.",
+        "q_2_2_3": "No se remite a nivel jurisdiccional; queda aprobado a nivel interno o institucional",
+        "q_2_2_5": "Modalidad mixta (se realizan ambos formatos sin que uno predomine)",
+        "q_3_3": "No se dispone de información registrada que permita realizar sistematización y análisis",
+        "q_3_4": "No contamos con un registro de oferentes",
+        "q_4_2": "Es insuficiente para cubrir las necesidades de Prácticas Profesionalizantes (PP)",
+        "q_5_5": "Sí",
+        "q_5_6": "Sí, mediante un análisis de coherencia entre las actividades realizadas en la práctica y la planificación inicial del proyecto"
+      }
+    },
+    {
+      "id": "escuela-0320",
       "jurisdictionId": "66",
       "jurisdiction": "Salta",
       "caseType": "titular",
@@ -6284,7 +7196,7 @@
       }
     },
     {
-      "id": "escuela-0279",
+      "id": "escuela-0321",
       "jurisdictionId": "66",
       "jurisdiction": "Salta",
       "caseType": "titular",
@@ -6305,7 +7217,7 @@
       }
     },
     {
-      "id": "escuela-0280",
+      "id": "escuela-0322",
       "jurisdictionId": "66",
       "jurisdiction": "Salta",
       "caseType": "titular",
@@ -6326,7 +7238,28 @@
       }
     },
     {
-      "id": "escuela-0281",
+      "id": "escuela-0323",
+      "jurisdictionId": "66",
+      "jurisdiction": "Salta",
+      "caseType": "titular",
+      "weight": 4.4,
+      "coordinates": [
+        -64.320307,
+        -23.128591
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, pero comparte la tarea con otras funciones (por ejemplo, docente de taller, jefe/a de taller, directivo/a).",
+        "q_2_2_3": "No se remite a nivel jurisdiccional; queda aprobado a nivel interno o institucional",
+        "q_2_2_5": "Predominantemente \"internas\"",
+        "q_3_3": "Se registra la información, pero no se realiza una sistematización ni un análisis posterior",
+        "q_3_4": "No contamos con un registro de oferentes",
+        "q_4_2": "Es suficiente para cubrir las Prácticas Profesionalizantes (PP) de la matrícula de la escuela",
+        "q_5_5": "No",
+        "q_5_6": "Sí, mediante un análisis de coherencia entre las actividades realizadas en la práctica y la planificación inicial del proyecto"
+      }
+    },
+    {
+      "id": "escuela-0324",
       "jurisdictionId": "66",
       "jurisdiction": "Salta",
       "caseType": "titular",
@@ -6347,7 +7280,7 @@
       }
     },
     {
-      "id": "escuela-0282",
+      "id": "escuela-0325",
       "jurisdictionId": "66",
       "jurisdiction": "Salta",
       "caseType": "titular",
@@ -6368,7 +7301,7 @@
       }
     },
     {
-      "id": "escuela-0283",
+      "id": "escuela-0326",
       "jurisdictionId": "66",
       "jurisdiction": "Salta",
       "caseType": "titular",
@@ -6389,7 +7322,7 @@
       }
     },
     {
-      "id": "escuela-0284",
+      "id": "escuela-0327",
       "jurisdictionId": "70",
       "jurisdiction": "San Juan",
       "caseType": "titular",
@@ -6410,7 +7343,7 @@
       }
     },
     {
-      "id": "escuela-0285",
+      "id": "escuela-0328",
       "jurisdictionId": "70",
       "jurisdiction": "San Juan",
       "caseType": "titular",
@@ -6431,7 +7364,7 @@
       }
     },
     {
-      "id": "escuela-0286",
+      "id": "escuela-0329",
       "jurisdictionId": "70",
       "jurisdiction": "San Juan",
       "caseType": "titular",
@@ -6452,7 +7385,7 @@
       }
     },
     {
-      "id": "escuela-0287",
+      "id": "escuela-0330",
       "jurisdictionId": "70",
       "jurisdiction": "San Juan",
       "caseType": "titular",
@@ -6473,7 +7406,7 @@
       }
     },
     {
-      "id": "escuela-0288",
+      "id": "escuela-0331",
       "jurisdictionId": "70",
       "jurisdiction": "San Juan",
       "caseType": "titular",
@@ -6494,7 +7427,7 @@
       }
     },
     {
-      "id": "escuela-0289",
+      "id": "escuela-0332",
       "jurisdictionId": "70",
       "jurisdiction": "San Juan",
       "caseType": "titular",
@@ -6515,7 +7448,28 @@
       }
     },
     {
-      "id": "escuela-0290",
+      "id": "escuela-0333",
+      "jurisdictionId": "70",
+      "jurisdiction": "San Juan",
+      "caseType": "titular",
+      "weight": 2.0,
+      "coordinates": [
+        -68.564584,
+        -31.515333
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, pero comparte la tarea con otras funciones (por ejemplo, docente de taller, jefe/a de taller, directivo/a).",
+        "q_2_2_3": "Se remite para notificación, pero no requiere aprobación explícita para iniciar",
+        "q_2_2_5": "Predominantemente \"externas\"",
+        "q_3_3": "Se sistematiza y analiza la información para generar insumos para la toma de decisiones",
+        "q_3_4": "No contamos con un registro de oferentes",
+        "q_4_2": "Es suficiente para cubrir las Prácticas Profesionalizantes (PP) de la matrícula de la escuela",
+        "q_5_5": "No",
+        "q_5_6": "Sí, mediante un análisis de coherencia entre las actividades realizadas en la práctica y la planificación inicial del proyecto"
+      }
+    },
+    {
+      "id": "escuela-0334",
       "jurisdictionId": "70",
       "jurisdiction": "San Juan",
       "caseType": "titular",
@@ -6536,7 +7490,7 @@
       }
     },
     {
-      "id": "escuela-0291",
+      "id": "escuela-0335",
       "jurisdictionId": "70",
       "jurisdiction": "San Juan",
       "caseType": "titular",
@@ -6557,7 +7511,7 @@
       }
     },
     {
-      "id": "escuela-0292",
+      "id": "escuela-0336",
       "jurisdictionId": "74",
       "jurisdiction": "San Luis",
       "caseType": "titular",
@@ -6578,7 +7532,7 @@
       }
     },
     {
-      "id": "escuela-0293",
+      "id": "escuela-0337",
       "jurisdictionId": "74",
       "jurisdiction": "San Luis",
       "caseType": "titular",
@@ -6599,7 +7553,7 @@
       }
     },
     {
-      "id": "escuela-0294",
+      "id": "escuela-0338",
       "jurisdictionId": "74",
       "jurisdiction": "San Luis",
       "caseType": "titular",
@@ -6620,7 +7574,28 @@
       }
     },
     {
-      "id": "escuela-0295",
+      "id": "escuela-0339",
+      "jurisdictionId": "74",
+      "jurisdiction": "San Luis",
+      "caseType": "titular",
+      "weight": 1.4,
+      "coordinates": [
+        -65.804327777778,
+        -32.233211111111
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, pero comparte la tarea con otras funciones (por ejemplo, docente de taller, jefe/a de taller, directivo/a).",
+        "q_2_2_3": "Se remite para notificación, pero no requiere aprobación explícita para iniciar",
+        "q_2_2_5": "Modalidad mixta (se realizan ambos formatos sin que uno predomine)",
+        "q_3_3": "Se sistematiza y analiza la información para generar insumos para la toma de decisiones",
+        "q_3_4": "No contamos con un registro de oferentes",
+        "q_4_2": "Es insuficiente para cubrir las necesidades de Prácticas Profesionalizantes (PP)",
+        "q_5_5": "No",
+        "q_5_6": "Sí, mediante un análisis de coherencia entre las actividades realizadas en la práctica y la planificación inicial del proyecto"
+      }
+    },
+    {
+      "id": "escuela-0340",
       "jurisdictionId": "74",
       "jurisdiction": "San Luis",
       "caseType": "titular",
@@ -6641,7 +7616,7 @@
       }
     },
     {
-      "id": "escuela-0296",
+      "id": "escuela-0341",
       "jurisdictionId": "74",
       "jurisdiction": "San Luis",
       "caseType": "titular",
@@ -6662,7 +7637,7 @@
       }
     },
     {
-      "id": "escuela-0297",
+      "id": "escuela-0342",
       "jurisdictionId": "74",
       "jurisdiction": "San Luis",
       "caseType": "titular",
@@ -6683,7 +7658,7 @@
       }
     },
     {
-      "id": "escuela-0298",
+      "id": "escuela-0343",
       "jurisdictionId": "74",
       "jurisdiction": "San Luis",
       "caseType": "titular",
@@ -6704,7 +7679,7 @@
       }
     },
     {
-      "id": "escuela-0299",
+      "id": "escuela-0344",
       "jurisdictionId": "74",
       "jurisdiction": "San Luis",
       "caseType": "titular",
@@ -6725,7 +7700,28 @@
       }
     },
     {
-      "id": "escuela-0300",
+      "id": "escuela-0345",
+      "jurisdictionId": "74",
+      "jurisdiction": "San Luis",
+      "caseType": "titular",
+      "weight": 2.6667,
+      "coordinates": [
+        -65.440338888889,
+        -33.698686111111
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
+        "q_2_2_3": "No se remite a nivel jurisdiccional; queda aprobado a nivel interno o institucional",
+        "q_2_2_5": "Predominantemente \"internas\"",
+        "q_3_3": "Se registra la información, pero no se realiza una sistematización ni un análisis posterior",
+        "q_3_4": "No contamos con un registro de oferentes",
+        "q_4_2": "Es insuficiente para cubrir las necesidades de Prácticas Profesionalizantes (PP)",
+        "q_5_5": "No",
+        "q_5_6": "No se realiza una evaluación formal de la pertinencia del perfil"
+      }
+    },
+    {
+      "id": "escuela-0346",
       "jurisdictionId": "74",
       "jurisdiction": "San Luis",
       "caseType": "titular",
@@ -6746,7 +7742,7 @@
       }
     },
     {
-      "id": "escuela-0301",
+      "id": "escuela-0347",
       "jurisdictionId": "74",
       "jurisdiction": "San Luis",
       "caseType": "titular",
@@ -6767,7 +7763,7 @@
       }
     },
     {
-      "id": "escuela-0302",
+      "id": "escuela-0348",
       "jurisdictionId": "74",
       "jurisdiction": "San Luis",
       "caseType": "titular",
@@ -6788,7 +7784,7 @@
       }
     },
     {
-      "id": "escuela-0303",
+      "id": "escuela-0349",
       "jurisdictionId": "74",
       "jurisdiction": "San Luis",
       "caseType": "titular",
@@ -6809,7 +7805,7 @@
       }
     },
     {
-      "id": "escuela-0304",
+      "id": "escuela-0350",
       "jurisdictionId": "74",
       "jurisdiction": "San Luis",
       "caseType": "titular",
@@ -6830,7 +7826,7 @@
       }
     },
     {
-      "id": "escuela-0305",
+      "id": "escuela-0351",
       "jurisdictionId": "78",
       "jurisdiction": "Santa Cruz",
       "caseType": "titular",
@@ -6851,7 +7847,7 @@
       }
     },
     {
-      "id": "escuela-0306",
+      "id": "escuela-0352",
       "jurisdictionId": "78",
       "jurisdiction": "Santa Cruz",
       "caseType": "titular",
@@ -6872,7 +7868,28 @@
       }
     },
     {
-      "id": "escuela-0307",
+      "id": "escuela-0353",
+      "jurisdictionId": "78",
+      "jurisdiction": "Santa Cruz",
+      "caseType": "titular",
+      "weight": 1.25,
+      "coordinates": [
+        -67.528960157159,
+        -46.445809683675
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
+        "q_2_2_3": "Sí, se remite y aprueba formalmente todos los años",
+        "q_2_2_5": "Modalidad mixta (se realizan ambos formatos sin que uno predomine)",
+        "q_3_3": "Se registra la información, pero no se realiza una sistematización ni un análisis posterior",
+        "q_3_4": "No contamos con un registro de oferentes",
+        "q_4_2": "Es insuficiente para cubrir las necesidades de Prácticas Profesionalizantes (PP)",
+        "q_5_5": "Sí",
+        "q_5_6": "Sí, mediante un análisis de coherencia entre las actividades realizadas en la práctica y la planificación inicial del proyecto"
+      }
+    },
+    {
+      "id": "escuela-0354",
       "jurisdictionId": "78",
       "jurisdiction": "Santa Cruz",
       "caseType": "titular",
@@ -6893,7 +7910,7 @@
       }
     },
     {
-      "id": "escuela-0308",
+      "id": "escuela-0355",
       "jurisdictionId": "78",
       "jurisdiction": "Santa Cruz",
       "caseType": "titular",
@@ -6914,7 +7931,7 @@
       }
     },
     {
-      "id": "escuela-0309",
+      "id": "escuela-0356",
       "jurisdictionId": "78",
       "jurisdiction": "Santa Cruz",
       "caseType": "titular",
@@ -6935,7 +7952,28 @@
       }
     },
     {
-      "id": "escuela-0310",
+      "id": "escuela-0357",
+      "jurisdictionId": "78",
+      "jurisdiction": "Santa Cruz",
+      "caseType": "titular",
+      "weight": 1.25,
+      "coordinates": [
+        -72.255717553775,
+        -50.348242788749
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
+        "q_2_2_3": "Se remite para notificación, pero no requiere aprobación explícita para iniciar",
+        "q_2_2_5": "Modalidad mixta (se realizan ambos formatos sin que uno predomine)",
+        "q_3_3": "Se registra la información, pero no se realiza una sistematización ni un análisis posterior",
+        "q_3_4": "No contamos con un registro de oferentes",
+        "q_4_2": "Es insuficiente para cubrir las necesidades de Prácticas Profesionalizantes (PP)",
+        "q_5_5": "No",
+        "q_5_6": "Sí, mediante un análisis de coherencia entre las actividades realizadas en la práctica y la planificación inicial del proyecto"
+      }
+    },
+    {
+      "id": "escuela-0358",
       "jurisdictionId": "78",
       "jurisdiction": "Santa Cruz",
       "caseType": "titular",
@@ -6956,7 +7994,7 @@
       }
     },
     {
-      "id": "escuela-0311",
+      "id": "escuela-0359",
       "jurisdictionId": "78",
       "jurisdiction": "Santa Cruz",
       "caseType": "titular",
@@ -6977,7 +8015,7 @@
       }
     },
     {
-      "id": "escuela-0312",
+      "id": "escuela-0360",
       "jurisdictionId": "78",
       "jurisdiction": "Santa Cruz",
       "caseType": "titular",
@@ -6998,11 +8036,32 @@
       }
     },
     {
-      "id": "escuela-0313",
+      "id": "escuela-0361",
       "jurisdictionId": "78",
       "jurisdiction": "Santa Cruz",
       "caseType": "titular",
-      "weight": 1.5,
+      "weight": 1.25,
+      "coordinates": [
+        -69.218861183807,
+        -51.634826508149
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
+        "q_2_2_3": "Sí, se remite y aprueba formalmente todos los años",
+        "q_2_2_5": "Modalidad mixta (se realizan ambos formatos sin que uno predomine)",
+        "q_3_3": "Se sistematiza y analiza la información para generar insumos para la toma de decisiones",
+        "q_3_4": "Sí, contamos con un registro en fichas (soporte papel)",
+        "q_4_2": "Es insuficiente para cubrir las necesidades de Prácticas Profesionalizantes (PP)",
+        "q_5_5": "No",
+        "q_5_6": "Parcialmente; se prioriza la experiencia laboral general por sobre la especificidad del título"
+      }
+    },
+    {
+      "id": "escuela-0362",
+      "jurisdictionId": "78",
+      "jurisdiction": "Santa Cruz",
+      "caseType": "titular",
+      "weight": 1.25,
       "coordinates": [
         -68.533427337381,
         -50.018456524078
@@ -7019,12 +8078,57 @@
       }
     },
     {
-      "id": "escuela-0314",
+      "id": "escuela-0363",
+      "jurisdictionId": "78",
+      "jurisdiction": "Santa Cruz",
+      "caseType": "titular",
+      "weight": 1.25,
+      "coordinates": [
+        -72.218911160656,
+        -51.588054576491
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
+        "q_2_2_3": "Se remite para notificación, pero no requiere aprobación explícita para iniciar",
+        "q_2_2_5": "Modalidad mixta (se realizan ambos formatos sin que uno predomine)",
+        "q_3_3": "Se sistematiza y analiza la información para generar insumos para la toma de decisiones",
+        "q_3_4": "Sí, contamos con un registro en fichas (soporte papel)",
+        "q_4_2": "Es suficiente para cubrir las Prácticas Profesionalizantes (PP) de la matrícula de la escuela",
+        "q_5_5": "No",
+        "q_5_6": "Parcialmente; se prioriza la experiencia laboral general por sobre la especificidad del título"
+      }
+    },
+    {
+      "id": "escuela-0364",
+      "jurisdictionId": "78",
+      "jurisdiction": "Santa Cruz",
+      "caseType": "titular",
+      "weight": 1.5,
+      "coordinates": [
+        -71.631787871001,
+        -46.547419689266
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
+        "q_2_2_3": "Sí, se remite y aprueba formalmente todos los años",
+        "q_2_2_5": "Modalidad mixta (se realizan ambos formatos sin que uno predomine)",
+        "q_3_3": "Se registra la información, pero no se realiza una sistematización ni un análisis posterior",
+        "q_3_4": "No contamos con un registro de oferentes",
+        "q_4_2": "Es insuficiente para cubrir las necesidades de Prácticas Profesionalizantes (PP)",
+        "q_5_5": "No",
+        "q_5_6": "Parcialmente; se prioriza la experiencia laboral general por sobre la especificidad del título"
+      }
+    },
+    {
+      "id": "escuela-0365",
       "jurisdictionId": "78",
       "jurisdiction": "Santa Cruz",
       "caseType": "titular",
       "weight": 1.0,
-      "coordinates": null,
+      "coordinates": [
+        -69.24231250000001,
+        -51.65956250000001
+      ],
       "answers": {
         "q_2_1_1": "Sí, pero comparte la tarea con otras funciones (por ejemplo, docente de taller, jefe/a de taller, directivo/a).",
         "q_2_2_3": "Se remite para notificación, pero no requiere aprobación explícita para iniciar",
@@ -7037,7 +8141,28 @@
       }
     },
     {
-      "id": "escuela-0315",
+      "id": "escuela-0366",
+      "jurisdictionId": "82",
+      "jurisdiction": "Santa Fe",
+      "caseType": "titular",
+      "weight": 5.05,
+      "coordinates": [
+        -61.698369264349,
+        -33.113454219644
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
+        "q_2_2_3": "Sí, se remite y aprueba formalmente todos los años",
+        "q_2_2_5": "Predominantemente \"externas\"",
+        "q_3_3": "Se registra la información, pero no se realiza una sistematización ni un análisis posterior",
+        "q_3_4": "Sí, contamos con un registro digital que se actualiza anualmente",
+        "q_4_2": "Es suficiente para cubrir las Prácticas Profesionalizantes (PP) de la matrícula de la escuela",
+        "q_5_5": "Sí",
+        "q_5_6": "Sí, mediante un análisis de coherencia entre las actividades realizadas en la práctica y la planificación inicial del proyecto"
+      }
+    },
+    {
+      "id": "escuela-0367",
       "jurisdictionId": "82",
       "jurisdiction": "Santa Fe",
       "caseType": "titular",
@@ -7058,7 +8183,7 @@
       }
     },
     {
-      "id": "escuela-0316",
+      "id": "escuela-0368",
       "jurisdictionId": "82",
       "jurisdiction": "Santa Fe",
       "caseType": "titular",
@@ -7079,7 +8204,7 @@
       }
     },
     {
-      "id": "escuela-0317",
+      "id": "escuela-0369",
       "jurisdictionId": "82",
       "jurisdiction": "Santa Fe",
       "caseType": "titular",
@@ -7100,7 +8225,7 @@
       }
     },
     {
-      "id": "escuela-0318",
+      "id": "escuela-0370",
       "jurisdictionId": "82",
       "jurisdiction": "Santa Fe",
       "caseType": "titular",
@@ -7121,7 +8246,7 @@
       }
     },
     {
-      "id": "escuela-0319",
+      "id": "escuela-0371",
       "jurisdictionId": "82",
       "jurisdiction": "Santa Fe",
       "caseType": "titular",
@@ -7142,7 +8267,7 @@
       }
     },
     {
-      "id": "escuela-0320",
+      "id": "escuela-0372",
       "jurisdictionId": "82",
       "jurisdiction": "Santa Fe",
       "caseType": "titular",
@@ -7163,7 +8288,7 @@
       }
     },
     {
-      "id": "escuela-0321",
+      "id": "escuela-0373",
       "jurisdictionId": "82",
       "jurisdiction": "Santa Fe",
       "caseType": "titular",
@@ -7184,7 +8309,7 @@
       }
     },
     {
-      "id": "escuela-0322",
+      "id": "escuela-0374",
       "jurisdictionId": "82",
       "jurisdiction": "Santa Fe",
       "caseType": "titular",
@@ -7205,7 +8330,28 @@
       }
     },
     {
-      "id": "escuela-0323",
+      "id": "escuela-0375",
+      "jurisdictionId": "82",
+      "jurisdiction": "Santa Fe",
+      "caseType": "titular",
+      "weight": 5.05,
+      "coordinates": [
+        -60.644713174305,
+        -32.93733561813
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
+        "q_2_2_3": "Se remite para notificación, pero no requiere aprobación explícita para iniciar",
+        "q_2_2_5": "Modalidad mixta (se realizan ambos formatos sin que uno predomine)",
+        "q_3_3": "Se registra la información, pero no se realiza una sistematización ni un análisis posterior",
+        "q_3_4": "Sí, contamos con un registro digital que se actualiza anualmente",
+        "q_4_2": "Es insuficiente para cubrir las necesidades de Prácticas Profesionalizantes (PP)",
+        "q_5_5": "No",
+        "q_5_6": "Sí, mediante un análisis de coherencia entre las actividades realizadas en la práctica y la planificación inicial del proyecto"
+      }
+    },
+    {
+      "id": "escuela-0376",
       "jurisdictionId": "82",
       "jurisdiction": "Santa Fe",
       "caseType": "titular",
@@ -7226,7 +8372,28 @@
       }
     },
     {
-      "id": "escuela-0324",
+      "id": "escuela-0377",
+      "jurisdictionId": "82",
+      "jurisdiction": "Santa Fe",
+      "caseType": "titular",
+      "weight": 3.4286,
+      "coordinates": [
+        -60.632368363746,
+        -32.961299339477
+      ],
+      "answers": {
+        "q_2_1_1": "No contamos con personal específico; la tarea se distribuye informalmente.",
+        "q_2_2_3": "Se remite para notificación, pero no requiere aprobación explícita para iniciar",
+        "q_2_2_5": "Modalidad mixta (se realizan ambos formatos sin que uno predomine)",
+        "q_3_3": "Se registra la información, pero no se realiza una sistematización ni un análisis posterior",
+        "q_3_4": "No contamos con un registro de oferentes",
+        "q_4_2": "Es insuficiente para cubrir las necesidades de Prácticas Profesionalizantes (PP)",
+        "q_5_5": "No",
+        "q_5_6": "No se realiza una evaluación formal de la pertinencia del perfil"
+      }
+    },
+    {
+      "id": "escuela-0378",
       "jurisdictionId": "82",
       "jurisdiction": "Santa Fe",
       "caseType": "titular",
@@ -7247,7 +8414,49 @@
       }
     },
     {
-      "id": "escuela-0325",
+      "id": "escuela-0379",
+      "jurisdictionId": "82",
+      "jurisdiction": "Santa Fe",
+      "caseType": "titular",
+      "weight": 5.05,
+      "coordinates": [
+        -60.714834713188,
+        -31.653697365791
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
+        "q_2_2_3": "Sí, se remite y aprueba formalmente todos los años",
+        "q_2_2_5": "Predominantemente \"externas\"",
+        "q_3_3": "Se sistematiza y analiza la información para generar insumos para la toma de decisiones",
+        "q_3_4": "No contamos con un registro de oferentes",
+        "q_4_2": "Es suficiente para cubrir las Prácticas Profesionalizantes (PP) de la matrícula de la escuela",
+        "q_5_5": "No",
+        "q_5_6": "Sí, mediante un análisis de coherencia entre las actividades realizadas en la práctica y la planificación inicial del proyecto"
+      }
+    },
+    {
+      "id": "escuela-0380",
+      "jurisdictionId": "82",
+      "jurisdiction": "Santa Fe",
+      "caseType": "titular",
+      "weight": 3.4286,
+      "coordinates": [
+        -60.710236521631,
+        -32.889125457958
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
+        "q_2_2_3": "Sí, se remite y aprueba formalmente todos los años",
+        "q_2_2_5": "Predominantemente \"externas\"",
+        "q_3_3": "Se registra la información, pero no se realiza una sistematización ni un análisis posterior",
+        "q_3_4": "Sí, contamos con un registro en fichas (soporte papel)",
+        "q_4_2": "Es suficiente para cubrir las Prácticas Profesionalizantes (PP) de la matrícula de la escuela",
+        "q_5_5": "No",
+        "q_5_6": "Sí, mediante un análisis de coherencia entre las actividades realizadas en la práctica y la planificación inicial del proyecto"
+      }
+    },
+    {
+      "id": "escuela-0381",
       "jurisdictionId": "82",
       "jurisdiction": "Santa Fe",
       "caseType": "titular",
@@ -7268,7 +8477,7 @@
       }
     },
     {
-      "id": "escuela-0326",
+      "id": "escuela-0382",
       "jurisdictionId": "82",
       "jurisdiction": "Santa Fe",
       "caseType": "titular",
@@ -7289,7 +8498,7 @@
       }
     },
     {
-      "id": "escuela-0327",
+      "id": "escuela-0383",
       "jurisdictionId": "82",
       "jurisdiction": "Santa Fe",
       "caseType": "titular",
@@ -7310,7 +8519,7 @@
       }
     },
     {
-      "id": "escuela-0328",
+      "id": "escuela-0384",
       "jurisdictionId": "82",
       "jurisdiction": "Santa Fe",
       "caseType": "titular",
@@ -7331,7 +8540,7 @@
       }
     },
     {
-      "id": "escuela-0329",
+      "id": "escuela-0385",
       "jurisdictionId": "82",
       "jurisdiction": "Santa Fe",
       "caseType": "titular",
@@ -7352,7 +8561,7 @@
       }
     },
     {
-      "id": "escuela-0330",
+      "id": "escuela-0386",
       "jurisdictionId": "82",
       "jurisdiction": "Santa Fe",
       "caseType": "titular",
@@ -7373,7 +8582,7 @@
       }
     },
     {
-      "id": "escuela-0331",
+      "id": "escuela-0387",
       "jurisdictionId": "82",
       "jurisdiction": "Santa Fe",
       "caseType": "titular",
@@ -7394,7 +8603,7 @@
       }
     },
     {
-      "id": "escuela-0332",
+      "id": "escuela-0388",
       "jurisdictionId": "82",
       "jurisdiction": "Santa Fe",
       "caseType": "titular",
@@ -7415,7 +8624,28 @@
       }
     },
     {
-      "id": "escuela-0333",
+      "id": "escuela-0389",
+      "jurisdictionId": "82",
+      "jurisdiction": "Santa Fe",
+      "caseType": "titular",
+      "weight": 5.05,
+      "coordinates": [
+        -60.695706646899,
+        -32.923768176415
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
+        "q_2_2_3": "Se remite para notificación, pero no requiere aprobación explícita para iniciar",
+        "q_2_2_5": "Modalidad mixta (se realizan ambos formatos sin que uno predomine)",
+        "q_3_3": "Se sistematiza y analiza la información para generar insumos para la toma de decisiones",
+        "q_3_4": "Sí, contamos con un registro en fichas (soporte papel)",
+        "q_4_2": "Es insuficiente para cubrir las necesidades de Prácticas Profesionalizantes (PP)",
+        "q_5_5": "No",
+        "q_5_6": "No se realiza una evaluación formal de la pertinencia del perfil"
+      }
+    },
+    {
+      "id": "escuela-0390",
       "jurisdictionId": "82",
       "jurisdiction": "Santa Fe",
       "caseType": "titular",
@@ -7436,7 +8666,7 @@
       }
     },
     {
-      "id": "escuela-0334",
+      "id": "escuela-0391",
       "jurisdictionId": "82",
       "jurisdiction": "Santa Fe",
       "caseType": "titular",
@@ -7457,7 +8687,7 @@
       }
     },
     {
-      "id": "escuela-0335",
+      "id": "escuela-0392",
       "jurisdictionId": "82",
       "jurisdiction": "Santa Fe",
       "caseType": "titular",
@@ -7478,7 +8708,7 @@
       }
     },
     {
-      "id": "escuela-0336",
+      "id": "escuela-0393",
       "jurisdictionId": "82",
       "jurisdiction": "Santa Fe",
       "caseType": "titular",
@@ -7499,7 +8729,7 @@
       }
     },
     {
-      "id": "escuela-0337",
+      "id": "escuela-0394",
       "jurisdictionId": "82",
       "jurisdiction": "Santa Fe",
       "caseType": "titular",
@@ -7520,7 +8750,7 @@
       }
     },
     {
-      "id": "escuela-0338",
+      "id": "escuela-0395",
       "jurisdictionId": "82",
       "jurisdiction": "Santa Fe",
       "caseType": "titular",
@@ -7541,7 +8771,7 @@
       }
     },
     {
-      "id": "escuela-0339",
+      "id": "escuela-0396",
       "jurisdictionId": "82",
       "jurisdiction": "Santa Fe",
       "caseType": "titular",
@@ -7562,7 +8792,7 @@
       }
     },
     {
-      "id": "escuela-0340",
+      "id": "escuela-0397",
       "jurisdictionId": "86",
       "jurisdiction": "Santiago del Estero",
       "caseType": "titular",
@@ -7583,7 +8813,49 @@
       }
     },
     {
-      "id": "escuela-0341",
+      "id": "escuela-0398",
+      "jurisdictionId": "86",
+      "jurisdiction": "Santiago del Estero",
+      "caseType": "titular",
+      "weight": 3.5,
+      "coordinates": [
+        -63.557996284021,
+        -26.685343544644
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, pero comparte la tarea con otras funciones (por ejemplo, docente de taller, jefe/a de taller, directivo/a).",
+        "q_2_2_3": "No se remite a nivel jurisdiccional; queda aprobado a nivel interno o institucional",
+        "q_2_2_5": "Predominantemente \"internas\"",
+        "q_3_3": "Se registra la información, pero no se realiza una sistematización ni un análisis posterior",
+        "q_3_4": "No contamos con un registro de oferentes",
+        "q_4_2": "Es insuficiente para cubrir las necesidades de Prácticas Profesionalizantes (PP)",
+        "q_5_5": "No",
+        "q_5_6": "Sí, mediante un análisis de coherencia entre las actividades realizadas en la práctica y la planificación inicial del proyecto"
+      }
+    },
+    {
+      "id": "escuela-0399",
+      "jurisdictionId": "86",
+      "jurisdiction": "Santiago del Estero",
+      "caseType": "titular",
+      "weight": 1.5714,
+      "coordinates": [
+        -64.108209999999,
+        -27.924870000004
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, pero comparte la tarea con otras funciones (por ejemplo, docente de taller, jefe/a de taller, directivo/a).",
+        "q_2_2_3": "No se remite a nivel jurisdiccional; queda aprobado a nivel interno o institucional",
+        "q_2_2_5": "Modalidad mixta (se realizan ambos formatos sin que uno predomine)",
+        "q_3_3": "Se sistematiza y analiza la información para generar insumos para la toma de decisiones",
+        "q_3_4": "Sí, contamos con un registro en fichas (soporte papel)",
+        "q_4_2": "Es insuficiente para cubrir las necesidades de Prácticas Profesionalizantes (PP)",
+        "q_5_5": "No",
+        "q_5_6": "Sí, mediante un análisis de coherencia entre las actividades realizadas en la práctica y la planificación inicial del proyecto"
+      }
+    },
+    {
+      "id": "escuela-0400",
       "jurisdictionId": "86",
       "jurisdiction": "Santiago del Estero",
       "caseType": "titular",
@@ -7604,7 +8876,28 @@
       }
     },
     {
-      "id": "escuela-0342",
+      "id": "escuela-0401",
+      "jurisdictionId": "86",
+      "jurisdiction": "Santiago del Estero",
+      "caseType": "titular",
+      "weight": 1.5,
+      "coordinates": [
+        -64.224714974807,
+        -27.74956780778
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, pero comparte la tarea con otras funciones (por ejemplo, docente de taller, jefe/a de taller, directivo/a).",
+        "q_2_2_3": "Sí, se remite y aprueba formalmente todos los años",
+        "q_2_2_5": "Predominantemente \"externas\"",
+        "q_3_3": "Se sistematiza y analiza la información para generar insumos para la toma de decisiones",
+        "q_3_4": "Sí, contamos con un registro digital que se actualiza anualmente",
+        "q_4_2": "Es suficiente para cubrir las Prácticas Profesionalizantes (PP) de la matrícula de la escuela",
+        "q_5_5": "No",
+        "q_5_6": "Sí, mediante un análisis de coherencia entre las actividades realizadas en la práctica y la planificación inicial del proyecto"
+      }
+    },
+    {
+      "id": "escuela-0402",
       "jurisdictionId": "86",
       "jurisdiction": "Santiago del Estero",
       "caseType": "titular",
@@ -7625,7 +8918,7 @@
       }
     },
     {
-      "id": "escuela-0343",
+      "id": "escuela-0403",
       "jurisdictionId": "86",
       "jurisdiction": "Santiago del Estero",
       "caseType": "titular",
@@ -7646,7 +8939,7 @@
       }
     },
     {
-      "id": "escuela-0344",
+      "id": "escuela-0404",
       "jurisdictionId": "86",
       "jurisdiction": "Santiago del Estero",
       "caseType": "titular",
@@ -7667,7 +8960,7 @@
       }
     },
     {
-      "id": "escuela-0345",
+      "id": "escuela-0405",
       "jurisdictionId": "86",
       "jurisdiction": "Santiago del Estero",
       "caseType": "titular",
@@ -7688,7 +8981,7 @@
       }
     },
     {
-      "id": "escuela-0346",
+      "id": "escuela-0406",
       "jurisdictionId": "86",
       "jurisdiction": "Santiago del Estero",
       "caseType": "titular",
@@ -7709,7 +9002,7 @@
       }
     },
     {
-      "id": "escuela-0347",
+      "id": "escuela-0407",
       "jurisdictionId": "86",
       "jurisdiction": "Santiago del Estero",
       "caseType": "titular",
@@ -7730,7 +9023,49 @@
       }
     },
     {
-      "id": "escuela-0348",
+      "id": "escuela-0408",
+      "jurisdictionId": "86",
+      "jurisdiction": "Santiago del Estero",
+      "caseType": "titular",
+      "weight": 1.5714,
+      "coordinates": [
+        -64.207879999999,
+        -27.670110000004
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, pero comparte la tarea con otras funciones (por ejemplo, docente de taller, jefe/a de taller, directivo/a).",
+        "q_2_2_3": "Se remite para notificación, pero no requiere aprobación explícita para iniciar",
+        "q_2_2_5": "Predominantemente \"internas\"",
+        "q_3_3": "No se dispone de información registrada que permita realizar sistematización y análisis",
+        "q_3_4": "No contamos con un registro de oferentes",
+        "q_4_2": "Es insuficiente para cubrir las necesidades de Prácticas Profesionalizantes (PP)",
+        "q_5_5": "No",
+        "q_5_6": "Sí, mediante un análisis de coherencia entre las actividades realizadas en la práctica y la planificación inicial del proyecto"
+      }
+    },
+    {
+      "id": "escuela-0409",
+      "jurisdictionId": "86",
+      "jurisdiction": "Santiago del Estero",
+      "caseType": "titular",
+      "weight": 2.25,
+      "coordinates": [
+        -63.888337684546,
+        -27.929036015031
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
+        "q_2_2_3": "No se remite a nivel jurisdiccional; queda aprobado a nivel interno o institucional",
+        "q_2_2_5": "Predominantemente \"internas\"",
+        "q_3_3": "No se dispone de información registrada que permita realizar sistematización y análisis",
+        "q_3_4": "No contamos con un registro de oferentes",
+        "q_4_2": "Es insuficiente para cubrir las necesidades de Prácticas Profesionalizantes (PP)",
+        "q_5_5": "No",
+        "q_5_6": "Parcialmente; se prioriza la experiencia laboral general por sobre la especificidad del título"
+      }
+    },
+    {
+      "id": "escuela-0410",
       "jurisdictionId": "86",
       "jurisdiction": "Santiago del Estero",
       "caseType": "titular",
@@ -7751,7 +9086,7 @@
       }
     },
     {
-      "id": "escuela-0349",
+      "id": "escuela-0411",
       "jurisdictionId": "90",
       "jurisdiction": "Tucumán",
       "caseType": "titular",
@@ -7772,7 +9107,7 @@
       }
     },
     {
-      "id": "escuela-0350",
+      "id": "escuela-0412",
       "jurisdictionId": "90",
       "jurisdiction": "Tucumán",
       "caseType": "titular",
@@ -7793,7 +9128,7 @@
       }
     },
     {
-      "id": "escuela-0351",
+      "id": "escuela-0413",
       "jurisdictionId": "90",
       "jurisdiction": "Tucumán",
       "caseType": "titular",
@@ -7814,7 +9149,7 @@
       }
     },
     {
-      "id": "escuela-0352",
+      "id": "escuela-0414",
       "jurisdictionId": "90",
       "jurisdiction": "Tucumán",
       "caseType": "titular",
@@ -7835,7 +9170,7 @@
       }
     },
     {
-      "id": "escuela-0353",
+      "id": "escuela-0415",
       "jurisdictionId": "90",
       "jurisdiction": "Tucumán",
       "caseType": "titular",
@@ -7856,7 +9191,7 @@
       }
     },
     {
-      "id": "escuela-0354",
+      "id": "escuela-0416",
       "jurisdictionId": "90",
       "jurisdiction": "Tucumán",
       "caseType": "titular",
@@ -7877,7 +9212,7 @@
       }
     },
     {
-      "id": "escuela-0355",
+      "id": "escuela-0417",
       "jurisdictionId": "90",
       "jurisdiction": "Tucumán",
       "caseType": "titular",
@@ -7898,7 +9233,28 @@
       }
     },
     {
-      "id": "escuela-0356",
+      "id": "escuela-0418",
+      "jurisdictionId": "90",
+      "jurisdiction": "Tucumán",
+      "caseType": "titular",
+      "weight": 2.4,
+      "coordinates": [
+        -65.3098726,
+        -27.1929704
+      ],
+      "answers": {
+        "q_2_1_1": "No contamos con personal específico; la tarea se distribuye informalmente.",
+        "q_2_2_3": "Se remite para notificación, pero no requiere aprobación explícita para iniciar",
+        "q_2_2_5": "Predominantemente \"externas\"",
+        "q_3_3": "Se registra la información, pero no se realiza una sistematización ni un análisis posterior",
+        "q_3_4": "Sí, contamos con un registro en fichas (soporte papel)",
+        "q_4_2": "Es insuficiente para cubrir las necesidades de Prácticas Profesionalizantes (PP)",
+        "q_5_5": "No",
+        "q_5_6": "Sí, mediante un análisis de coherencia entre las actividades realizadas en la práctica y la planificación inicial del proyecto"
+      }
+    },
+    {
+      "id": "escuela-0419",
       "jurisdictionId": "90",
       "jurisdiction": "Tucumán",
       "caseType": "titular",
@@ -7919,7 +9275,7 @@
       }
     },
     {
-      "id": "escuela-0357",
+      "id": "escuela-0420",
       "jurisdictionId": "90",
       "jurisdiction": "Tucumán",
       "caseType": "titular",
@@ -7940,7 +9296,7 @@
       }
     },
     {
-      "id": "escuela-0358",
+      "id": "escuela-0421",
       "jurisdictionId": "90",
       "jurisdiction": "Tucumán",
       "caseType": "titular",
@@ -7961,7 +9317,7 @@
       }
     },
     {
-      "id": "escuela-0359",
+      "id": "escuela-0422",
       "jurisdictionId": "90",
       "jurisdiction": "Tucumán",
       "caseType": "titular",
@@ -7982,7 +9338,7 @@
       }
     },
     {
-      "id": "escuela-0360",
+      "id": "escuela-0423",
       "jurisdictionId": "90",
       "jurisdiction": "Tucumán",
       "caseType": "titular",
@@ -8003,7 +9359,7 @@
       }
     },
     {
-      "id": "escuela-0361",
+      "id": "escuela-0424",
       "jurisdictionId": "94",
       "jurisdiction": "Tierra del Fuego",
       "caseType": "titular",
@@ -8024,7 +9380,7 @@
       }
     },
     {
-      "id": "escuela-0362",
+      "id": "escuela-0425",
       "jurisdictionId": "94",
       "jurisdiction": "Tierra del Fuego",
       "caseType": "titular",
@@ -8045,7 +9401,7 @@
       }
     },
     {
-      "id": "escuela-0363",
+      "id": "escuela-0426",
       "jurisdictionId": "94",
       "jurisdiction": "Tierra del Fuego",
       "caseType": "titular",
@@ -8066,7 +9422,28 @@
       }
     },
     {
-      "id": "escuela-0364",
+      "id": "escuela-0427",
+      "jurisdictionId": "94",
+      "jurisdiction": "Tierra del Fuego",
+      "caseType": "titular",
+      "weight": 1.0,
+      "coordinates": [
+        -67.799195663838,
+        -53.724896010855
+      ],
+      "answers": {
+        "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
+        "q_2_2_3": "Se remite para notificación, pero no requiere aprobación explícita para iniciar",
+        "q_2_2_5": "Modalidad mixta (se realizan ambos formatos sin que uno predomine)",
+        "q_3_3": "Se registra la información, pero no se realiza una sistematización ni un análisis posterior",
+        "q_3_4": "No contamos con un registro de oferentes",
+        "q_4_2": "Es suficiente para cubrir las Prácticas Profesionalizantes (PP) de la matrícula de la escuela",
+        "q_5_5": "No",
+        "q_5_6": "Sí, mediante un análisis de coherencia entre las actividades realizadas en la práctica y la planificación inicial del proyecto"
+      }
+    },
+    {
+      "id": "escuela-0428",
       "jurisdictionId": "94",
       "jurisdiction": "Tierra del Fuego",
       "caseType": "titular",
@@ -8087,12 +9464,15 @@
       }
     },
     {
-      "id": "escuela-0365",
+      "id": "escuela-0429",
       "jurisdictionId": "94",
       "jurisdiction": "Tierra del Fuego",
       "caseType": "titular",
       "weight": 1.0,
-      "coordinates": null,
+      "coordinates": [
+        -68.276706923959,
+        -54.794119655526
+      ],
       "answers": {
         "q_2_1_1": "Sí, con exclusividad (por ejemplo, coordinador/a de Prácticas Profesionalizantes (PP) con horas específicas).",
         "q_2_2_3": "Sí, se remite y aprueba formalmente todos los años",
@@ -8105,7 +9485,7 @@
       }
     },
     {
-      "id": "escuela-0366",
+      "id": "escuela-0430",
       "jurisdictionId": "94",
       "jurisdiction": "Tierra del Fuego",
       "caseType": "titular",
